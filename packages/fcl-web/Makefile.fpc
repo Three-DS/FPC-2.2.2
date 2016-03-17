@@ -1,0 +1,29 @@
+#
+#   Makefile.fpc for FCL Web components
+#
+
+[package]
+name=fcl-web
+version=2.2.2
+
+[target]
+units=httpdefs fphttp custcgi fpcgi fptemplate fphtml websession fpweb \
+      webutil fpdatasetform cgiapp ezcgi
+rsts=fpcgi fphtml fpweb websession cgiapp
+
+[require]
+packages=fcl-base fcl-xml fcl-db fcl-process
+
+[compiler]
+options=-S2h
+sourcedir=src
+
+[install]
+fpcpackage=y
+
+[default]
+fpcdir=../..
+
+
+[rules]
+.NOTPARALLEL:

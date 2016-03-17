@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Compiler Value="C:\hydra\pp.pas.lpr\2.6.2\bin\x86_64-win64\fpc.exe" Date="1114731730"/>
+  <Params Value=" -MObjFPC -O1 -Twin64 -Px86_64 -gs -gl -vei -Se50 -FiC:\hydra\pp.pas.lpr\2.2.2\source\compiler\x86_64 -FuC:\hydra\pp.pas.lpr\2.2.2\units\x86_64-linux\rtl -FuC:\hydra\pp.pas.lpr\2.2.2\source\compiler\x86_64 -FuC:\hydra\pp.pas.lpr\2.2.2\source\compiler\x86 -FuC:\hydra\pp.pas.lpr\2.2.2\source\compiler\systems -FuC:\hydra\pp.pas.lpr\2.2.2\source\compiler\ -FUC:\hydra\pp.pas.lpr\2.2.2\source\compiler\i386\lazbuild\ -l -FEC:\hydra\pp.pas.lpr\2.2.2\source\compiler\i386\ -dx86_64 pp.pas"/>
+  <Complete Value="False"/>
+</CONFIG>

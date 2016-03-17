@@ -1,0 +1,22 @@
+#
+#   Makefile.fpc for DB TestFramework 
+#
+
+[package]
+main=fcl
+
+[target]
+examples=dbtestframework
+units=toolsunit dbftoolsunit memdstoolsunit sqldbtoolsunit
+
+[install]
+fpcpackage=y
+
+[default]
+fpcdir=../../..
+
+[require]
+packages=fcl-fpcunit fcl-db paszlib
+
+[rules]
+.NOTPARALLEL:

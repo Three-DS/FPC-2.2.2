@@ -1,0 +1,14 @@
+[package]
+name=gtk2
+version=2.2.2
+[require]
+libc=y
+packages_beos=x11
+packages_linux=x11
+packages_openbsd=x11
+packages_freebsd=x11
+packages=rtl 
+packages_solaris=x11
+packages_netbsd=x11
+packages_darwin=x11
+packages_linux_x86_64=

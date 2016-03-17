@@ -1,0 +1,14307 @@
+	.file "aasmcpu.pas"
+# Begin asmlist al_begin
+# End asmlist al_begin
+# Begin asmlist al_stabs
+# End asmlist al_stabs
+# Begin asmlist al_procedures
+
+.section .text.n_aasmcpu_tai_align_$__create$byte$$tai_align
+	.balign 16,0x90
+.globl	AASMCPU_TAI_ALIGN_$__CREATE$BYTE$$TAI_ALIGN
+AASMCPU_TAI_ALIGN_$__CREATE$BYTE$$TAI_ALIGN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movb	%cl,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj5
+	jmp	.Lj6
+.Lj5:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj6:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj11
+	jmp	.Lj12
+.Lj11:
+	jmp	.Lj3
+.Lj12:
+	movb	-4(%ebp),%cl
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_ALIGN_ABSTRACT_$__CREATE$BYTE$$TAI_ALIGN_ABSTRACT
+	movl	-12(%ebp),%eax
+	movl	$17039361,24(%eax)
+.Lj3:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj23
+	jmp	.Lj22
+.Lj23:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj21
+	jmp	.Lj22
+.Lj21:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj22:
+	movl	-12(%ebp),%eax
+	leave
+	ret
+
+.section .text.n_aasmcpu_tai_align_$__create_op$byte$byte$$tai_align
+	.balign 16,0x90
+.globl	AASMCPU_TAI_ALIGN_$__CREATE_OP$BYTE$BYTE$$TAI_ALIGN
+AASMCPU_TAI_ALIGN_$__CREATE_OP$BYTE$BYTE$$TAI_ALIGN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movb	%cl,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj28
+	jmp	.Lj29
+.Lj28:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj29:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj34
+	jmp	.Lj35
+.Lj34:
+	jmp	.Lj26
+.Lj35:
+	movzbl	8(%ebp),%eax
+	pushl	%eax
+	movb	-4(%ebp),%cl
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_ALIGN_ABSTRACT_$__CREATE_OP$BYTE$BYTE$$TAI_ALIGN_ABSTRACT
+	movl	-12(%ebp),%eax
+	movl	$0,24(%eax)
+.Lj26:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj48
+	jmp	.Lj47
+.Lj48:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj46
+	jmp	.Lj47
+.Lj46:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj47:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$4
+
+.section .text.n_aasmcpu_tai_align_$__calculatefillbuf$tfillbuffer$$pchar
+	.balign 16,0x90
+.globl	AASMCPU_TAI_ALIGN_$__CALCULATEFILLBUF$TFILLBUFFER$$PCHAR
+AASMCPU_TAI_ALIGN_$__CALCULATEFILLBUF$TFILLBUFFER$$PCHAR:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$24,%esp
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movl	-4(%ebp),%edx
+	movl	-8(%ebp),%eax
+	call	AASMTAI_TAI_ALIGN_ABSTRACT_$__CALCULATEFILLBUF$TFILLBUFFER$$PCHAR
+	movl	-8(%ebp),%eax
+	movb	20(%eax),%al
+	testb	%al,%al
+	je	.Lj57
+	jmp	.Lj58
+.Lj57:
+	movl	-4(%ebp),%eax
+	movl	%eax,-16(%ebp)
+	movl	-8(%ebp),%eax
+	movb	18(%eax),%al
+	movb	%al,-24(%ebp)
+	jmp	.Lj64
+	.balign 4,0x90
+.Lj63:
+	movl	$0,-20(%ebp)
+	decl	-20(%ebp)
+	.balign 4,0x90
+.Lj68:
+	incl	-20(%ebp)
+	movl	-20(%ebp),%eax
+	imull	$5,%eax
+	movb	TC_AASMCPU_TAI_ALIGN_$_CALCULATEFILLBUF$TFILLBUFFER$$PCHAR_ALIGNARRAY(,%eax),%al
+	cmpb	-24(%ebp),%al
+	jbe	.Lj69
+	jmp	.Lj70
+.Lj69:
+	jmp	.Lj67
+.Lj70:
+	cmpl	$3,-20(%ebp)
+	jl	.Lj68
+.Lj67:
+	movl	-20(%ebp),%eax
+	imull	$5,%eax
+	movzbl	TC_AASMCPU_TAI_ALIGN_$_CALCULATEFILLBUF$TFILLBUFFER$$PCHAR_ALIGNARRAY(,%eax),%ecx
+	movl	-16(%ebp),%edx
+	movl	-20(%ebp),%eax
+	imull	$5,%eax
+	leal	TC_AASMCPU_TAI_ALIGN_$_CALCULATEFILLBUF$TFILLBUFFER$$PCHAR_ALIGNARRAY+1(,%eax),%eax
+	call	SYSTEM_MOVE$formal$formal$LONGINT
+	movl	-20(%ebp),%eax
+	imull	$5,%eax
+	movzbl	TC_AASMCPU_TAI_ALIGN_$_CALCULATEFILLBUF$TFILLBUFFER$$PCHAR_ALIGNARRAY(,%eax),%eax
+	addl	%eax,-16(%ebp)
+	movl	-20(%ebp),%eax
+	imull	$5,%eax
+	movb	TC_AASMCPU_TAI_ALIGN_$_CALCULATEFILLBUF$TFILLBUFFER$$PCHAR_ALIGNARRAY(,%eax),%al
+	subb	%al,-24(%ebp)
+.Lj64:
+	movzbl	-24(%ebp),%eax
+	cmpl	$0,%eax
+	jg	.Lj63
+	jmp	.Lj65
+.Lj65:
+.Lj58:
+	movl	-4(%ebp),%eax
+	movl	%eax,-12(%ebp)
+	movl	-12(%ebp),%eax
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__changeopsize$topsize
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__CHANGEOPSIZE$TOPSIZE
+AASMCPU_TAICPU_$__CHANGEOPSIZE$TOPSIZE:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$8,%esp
+	movl	%eax,-8(%ebp)
+	movb	%dl,-4(%ebp)
+	movl	-8(%ebp),%edx
+	movb	-4(%ebp),%al
+	movb	%al,57(%edx)
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__init$topsize
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__INIT$TOPSIZE
+AASMCPU_TAICPU_$__INIT$TOPSIZE:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$8,%esp
+	movl	%eax,-8(%ebp)
+	movb	%dl,-4(%ebp)
+	movl	-8(%ebp),%eax
+	movb	$1,58(%eax)
+	movl	-8(%ebp),%eax
+	movl	$0,52(%eax)
+	movl	-8(%ebp),%eax
+	movb	-4(%ebp),%dl
+	movb	%dl,57(%eax)
+	movl	-8(%ebp),%eax
+	movl	$0,60(%eax)
+	movl	-8(%ebp),%eax
+	movl	$-1,68(%eax)
+	movl	-8(%ebp),%eax
+	movl	$0,64(%eax)
+	movl	-8(%ebp),%eax
+	movb	$0,72(%eax)
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__op_none$tasmop$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_NONE$TASMOP$$TAICPU
+AASMCPU_TAICPU_$__OP_NONE$TASMOP$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj101
+	jmp	.Lj102
+.Lj101:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj102:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj107
+	jmp	.Lj108
+.Lj107:
+	jmp	.Lj99
+.Lj108:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movl	-12(%ebp),%eax
+	movb	$0,%dl
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+.Lj99:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj121
+	jmp	.Lj120
+.Lj121:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj119
+	jmp	.Lj120
+.Lj119:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj120:
+	movl	-12(%ebp),%eax
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__op_none$tasmop$topsize$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_NONE$TASMOP$TOPSIZE$$TAICPU
+AASMCPU_TAICPU_$__OP_NONE$TASMOP$TOPSIZE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj126
+	jmp	.Lj127
+.Lj126:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj127:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj132
+	jmp	.Lj133
+.Lj132:
+	jmp	.Lj124
+.Lj133:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	8(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+.Lj124:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj146
+	jmp	.Lj145
+.Lj146:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj144
+	jmp	.Lj145
+.Lj144:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj145:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$4
+
+.section .text.n_aasmcpu_taicpu_$__op_reg$tasmop$topsize$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REG$TASMOP$TOPSIZE$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_REG$TASMOP$TOPSIZE$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj151
+	jmp	.Lj152
+.Lj151:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj152:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj157
+	jmp	.Lj158
+.Lj157:
+	jmp	.Lj149
+.Lj158:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	12(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$1,33(%eax)
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj149:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj179
+	jmp	.Lj178
+.Lj179:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj177
+	jmp	.Lj178
+.Lj177:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj178:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$8
+
+.section .text.n_aasmcpu_taicpu_$__op_const$tasmop$topsize$longint$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_CONST$TASMOP$TOPSIZE$LONGINT$$TAICPU
+AASMCPU_TAICPU_$__OP_CONST$TASMOP$TOPSIZE$LONGINT$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj184
+	jmp	.Lj185
+.Lj184:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj185:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj190
+	jmp	.Lj191
+.Lj190:
+	jmp	.Lj182
+.Lj191:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	12(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$1,33(%eax)
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+.Lj182:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj212
+	jmp	.Lj211
+.Lj212:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj210
+	jmp	.Lj211
+.Lj210:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj211:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$8
+
+.section .text.n_aasmcpu_taicpu_$__op_ref$tasmop$topsize$treference$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REF$TASMOP$TOPSIZE$TREFERENCE$$TAICPU
+AASMCPU_TAICPU_$__OP_REF$TASMOP$TOPSIZE$TREFERENCE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj217
+	jmp	.Lj218
+.Lj217:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj218:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj223
+	jmp	.Lj224
+.Lj223:
+	jmp	.Lj215
+.Lj224:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	12(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$1,33(%eax)
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+.Lj215:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj245
+	jmp	.Lj244
+.Lj245:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj243
+	jmp	.Lj244
+.Lj243:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj244:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$8
+
+.section .text.n_aasmcpu_taicpu_$__op_reg_reg$tasmop$topsize$tregister$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REG_REG$TASMOP$TOPSIZE$TREGISTER$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_REG_REG$TASMOP$TOPSIZE$TREGISTER$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj250
+	jmp	.Lj251
+.Lj250:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj251:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj256
+	jmp	.Lj257
+.Lj256:
+	jmp	.Lj248
+.Lj257:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj248:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj284
+	jmp	.Lj283
+.Lj284:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj282
+	jmp	.Lj283
+.Lj282:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj283:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_reg_const$tasmop$topsize$tregister$longint$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REG_CONST$TASMOP$TOPSIZE$TREGISTER$LONGINT$$TAICPU
+AASMCPU_TAICPU_$__OP_REG_CONST$TASMOP$TOPSIZE$TREGISTER$LONGINT$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj289
+	jmp	.Lj290
+.Lj289:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj290:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj295
+	jmp	.Lj296
+.Lj295:
+	jmp	.Lj287
+.Lj296:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+.Lj287:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj323
+	jmp	.Lj322
+.Lj323:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj321
+	jmp	.Lj322
+.Lj321:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj322:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_reg_ref$tasmop$topsize$tregister$treference$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREFERENCE$$TAICPU
+AASMCPU_TAICPU_$__OP_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREFERENCE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj328
+	jmp	.Lj329
+.Lj328:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj329:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj334
+	jmp	.Lj335
+.Lj334:
+	jmp	.Lj326
+.Lj335:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+.Lj326:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj362
+	jmp	.Lj361
+.Lj362:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj360
+	jmp	.Lj361
+.Lj360:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj361:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_const_reg$tasmop$topsize$longint$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_CONST_REG$TASMOP$TOPSIZE$LONGINT$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_CONST_REG$TASMOP$TOPSIZE$LONGINT$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj367
+	jmp	.Lj368
+.Lj367:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj368:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj373
+	jmp	.Lj374
+.Lj373:
+	jmp	.Lj365
+.Lj374:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj365:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj401
+	jmp	.Lj400
+.Lj401:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj399
+	jmp	.Lj400
+.Lj399:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj400:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_const_const$tasmop$topsize$longint$longint$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_CONST_CONST$TASMOP$TOPSIZE$LONGINT$LONGINT$$TAICPU
+AASMCPU_TAICPU_$__OP_CONST_CONST$TASMOP$TOPSIZE$LONGINT$LONGINT$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj406
+	jmp	.Lj407
+.Lj406:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj407:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj412
+	jmp	.Lj413
+.Lj412:
+	jmp	.Lj404
+.Lj413:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+.Lj404:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj440
+	jmp	.Lj439
+.Lj440:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj438
+	jmp	.Lj439
+.Lj438:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj439:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_const_ref$tasmop$topsize$longint$treference$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_CONST_REF$TASMOP$TOPSIZE$LONGINT$TREFERENCE$$TAICPU
+AASMCPU_TAICPU_$__OP_CONST_REF$TASMOP$TOPSIZE$LONGINT$TREFERENCE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj445
+	jmp	.Lj446
+.Lj445:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj446:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj451
+	jmp	.Lj452
+.Lj451:
+	jmp	.Lj443
+.Lj452:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+.Lj443:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj479
+	jmp	.Lj478
+.Lj479:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj477
+	jmp	.Lj478
+.Lj477:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj478:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_ref_reg$tasmop$topsize$treference$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REF_REG$TASMOP$TOPSIZE$TREFERENCE$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_REF_REG$TASMOP$TOPSIZE$TREFERENCE$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj484
+	jmp	.Lj485
+.Lj484:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj485:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj490
+	jmp	.Lj491
+.Lj490:
+	jmp	.Lj482
+.Lj491:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj482:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj518
+	jmp	.Lj517
+.Lj518:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj516
+	jmp	.Lj517
+.Lj516:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj517:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_reg_reg_reg$tasmop$topsize$tregister$tregister$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REG_REG_REG$TASMOP$TOPSIZE$TREGISTER$TREGISTER$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_REG_REG_REG$TASMOP$TOPSIZE$TREGISTER$TREGISTER$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj523
+	jmp	.Lj524
+.Lj523:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj524:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj529
+	jmp	.Lj530
+.Lj529:
+	jmp	.Lj521
+.Lj530:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	20(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$3,33(%eax)
+	movl	16(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$2,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj521:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj563
+	jmp	.Lj562
+.Lj563:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj561
+	jmp	.Lj562
+.Lj561:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj562:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$16
+
+.section .text.n_aasmcpu_taicpu_$__op_const_reg_reg$tasmop$topsize$longint$tregister$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_CONST_REG_REG$TASMOP$TOPSIZE$LONGINT$TREGISTER$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_CONST_REG_REG$TASMOP$TOPSIZE$LONGINT$TREGISTER$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj568
+	jmp	.Lj569
+.Lj568:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj569:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj574
+	jmp	.Lj575
+.Lj574:
+	jmp	.Lj566
+.Lj575:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	20(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$3,33(%eax)
+	movl	16(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$2,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj566:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj608
+	jmp	.Lj607
+.Lj608:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj606
+	jmp	.Lj607
+.Lj606:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj607:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$16
+
+.section .text.n_aasmcpu_taicpu_$__op_reg_reg_ref$tasmop$topsize$tregister$tregister$treference$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_REG_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREGISTER$TREFERENCE$$TAICPU
+AASMCPU_TAICPU_$__OP_REG_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREGISTER$TREFERENCE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj613
+	jmp	.Lj614
+.Lj613:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj614:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj619
+	jmp	.Lj620
+.Lj619:
+	jmp	.Lj611
+.Lj620:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	20(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$3,33(%eax)
+	movl	16(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$2,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+.Lj611:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj653
+	jmp	.Lj652
+.Lj653:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj651
+	jmp	.Lj652
+.Lj651:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj652:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$16
+
+.section .text.n_aasmcpu_taicpu_$__op_const_ref_reg$tasmop$topsize$longint$treference$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_CONST_REF_REG$TASMOP$TOPSIZE$LONGINT$TREFERENCE$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_CONST_REF_REG$TASMOP$TOPSIZE$LONGINT$TREFERENCE$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj658
+	jmp	.Lj659
+.Lj658:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj659:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj664
+	jmp	.Lj665
+.Lj664:
+	jmp	.Lj656
+.Lj665:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	20(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$3,33(%eax)
+	movl	16(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$2,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj656:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj698
+	jmp	.Lj697
+.Lj698:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj696
+	jmp	.Lj697
+.Lj696:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj697:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$16
+
+.section .text.n_aasmcpu_taicpu_$__op_const_reg_ref$tasmop$topsize$longint$tregister$treference$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_CONST_REG_REF$TASMOP$TOPSIZE$LONGINT$TREGISTER$TREFERENCE$$TAICPU
+AASMCPU_TAICPU_$__OP_CONST_REG_REF$TASMOP$TOPSIZE$LONGINT$TREGISTER$TREFERENCE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj703
+	jmp	.Lj704
+.Lj703:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj704:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj709
+	jmp	.Lj710
+.Lj709:
+	jmp	.Lj701
+.Lj710:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	20(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$3,33(%eax)
+	movl	16(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADCONST$LONGINT$LONGINT
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$2,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+.Lj701:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj743
+	jmp	.Lj742
+.Lj743:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj741
+	jmp	.Lj742
+.Lj741:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj742:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$16
+
+.section .text.n_aasmcpu_taicpu_$__op_cond_sym$tasmop$tasmcond$topsize$tasmsymbol$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_COND_SYM$TASMOP$TASMCOND$TOPSIZE$TASMSYMBOL$$TAICPU
+AASMCPU_TAICPU_$__OP_COND_SYM$TASMOP$TASMCOND$TOPSIZE$TASMSYMBOL$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj748
+	jmp	.Lj749
+.Lj748:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj749:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj754
+	jmp	.Lj755
+.Lj754:
+	jmp	.Lj746
+.Lj755:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	12(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	16(%ebp),%dl
+	movb	%dl,32(%eax)
+	movl	-12(%ebp),%eax
+	movb	$1,33(%eax)
+	pushl	$0
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADSYMBOL$LONGINT$TASMSYMBOL$LONGINT
+.Lj746:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj780
+	jmp	.Lj779
+.Lj780:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj778
+	jmp	.Lj779
+.Lj778:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj779:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_sym$tasmop$topsize$tasmsymbol$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_SYM$TASMOP$TOPSIZE$TASMSYMBOL$$TAICPU
+AASMCPU_TAICPU_$__OP_SYM$TASMOP$TOPSIZE$TASMSYMBOL$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj785
+	jmp	.Lj786
+.Lj785:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj786:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj791
+	jmp	.Lj792
+.Lj791:
+	jmp	.Lj783
+.Lj792:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	12(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$1,33(%eax)
+	pushl	$0
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADSYMBOL$LONGINT$TASMSYMBOL$LONGINT
+.Lj783:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj815
+	jmp	.Lj814
+.Lj815:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj813
+	jmp	.Lj814
+.Lj813:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj814:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$8
+
+.section .text.n_aasmcpu_taicpu_$__op_sym_ofs$tasmop$topsize$tasmsymbol$longint$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_SYM_OFS$TASMOP$TOPSIZE$TASMSYMBOL$LONGINT$$TAICPU
+AASMCPU_TAICPU_$__OP_SYM_OFS$TASMOP$TOPSIZE$TASMSYMBOL$LONGINT$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj820
+	jmp	.Lj821
+.Lj820:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj821:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj826
+	jmp	.Lj827
+.Lj826:
+	jmp	.Lj818
+.Lj827:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	16(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$1,33(%eax)
+	pushl	8(%ebp)
+	movl	12(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADSYMBOL$LONGINT$TASMSYMBOL$LONGINT
+.Lj818:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj850
+	jmp	.Lj849
+.Lj850:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj848
+	jmp	.Lj849
+.Lj848:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj849:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$12
+
+.section .text.n_aasmcpu_taicpu_$__op_sym_ofs_reg$tasmop$topsize$tasmsymbol$longint$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_SYM_OFS_REG$TASMOP$TOPSIZE$TASMSYMBOL$LONGINT$TREGISTER$$TAICPU
+AASMCPU_TAICPU_$__OP_SYM_OFS_REG$TASMOP$TOPSIZE$TASMSYMBOL$LONGINT$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj855
+	jmp	.Lj856
+.Lj855:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj856:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj861
+	jmp	.Lj862
+.Lj861:
+	jmp	.Lj853
+.Lj862:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	20(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	pushl	12(%ebp)
+	movl	16(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADSYMBOL$LONGINT$TASMSYMBOL$LONGINT
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREG$LONGINT$TREGISTER
+.Lj853:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj891
+	jmp	.Lj890
+.Lj891:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj889
+	jmp	.Lj890
+.Lj889:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj890:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$16
+
+.section .text.n_aasmcpu_taicpu_$__op_sym_ofs_ref$tasmop$topsize$tasmsymbol$longint$treference$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__OP_SYM_OFS_REF$TASMOP$TOPSIZE$TASMSYMBOL$LONGINT$TREFERENCE$$TAICPU
+AASMCPU_TAICPU_$__OP_SYM_OFS_REF$TASMOP$TOPSIZE$TASMSYMBOL$LONGINT$TREFERENCE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-12(%ebp)
+	movl	%edx,-8(%ebp)
+	movw	%cx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	cmpl	$1,%eax
+	ja	.Lj896
+	jmp	.Lj897
+.Lj896:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	call	*52(%edx)
+	movl	%eax,-12(%ebp)
+.Lj897:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj902
+	jmp	.Lj903
+.Lj902:
+	jmp	.Lj894
+.Lj903:
+	movw	-4(%ebp),%cx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	movb	20(%ebp),%dl
+	movl	-12(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INIT$TOPSIZE
+	movl	-12(%ebp),%eax
+	movb	$2,33(%eax)
+	pushl	12(%ebp)
+	movl	16(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$0,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADSYMBOL$LONGINT$TASMSYMBOL$LONGINT
+	movl	8(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$1,%edx
+	call	AASMTAI_TAI_CPU_ABSTRACT_$__LOADREF$LONGINT$TREFERENCE
+.Lj894:
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj932
+	jmp	.Lj931
+.Lj932:
+	movl	-8(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj930
+	jmp	.Lj931
+.Lj930:
+	movl	-12(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	(%edx),%edx
+	call	*68(%edx)
+.Lj931:
+	movl	-12(%ebp),%eax
+	leave
+	ret	$16
+
+.section .text.n_aasmcpu_taicpu_$__getstring$$shortstring
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__GETSTRING$$SHORTSTRING
+AASMCPU_TAICPU_$__GETSTRING$$SHORTSTRING:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$280,%esp
+	movl	%ebx,-280(%ebp)
+	movl	%esi,-276(%ebp)
+	movl	%eax,-4(%ebp)
+	movl	%edx,-8(%ebp)
+	movl	-4(%ebp),%eax
+	movzwl	48(%eax),%eax
+	imull	$12,%eax
+	leal	TC_CPUBASE_STD_OP2STR(,%eax),%eax
+	pushl	%eax
+	movl	$_$AASMCPU$_Ld1,%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	movl	-4(%ebp),%eax
+	movzbl	33(%eax),%eax
+	decl	%eax
+	movl	%eax,%ebx
+	movl	$0,-12(%ebp)
+	cmpl	-12(%ebp),%ebx
+	jl	.Lj946
+	decl	-12(%ebp)
+	.balign 4,0x90
+.Lj947:
+	incl	-12(%ebp)
+	movl	-4(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	%eax,%esi
+	movl	-12(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj950
+	jmp	.Lj951
+.Lj950:
+	pushl	$_$AASMCPU$_Ld2
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj960
+.Lj951:
+	pushl	$_$AASMCPU$_Ld3
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+.Lj960:
+	movb	$0,-272(%ebp)
+	movl	(%esi),%eax
+	andl	$2101264,%eax
+	cmpl	$2101264,%eax
+	je	.Lj971
+	jmp	.Lj972
+.Lj971:
+	pushl	$_$AASMCPU$_Ld4
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj981
+.Lj972:
+	movl	(%esi),%eax
+	andl	$2101280,%eax
+	cmpl	$2101280,%eax
+	je	.Lj982
+	jmp	.Lj983
+.Lj982:
+	pushl	$_$AASMCPU$_Ld5
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj992
+.Lj983:
+	movl	(%esi),%eax
+	andl	$16777216,%eax
+	cmpl	$16777216,%eax
+	je	.Lj993
+	jmp	.Lj994
+.Lj993:
+	pushl	$_$AASMCPU$_Ld6
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj1003
+.Lj994:
+	movl	(%esi),%eax
+	andl	$4096,%eax
+	cmpl	$4096,%eax
+	je	.Lj1004
+	jmp	.Lj1005
+.Lj1004:
+	pushl	$_$AASMCPU$_Ld7
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	movb	$1,-272(%ebp)
+	jmp	.Lj1016
+.Lj1005:
+	movl	(%esi),%eax
+	andl	$8192,%eax
+	cmpl	$8192,%eax
+	je	.Lj1017
+	jmp	.Lj1018
+.Lj1017:
+	pushl	$_$AASMCPU$_Ld8
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	movb	$1,-272(%ebp)
+	jmp	.Lj1029
+.Lj1018:
+	movl	(%esi),%eax
+	andl	$2113536,%eax
+	cmpl	$2113536,%eax
+	je	.Lj1030
+	jmp	.Lj1031
+.Lj1030:
+	pushl	$_$AASMCPU$_Ld9
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	movb	$1,-272(%ebp)
+	jmp	.Lj1042
+.Lj1031:
+	pushl	$_$AASMCPU$_Ld10
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+.Lj1042:
+.Lj1029:
+.Lj1016:
+.Lj1003:
+.Lj992:
+.Lj981:
+	cmpb	$0,-272(%ebp)
+	jne	.Lj1051
+	jmp	.Lj1052
+.Lj1051:
+	movl	(%esi),%eax
+	andl	$1,%eax
+	testl	%eax,%eax
+	jne	.Lj1053
+	jmp	.Lj1054
+.Lj1053:
+	pushl	$_$AASMCPU$_Ld11
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj1063
+.Lj1054:
+	movl	(%esi),%eax
+	andl	$2,%eax
+	testl	%eax,%eax
+	jne	.Lj1064
+	jmp	.Lj1065
+.Lj1064:
+	pushl	$_$AASMCPU$_Ld12
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj1074
+.Lj1065:
+	movl	(%esi),%eax
+	andl	$4,%eax
+	testl	%eax,%eax
+	jne	.Lj1075
+	jmp	.Lj1076
+.Lj1075:
+	pushl	$_$AASMCPU$_Ld13
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj1085
+.Lj1076:
+	movl	(%esi),%eax
+	andl	$8,%eax
+	testl	%eax,%eax
+	jne	.Lj1086
+	jmp	.Lj1087
+.Lj1086:
+	pushl	$_$AASMCPU$_Ld14
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	jmp	.Lj1096
+.Lj1087:
+	pushl	$_$AASMCPU$_Ld15
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+.Lj1096:
+.Lj1085:
+.Lj1074:
+.Lj1063:
+	movl	(%esi),%eax
+	andl	$256,%eax
+	testl	%eax,%eax
+	jne	.Lj1105
+	jmp	.Lj1106
+.Lj1105:
+	pushl	$_$AASMCPU$_Ld16
+	leal	-268(%ebp),%ecx
+	leal	-268(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+.Lj1106:
+.Lj1052:
+	cmpl	-12(%ebp),%ebx
+	jg	.Lj947
+.Lj946:
+	pushl	$_$AASMCPU$_Ld17
+	leal	-268(%ebp),%ecx
+	movl	-8(%ebp),%eax
+	movl	$255,%edx
+	call	fpc_shortstr_concat
+	movl	-280(%ebp),%ebx
+	movl	-276(%ebp),%esi
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__swapoperands
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__SWAPOPERANDS
+AASMCPU_TAICPU_$__SWAPOPERANDS:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$8,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	movb	33(%eax),%al
+	cmpb	$2,%al
+	jb	.Lj1126
+	subb	$2,%al
+	je	.Lj1127
+	decb	%al
+	je	.Lj1128
+	jmp	.Lj1126
+.Lj1127:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	%eax,-8(%ebp)
+	movl	-4(%ebp),%eax
+	movl	-4(%ebp),%edx
+	movl	40(%eax),%eax
+	movl	%eax,36(%edx)
+	movl	-4(%ebp),%eax
+	movl	-8(%ebp),%edx
+	movl	%edx,40(%eax)
+	jmp	.Lj1125
+.Lj1128:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	%eax,-8(%ebp)
+	movl	-4(%ebp),%eax
+	movl	-4(%ebp),%edx
+	movl	44(%eax),%eax
+	movl	%eax,36(%edx)
+	movl	-4(%ebp),%edx
+	movl	-8(%ebp),%eax
+	movl	%eax,44(%edx)
+	jmp	.Lj1125
+.Lj1126:
+.Lj1125:
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__setoperandorder$toperandorder
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__SETOPERANDORDER$TOPERANDORDER
+AASMCPU_TAICPU_$__SETOPERANDORDER$TOPERANDORDER:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$8,%esp
+	movl	%eax,-8(%ebp)
+	movb	%dl,-4(%ebp)
+	movl	-8(%ebp),%eax
+	movb	58(%eax),%al
+	cmpb	-4(%ebp),%al
+	jne	.Lj1143
+	jmp	.Lj1144
+.Lj1143:
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__SWAPOPERANDS
+	movl	-8(%ebp),%eax
+	movb	-4(%ebp),%dl
+	movb	%dl,58(%eax)
+.Lj1144:
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__checknoncommutativeopcodes
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__CHECKNONCOMMUTATIVEOPCODES
+AASMCPU_TAICPU_$__CHECKNONCOMMUTATIVEOPCODES:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	movb	$1,%dl
+	call	AASMCPU_TAICPU_$__SETOPERANDORDER$TOPERANDORDER
+	movl	-4(%ebp),%eax
+	movzbl	33(%eax),%eax
+	cmpl	$2,%eax
+	je	.Lj1160
+	jmp	.Lj1157
+.Lj1160:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj1159
+	jmp	.Lj1157
+.Lj1159:
+	movl	-4(%ebp),%eax
+	movl	40(%eax),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj1158
+	jmp	.Lj1157
+.Lj1158:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	8(%eax),%eax
+	cmpl	$33554440,%eax
+	je	.Lj1155
+	jmp	.Lj1161
+.Lj1161:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	8(%eax),%eax
+	cmpl	$33554432,%eax
+	je	.Lj1155
+	jmp	.Lj1157
+.Lj1157:
+	movl	-4(%ebp),%eax
+	movzbl	33(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1155
+	jmp	.Lj1156
+.Lj1155:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$126,%ax
+	je	.Lj1162
+	jmp	.Lj1163
+.Lj1162:
+	movl	-4(%ebp),%eax
+	movw	$124,48(%eax)
+	jmp	.Lj1166
+.Lj1163:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$124,%ax
+	je	.Lj1167
+	jmp	.Lj1168
+.Lj1167:
+	movl	-4(%ebp),%eax
+	movw	$126,48(%eax)
+	jmp	.Lj1171
+.Lj1168:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$67,%ax
+	je	.Lj1172
+	jmp	.Lj1173
+.Lj1172:
+	movl	-4(%ebp),%eax
+	movw	$65,48(%eax)
+	jmp	.Lj1176
+.Lj1173:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$65,%ax
+	je	.Lj1177
+	jmp	.Lj1178
+.Lj1177:
+	movl	-4(%ebp),%eax
+	movw	$67,48(%eax)
+	jmp	.Lj1181
+.Lj1178:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$127,%ax
+	je	.Lj1182
+	jmp	.Lj1183
+.Lj1182:
+	movl	-4(%ebp),%eax
+	movw	$125,48(%eax)
+	jmp	.Lj1186
+.Lj1183:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$125,%ax
+	je	.Lj1187
+	jmp	.Lj1188
+.Lj1187:
+	movl	-4(%ebp),%eax
+	movw	$127,48(%eax)
+	jmp	.Lj1191
+.Lj1188:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$68,%ax
+	je	.Lj1192
+	jmp	.Lj1193
+.Lj1192:
+	movl	-4(%ebp),%eax
+	movw	$66,48(%eax)
+	jmp	.Lj1196
+.Lj1193:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$66,%ax
+	je	.Lj1197
+	jmp	.Lj1198
+.Lj1197:
+	movl	-4(%ebp),%eax
+	movw	$68,48(%eax)
+.Lj1198:
+.Lj1196:
+.Lj1191:
+.Lj1186:
+.Lj1181:
+.Lj1176:
+.Lj1171:
+.Lj1166:
+.Lj1156:
+	movl	-4(%ebp),%eax
+	movzbl	33(%eax),%eax
+	cmpl	$1,%eax
+	je	.Lj1205
+	jmp	.Lj1202
+.Lj1205:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj1204
+	jmp	.Lj1202
+.Lj1204:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-8(%ebp)
+	movb	-5(%ebp),%al
+	movb	%al,-12(%ebp)
+	movb	-12(%ebp),%al
+	cmpb	$2,%al
+	je	.Lj1203
+	jmp	.Lj1202
+.Lj1203:
+	movl	-4(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	8(%eax),%eax
+	cmpl	$33554440,%eax
+	jne	.Lj1201
+	jmp	.Lj1202
+.Lj1201:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$127,%ax
+	je	.Lj1210
+	jmp	.Lj1211
+.Lj1210:
+	movl	-4(%ebp),%eax
+	movw	$125,48(%eax)
+	jmp	.Lj1214
+.Lj1211:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$125,%ax
+	je	.Lj1215
+	jmp	.Lj1216
+.Lj1215:
+	movl	-4(%ebp),%eax
+	movw	$127,48(%eax)
+	jmp	.Lj1219
+.Lj1216:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$68,%ax
+	je	.Lj1220
+	jmp	.Lj1221
+.Lj1220:
+	movl	-4(%ebp),%eax
+	movw	$66,48(%eax)
+	jmp	.Lj1224
+.Lj1221:
+	movl	-4(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$66,%ax
+	je	.Lj1225
+	jmp	.Lj1226
+.Lj1225:
+	movl	-4(%ebp),%eax
+	movw	$68,48(%eax)
+.Lj1226:
+.Lj1224:
+.Lj1219:
+.Lj1214:
+.Lj1202:
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__create_ot$tobjdata
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__CREATE_OT$TOBJDATA
+AASMCPU_TAICPU_$__CREATE_OT$TOBJDATA:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$40,%esp
+	movl	%ebx,-40(%ebp)
+	movl	%esi,-36(%ebp)
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	movzbl	33(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1231
+	jmp	.Lj1232
+.Lj1231:
+	jmp	.Lj1229
+.Lj1232:
+	movl	-8(%ebp),%eax
+	movzbl	33(%eax),%ebx
+	decl	%ebx
+	movl	$0,-12(%ebp)
+	cmpl	-12(%ebp),%ebx
+	jl	.Lj1234
+	decl	-12(%ebp)
+	.balign 4,0x90
+.Lj1235:
+	incl	-12(%ebp)
+	movl	-8(%ebp),%eax
+	movl	-12(%ebp),%edx
+	movl	36(%eax,%edx,4),%esi
+	movb	4(%esi),%al
+	testb	%al,%al
+	je	.Lj1244
+	decb	%al
+	je	.Lj1240
+	decb	%al
+	je	.Lj1241
+	decb	%al
+	je	.Lj1243
+	subb	$2,%al
+	je	.Lj1242
+	jmp	.Lj1239
+.Lj1240:
+	movl	8(%esi),%eax
+	call	CPUBASE_FINDREG_BY_NUMBER$TREGISTER$$TREGISTERINDEX
+	movzbl	%al,%eax
+	movl	TC_AASMCPU_REG_OT_TABLE(,%eax,4),%eax
+	movl	%eax,(%esi)
+	jmp	.Lj1238
+.Lj1241:
+	movl	8(%esi),%eax
+	movb	24(%eax),%al
+	testb	%al,%al
+	je	.Lj1249
+	jmp	.Lj1251
+.Lj1251:
+	movl	8(%esi),%eax
+	movb	24(%eax),%al
+	cmpb	$2,%al
+	je	.Lj1252
+	jmp	.Lj1250
+.Lj1252:
+	movl	8(%esi),%eax
+	movl	16(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj1249
+	jmp	.Lj1250
+.Lj1249:
+	movl	(%esi),%eax
+	andl	$31,%eax
+	testl	%eax,%eax
+	je	.Lj1253
+	jmp	.Lj1254
+.Lj1253:
+	movl	-12(%ebp),%edx
+	imull	$100,%edx
+	movl	-8(%ebp),%eax
+	movzbl	57(%eax),%eax
+	movl	TC_AASMCPU_OPSIZE_2_TYPE(%edx,%eax,4),%eax
+	orl	$2113536,%eax
+	movl	%eax,(%esi)
+	jmp	.Lj1257
+.Lj1254:
+	movl	(%esi),%eax
+	andl	$31,%eax
+	orl	$2113536,%eax
+	movl	%eax,(%esi)
+.Lj1257:
+	movl	8(%esi),%eax
+	movl	16(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1262
+	jmp	.Lj1261
+.Lj1262:
+	movl	8(%esi),%eax
+	movl	20(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1260
+	jmp	.Lj1261
+.Lj1260:
+	movl	(%esi),%eax
+	orl	$6307840,%eax
+	movl	%eax,(%esi)
+.Lj1261:
+	movl	8(%esi),%eax
+	movl	20(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1265
+	jmp	.Lj1266
+.Lj1265:
+	movl	8(%esi),%eax
+	movb	$0,25(%eax)
+	jmp	.Lj1269
+.Lj1266:
+	movl	8(%esi),%eax
+	movzbl	25(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1270
+	jmp	.Lj1271
+.Lj1270:
+	movl	8(%esi),%eax
+	movb	$1,25(%eax)
+.Lj1271:
+.Lj1269:
+	jmp	.Lj1274
+.Lj1250:
+	cmpl	$0,-4(%ebp)
+	jne	.Lj1277
+	jmp	.Lj1276
+.Lj1277:
+	movl	-8(%ebp),%eax
+	cmpb	$0,56(%eax)
+	jne	.Lj1275
+	jmp	.Lj1276
+.Lj1275:
+	movl	8(%esi),%eax
+	movl	4(%eax),%edx
+	movl	-4(%ebp),%eax
+	call	OGBASE_TOBJDATA_$__SYMBOLREF$TASMSYMBOL$$TOBJSYMBOL
+	movl	%eax,-24(%ebp)
+	movl	8(%esi),%eax
+	movl	(%eax),%eax
+	movl	%eax,-16(%ebp)
+	cmpl	$0,-24(%ebp)
+	jne	.Lj1286
+	jmp	.Lj1287
+.Lj1286:
+	movl	-24(%ebp),%eax
+	call	OGBASE_TOBJSYMBOL_$__ADDRESS$$LONGINT
+	addl	%eax,-16(%ebp)
+.Lj1287:
+	movl	-8(%ebp),%eax
+	movl	64(%eax),%eax
+	movl	-16(%ebp),%edx
+	cmpl	%edx,%eax
+	jl	.Lj1292
+	jmp	.Lj1291
+.Lj1292:
+	movl	-8(%ebp),%eax
+	movl	68(%eax),%eax
+	cmpl	$-1,%eax
+	jne	.Lj1290
+	jmp	.Lj1291
+.Lj1290:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	movl	64(%eax),%eax
+	movl	68(%edx),%edx
+	subl	%edx,%eax
+	addl	%eax,-16(%ebp)
+.Lj1291:
+	movl	-8(%ebp),%eax
+	movl	64(%eax),%edx
+	addl	$2,%edx
+	movl	-16(%ebp),%eax
+	subl	%eax,%edx
+	movl	%edx,-20(%ebp)
+	movl	-20(%ebp),%eax
+	cmpl	$-128,%eax
+	jge	.Lj1298
+	jmp	.Lj1296
+.Lj1298:
+	movl	-20(%ebp),%eax
+	cmpl	$127,%eax
+	jle	.Lj1297
+	jmp	.Lj1296
+.Lj1297:
+	cmpl	$0,-24(%ebp)
+	jne	.Lj1299
+	jmp	.Lj1295
+.Lj1299:
+	movl	-24(%ebp),%eax
+	movl	-4(%ebp),%edx
+	movl	20(%eax),%eax
+	cmpl	96(%edx),%eax
+	je	.Lj1295
+	jmp	.Lj1296
+.Lj1295:
+	movl	$8321,(%esi)
+	jmp	.Lj1302
+.Lj1296:
+	movl	$8260,(%esi)
+.Lj1302:
+	jmp	.Lj1305
+.Lj1276:
+	movl	$8260,(%esi)
+.Lj1305:
+.Lj1274:
+	jmp	.Lj1238
+.Lj1242:
+	movl	(%esi),%eax
+	andl	$31,%eax
+	testl	%eax,%eax
+	je	.Lj1308
+	jmp	.Lj1309
+.Lj1308:
+	movl	-12(%ebp),%edx
+	imull	$100,%edx
+	movl	-8(%ebp),%eax
+	movzbl	57(%eax),%eax
+	movl	TC_AASMCPU_OPSIZE_2_TYPE(%edx,%eax,4),%eax
+	orl	$2113536,%eax
+	movl	%eax,(%esi)
+	jmp	.Lj1312
+.Lj1309:
+	movl	(%esi),%eax
+	andl	$31,%eax
+	orl	$2113536,%eax
+	movl	%eax,(%esi)
+.Lj1312:
+	jmp	.Lj1238
+.Lj1243:
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	testb	%al,%al
+	je	.Lj1317
+	jmp	.Lj1316
+.Lj1317:
+	movl	-12(%ebp),%eax
+	decl	%eax
+	cmpl	$2,%eax
+	jb	.Lj1318
+.Lj1318:
+	jnc	.Lj1315
+	jmp	.Lj1316
+.Lj1315:
+	movl	$0,-32(%ebp)
+	movl	$0,-28(%ebp)
+	leal	-32(%ebp),%edx
+	movl	$7048,%eax
+	call	VERBOSE_MESSAGE$LONGINT$TMSGQUEUEEVENT
+.Lj1316:
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	cmpb	$2,%al
+	jne	.Lj1326
+	jmp	.Lj1324
+.Lj1326:
+	movl	8(%esi),%eax
+	cmpl	$-128,%eax
+	jge	.Lj1325
+	jmp	.Lj1324
+.Lj1325:
+	movl	8(%esi),%eax
+	cmpl	$127,%eax
+	jle	.Lj1323
+	jmp	.Lj1324
+.Lj1323:
+	movl	$8449,(%esi)
+	jmp	.Lj1329
+.Lj1324:
+	movl	-12(%ebp),%edx
+	imull	$100,%edx
+	movl	-8(%ebp),%eax
+	movzbl	57(%eax),%eax
+	movl	TC_AASMCPU_OPSIZE_2_TYPE(%edx,%eax,4),%eax
+	orl	$8192,%eax
+	movl	%eax,(%esi)
+.Lj1329:
+	jmp	.Lj1238
+.Lj1244:
+	jmp	.Lj1238
+.Lj1239:
+	movl	$200402261,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj1238:
+	cmpl	-12(%ebp),%ebx
+	jg	.Lj1235
+.Lj1234:
+.Lj1229:
+	movl	-40(%ebp),%ebx
+	movl	-36(%ebp),%esi
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__insend$$longint
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__INSEND$$LONGINT
+AASMCPU_TAICPU_$__INSEND$$LONGINT:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$8,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	movl	-4(%ebp),%edx
+	movsbl	72(%edx),%edx
+	movl	64(%eax),%eax
+	addl	%edx,%eax
+	movl	%eax,-8(%ebp)
+	movl	-8(%ebp),%eax
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__matches$pinsentry$$boolean
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__MATCHES$PINSENTRY$$BOOLEAN
+AASMCPU_TAICPU_$__MATCHES$PINSENTRY$$BOOLEAN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$56,%esp
+	movl	%ebx,-56(%ebp)
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movb	$0,-12(%ebp)
+	movl	-4(%ebp),%eax
+	movl	-8(%ebp),%edx
+	movw	(%eax),%ax
+	cmpw	48(%edx),%ax
+	jne	.Lj1342
+	jmp	.Lj1344
+.Lj1344:
+	movl	-4(%ebp),%eax
+	movl	-8(%ebp),%edx
+	movb	2(%eax),%al
+	cmpb	33(%edx),%al
+	jne	.Lj1342
+	jmp	.Lj1343
+.Lj1342:
+	jmp	.Lj1338
+.Lj1343:
+	movl	-4(%ebp),%eax
+	movzbl	2(%eax),%eax
+	decl	%eax
+	movl	$0,-28(%ebp)
+	cmpl	-28(%ebp),%eax
+	jl	.Lj1346
+	decl	-28(%ebp)
+	.balign 4,0x90
+.Lj1347:
+	incl	-28(%ebp)
+	movl	-4(%ebp),%edx
+	movl	-28(%ebp),%ecx
+	movl	3(%edx,%ecx,4),%edx
+	movl	%edx,-16(%ebp)
+	movl	-8(%ebp),%edx
+	movl	-28(%ebp),%ecx
+	movl	36(%edx,%ecx,4),%edx
+	movl	(%edx),%edx
+	movl	%edx,-24(%ebp)
+	movl	-24(%ebp),%edx
+	notl	%edx
+	movl	-16(%ebp),%ecx
+	andl	%ecx,%edx
+	andl	$-32,%edx
+	testl	%edx,%edx
+	jne	.Lj1352
+	jmp	.Lj1353
+.Lj1352:
+	jmp	.Lj1338
+.Lj1353:
+	movl	-16(%ebp),%edx
+	andl	$31,%edx
+	testl	%edx,%edx
+	jne	.Lj1356
+	jmp	.Lj1355
+.Lj1356:
+	movl	-16(%ebp),%ecx
+	movl	-24(%ebp),%edx
+	andl	%edx,%ecx
+	andl	$31,%ecx
+	movl	-24(%ebp),%edx
+	andl	$31,%edx
+	cmpl	%edx,%ecx
+	jne	.Lj1354
+	jmp	.Lj1355
+.Lj1354:
+	jmp	.Lj1338
+.Lj1355:
+	cmpl	-28(%ebp),%eax
+	jg	.Lj1347
+.Lj1346:
+	movl	-4(%ebp),%eax
+	movl	27(%eax),%eax
+	movl	%eax,-20(%ebp)
+	movl	-20(%ebp),%eax
+	andl	$31,%eax
+	testl	%eax,%eax
+	jne	.Lj1359
+	jmp	.Lj1360
+.Lj1359:
+	movl	$-1,-36(%ebp)
+	movl	-20(%ebp),%eax
+	andl	$4,%eax
+	testl	%eax,%eax
+	jne	.Lj1363
+	jmp	.Lj1364
+.Lj1363:
+	movl	$1,-36(%ebp)
+	jmp	.Lj1367
+.Lj1364:
+	movl	-20(%ebp),%eax
+	andl	$8,%eax
+	testl	%eax,%eax
+	jne	.Lj1368
+	jmp	.Lj1369
+.Lj1368:
+	movl	$2,-36(%ebp)
+	jmp	.Lj1372
+.Lj1369:
+	movl	-20(%ebp),%eax
+	andl	$16,%eax
+	testl	%eax,%eax
+	jne	.Lj1373
+	jmp	.Lj1374
+.Lj1373:
+	movl	$4,-36(%ebp)
+.Lj1374:
+.Lj1372:
+.Lj1367:
+	movl	-20(%ebp),%eax
+	andl	$96,%eax
+	testl	%eax,%eax
+	jne	.Lj1377
+	jmp	.Lj1378
+.Lj1377:
+	movl	$0,-52(%ebp)
+	movl	$0,-48(%ebp)
+	movl	$0,-44(%ebp)
+	movl	-20(%ebp),%eax
+	andl	$32,%eax
+	testl	%eax,%eax
+	jne	.Lj1385
+	jmp	.Lj1386
+.Lj1385:
+	movl	-36(%ebp),%eax
+	movl	%eax,-52(%ebp)
+	jmp	.Lj1389
+.Lj1386:
+	movl	-20(%ebp),%eax
+	andl	$64,%eax
+	testl	%eax,%eax
+	jne	.Lj1390
+	jmp	.Lj1391
+.Lj1390:
+	movl	-36(%ebp),%eax
+	movl	%eax,-48(%ebp)
+	jmp	.Lj1394
+.Lj1391:
+	movl	-20(%ebp),%eax
+	andl	$96,%eax
+	testl	%eax,%eax
+	jne	.Lj1395
+	jmp	.Lj1396
+.Lj1395:
+	movl	-36(%ebp),%eax
+	movl	%eax,-44(%ebp)
+.Lj1396:
+.Lj1394:
+.Lj1389:
+	jmp	.Lj1399
+.Lj1378:
+	movl	-36(%ebp),%eax
+	movl	%eax,-52(%ebp)
+	movl	-36(%ebp),%eax
+	movl	%eax,-48(%ebp)
+	movl	-36(%ebp),%eax
+	movl	%eax,-44(%ebp)
+.Lj1399:
+	movl	-20(%ebp),%eax
+	andl	$3,%eax
+	testl	%eax,%eax
+	jne	.Lj1406
+	jmp	.Lj1407
+.Lj1406:
+	movl	-20(%ebp),%eax
+	andl	$2,%eax
+	testl	%eax,%eax
+	jne	.Lj1408
+	jmp	.Lj1409
+.Lj1408:
+	movl	$2,-40(%ebp)
+	jmp	.Lj1412
+.Lj1409:
+	movl	-4(%ebp),%eax
+	movzbl	2(%eax),%eax
+	movl	%eax,-40(%ebp)
+.Lj1412:
+	movl	-40(%ebp),%eax
+	decl	%eax
+	movl	$0,-28(%ebp)
+	cmpl	-28(%ebp),%eax
+	jl	.Lj1416
+	decl	-28(%ebp)
+	.balign 4,0x90
+.Lj1417:
+	incl	-28(%ebp)
+	movl	-4(%ebp),%edx
+	movl	-28(%ebp),%ecx
+	movl	3(%edx,%ecx,4),%edx
+	andl	$31,%edx
+	testl	%edx,%edx
+	jne	.Lj1418
+	jmp	.Lj1419
+.Lj1418:
+	movl	-40(%ebp),%edx
+	decl	%edx
+	movl	$0,-32(%ebp)
+	cmpl	-32(%ebp),%edx
+	jl	.Lj1421
+	decl	-32(%ebp)
+	.balign 4,0x90
+.Lj1422:
+	incl	-32(%ebp)
+	movl	-4(%ebp),%ebx
+	movl	-28(%ebp),%ecx
+	movl	3(%ebx,%ecx,4),%ebx
+	andl	$31,%ebx
+	movl	-32(%ebp),%ecx
+	movl	%ebx,-52(%ebp,%ecx,4)
+	cmpl	-32(%ebp),%edx
+	jg	.Lj1422
+.Lj1421:
+	jmp	.Lj1416
+.Lj1419:
+	cmpl	-28(%ebp),%eax
+	jg	.Lj1417
+.Lj1416:
+	jmp	.Lj1425
+.Lj1407:
+	movl	$2,-40(%ebp)
+.Lj1425:
+	movl	-4(%ebp),%eax
+	movzbl	2(%eax),%eax
+	decl	%eax
+	movl	$0,-28(%ebp)
+	cmpl	-28(%ebp),%eax
+	jl	.Lj1429
+	decl	-28(%ebp)
+	.balign 4,0x90
+.Lj1430:
+	incl	-28(%ebp)
+	movl	-4(%ebp),%edx
+	movl	-28(%ebp),%ecx
+	movl	3(%edx,%ecx,4),%edx
+	movl	%edx,-16(%ebp)
+	movl	-8(%ebp),%ecx
+	movl	-28(%ebp),%edx
+	movl	36(%ecx,%edx,4),%edx
+	movl	(%edx),%edx
+	movl	%edx,-24(%ebp)
+	movl	-16(%ebp),%edx
+	andl	$31,%edx
+	testl	%edx,%edx
+	je	.Lj1439
+	jmp	.Lj1436
+.Lj1439:
+	movl	-28(%ebp),%edx
+	movl	-52(%ebp,%edx,4),%edx
+	notl	%edx
+	movl	-24(%ebp),%ecx
+	andl	$31,%ecx
+	andl	%ecx,%edx
+	testl	%edx,%edx
+	jne	.Lj1438
+	jmp	.Lj1436
+.Lj1438:
+	movl	-24(%ebp),%edx
+	andl	$8192,%edx
+	testl	%edx,%edx
+	je	.Lj1437
+	jmp	.Lj1436
+.Lj1437:
+	movl	-28(%ebp),%edx
+	movl	-16(%ebp),%ebx
+	andl	$31,%ebx
+	movl	-52(%ebp,%edx,4),%ecx
+	orl	%ebx,%ecx
+	movl	-24(%ebp),%edx
+	andl	$31,%edx
+	cmpl	%edx,%ecx
+	jl	.Lj1435
+	jmp	.Lj1436
+.Lj1435:
+	jmp	.Lj1338
+.Lj1436:
+	cmpl	-28(%ebp),%eax
+	jg	.Lj1430
+.Lj1429:
+.Lj1360:
+	movb	$1,-12(%ebp)
+.Lj1338:
+	movb	-12(%ebp),%al
+	movl	-56(%ebp),%ebx
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__resetpass1
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__RESETPASS1
+AASMCPU_TAICPU_$__RESETPASS1:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$4,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	movl	$0,60(%eax)
+	movl	-4(%ebp),%eax
+	movb	$0,72(%eax)
+	movl	-4(%ebp),%eax
+	movl	$-1,68(%eax)
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__resetpass2
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__RESETPASS2
+AASMCPU_TAICPU_$__RESETPASS2:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$4,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	cmpl	$0,60(%eax)
+	jne	.Lj1454
+	jmp	.Lj1453
+.Lj1454:
+	movl	-4(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	27(%eax),%eax
+	andl	$-2147483648,%eax
+	testl	%eax,%eax
+	jne	.Lj1452
+	jmp	.Lj1453
+.Lj1452:
+	movl	-4(%ebp),%eax
+	movl	$0,60(%eax)
+	movl	-4(%ebp),%eax
+	movb	$0,72(%eax)
+.Lj1453:
+	movl	-4(%ebp),%eax
+	movl	$-1,68(%eax)
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__checkifvalid$$boolean
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__CHECKIFVALID$$BOOLEAN
+AASMCPU_TAICPU_$__CHECKIFVALID$$BOOLEAN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$8,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	movl	$0,%edx
+	call	AASMCPU_TAICPU_$__FINDINSENTRY$TOBJDATA$$BOOLEAN
+	movb	%al,-8(%ebp)
+	movb	-8(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__findinsentry$tobjdata$$boolean
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__FINDINSENTRY$TOBJDATA$$BOOLEAN
+AASMCPU_TAICPU_$__FINDINSENTRY$TOBJDATA$$BOOLEAN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$280,%esp
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movb	$0,-12(%ebp)
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1473
+	jmp	.Lj1475
+.Lj1475:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	27(%eax),%eax
+	andl	$-2147483648,%eax
+	testl	%eax,%eax
+	jne	.Lj1473
+	jmp	.Lj1474
+.Lj1473:
+	movl	-8(%ebp),%eax
+	movb	$0,%dl
+	call	AASMCPU_TAICPU_$__SETOPERANDORDER$TOPERANDORDER
+	movl	-4(%ebp),%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__CREATE_OT$TOBJDATA
+	movl	-8(%ebp),%edx
+	movl	20(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS
+	movl	24(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS+4
+	movl	28(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS+8
+	jmp	.Lj1486
+.Lj1474:
+	movb	$1,-12(%ebp)
+	jmp	.Lj1469
+.Lj1486:
+	movl	-8(%ebp),%eax
+	movb	$-1,72(%eax)
+	movl	U_AASMCPU_INSTABCACHE,%edx
+	movl	-8(%ebp),%eax
+	movzwl	48(%eax),%eax
+	movl	(%edx,%eax,4),%eax
+	movl	%eax,-16(%ebp)
+	movl	-16(%ebp),%eax
+	cmpl	$-1,%eax
+	je	.Lj1493
+	jmp	.Lj1494
+.Lj1493:
+	movl	-8(%ebp),%eax
+	movzwl	48(%eax),%eax
+	imull	$12,%eax
+	leal	TC_ITCPUGAS_GAS_OP2STR(,%eax),%edx
+	movl	$0,-24(%ebp)
+	movl	$0,-20(%ebp)
+	leal	-24(%ebp),%ecx
+	movl	$8006,%eax
+	call	VERBOSE_MESSAGE1$LONGINT$SHORTSTRING$TMSGQUEUEEVENT
+	jmp	.Lj1469
+.Lj1494:
+	movl	-16(%ebp),%eax
+	imull	$31,%eax
+	leal	TC_AASMCPU_INSTAB(,%eax),%edx
+	movl	-8(%ebp),%eax
+	movl	%edx,60(%eax)
+	jmp	.Lj1504
+	.balign 4,0x90
+.Lj1503:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__MATCHES$PINSENTRY$$BOOLEAN
+	testb	%al,%al
+	jne	.Lj1506
+	jmp	.Lj1507
+.Lj1506:
+	movb	$1,-12(%ebp)
+	jmp	.Lj1469
+.Lj1507:
+	movl	-8(%ebp),%eax
+	addl	$31,60(%eax)
+.Lj1504:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	-8(%ebp),%edx
+	movw	(%eax),%ax
+	cmpw	48(%edx),%ax
+	je	.Lj1503
+	jmp	.Lj1505
+.Lj1505:
+	leal	-280(%ebp),%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__GETSTRING$$SHORTSTRING
+	leal	-280(%ebp),%edx
+	movl	$0,-24(%ebp)
+	movl	$0,-20(%ebp)
+	leal	-24(%ebp),%ecx
+	movl	$8007,%eax
+	call	VERBOSE_MESSAGE1$LONGINT$SHORTSTRING$TMSGQUEUEEVENT
+	movl	-8(%ebp),%eax
+	movl	$0,60(%eax)
+	movl	-8(%ebp),%eax
+	movb	$-1,72(%eax)
+.Lj1469:
+	movb	-12(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__pass1$tobjdata$$longint
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__PASS1$TOBJDATA$$LONGINT
+AASMCPU_TAICPU_$__PASS1$TOBJDATA$$LONGINT:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movl	$0,-12(%ebp)
+	movl	-4(%ebp),%eax
+	movl	96(%eax),%eax
+	movl	-8(%ebp),%edx
+	movl	40(%eax),%eax
+	movl	%eax,64(%edx)
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1536
+	jmp	.Lj1535
+.Lj1536:
+	movl	-8(%ebp),%eax
+	movb	72(%eax),%al
+	cmpb	$-1,%al
+	je	.Lj1534
+	jmp	.Lj1535
+.Lj1534:
+	jmp	.Lj1528
+.Lj1535:
+	movl	-8(%ebp),%edx
+	movl	20(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS
+	movl	24(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS+4
+	movl	28(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS+8
+	movl	-4(%ebp),%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__FINDINSENTRY$TOBJDATA$$BOOLEAN
+	testb	%al,%al
+	jne	.Lj1539
+	jmp	.Lj1540
+.Lj1539:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__CALCSIZE$PINSENTRY$$SHORTINT
+	movl	-8(%ebp),%edx
+	movb	%al,72(%edx)
+	movl	-8(%ebp),%eax
+	movl	52(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj1551
+	jmp	.Lj1552
+.Lj1551:
+	movl	-8(%ebp),%eax
+	incb	72(%eax)
+.Lj1552:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	27(%eax),%eax
+	andl	$28,%eax
+	testl	%eax,%eax
+	jne	.Lj1553
+	jmp	.Lj1554
+.Lj1553:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	27(%eax),%eax
+	andl	$96,%eax
+	testl	%eax,%eax
+	je	.Lj1555
+	jmp	.Lj1556
+.Lj1555:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	27(%eax),%eax
+	andl	$4,%eax
+	testl	%eax,%eax
+	jne	.Lj1557
+	jmp	.Lj1558
+.Lj1557:
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	testb	%al,%al
+	je	.Lj1559
+	jmp	.Lj1560
+.Lj1559:
+	movl	-8(%ebp),%eax
+	movb	$1,57(%eax)
+.Lj1560:
+	jmp	.Lj1563
+.Lj1558:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	27(%eax),%eax
+	andl	$8,%eax
+	testl	%eax,%eax
+	jne	.Lj1564
+	jmp	.Lj1565
+.Lj1564:
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	testb	%al,%al
+	je	.Lj1566
+	jmp	.Lj1567
+.Lj1566:
+	movl	-8(%ebp),%eax
+	movb	$2,57(%eax)
+.Lj1567:
+	jmp	.Lj1570
+.Lj1565:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	movl	27(%eax),%eax
+	andl	$16,%eax
+	testl	%eax,%eax
+	jne	.Lj1571
+	jmp	.Lj1572
+.Lj1571:
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	testb	%al,%al
+	je	.Lj1573
+	jmp	.Lj1574
+.Lj1573:
+	movl	-8(%ebp),%eax
+	movb	$3,57(%eax)
+.Lj1574:
+.Lj1572:
+.Lj1570:
+.Lj1563:
+.Lj1556:
+.Lj1554:
+	movl	-8(%ebp),%eax
+	movl	-8(%ebp),%edx
+	movl	64(%eax),%eax
+	movl	%eax,68(%edx)
+	movl	-8(%ebp),%eax
+	movsbl	72(%eax),%eax
+	movl	%eax,-12(%ebp)
+	jmp	.Lj1528
+.Lj1540:
+	movl	-8(%ebp),%eax
+	movl	$-1,68(%eax)
+.Lj1528:
+	movl	-12(%ebp),%eax
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__pass2$tobjdata
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__PASS2$TOBJDATA
+AASMCPU_TAICPU_$__PASS2$TOBJDATA:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1585
+	jmp	.Lj1586
+.Lj1585:
+	jmp	.Lj1583
+.Lj1586:
+	movl	-8(%ebp),%edx
+	movl	20(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS
+	movl	24(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS+4
+	movl	28(%edx),%eax
+	movl	%eax,U_GLOBALS_CURRENT_FILEPOS+8
+	movl	-8(%ebp),%eax
+	movl	52(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj1589
+	jmp	.Lj1590
+.Lj1589:
+	movl	-8(%ebp),%eax
+	movl	52(%eax),%eax
+	cmpl	$83886081,%eax
+	jl	.Lj1592
+	subl	$83886081,%eax
+	je	.Lj1593
+	decl	%eax
+	je	.Lj1594
+	decl	%eax
+	je	.Lj1595
+	decl	%eax
+	je	.Lj1598
+	decl	%eax
+	je	.Lj1596
+	decl	%eax
+	je	.Lj1597
+	jmp	.Lj1592
+.Lj1593:
+	movl	$46,-12(%ebp)
+	jmp	.Lj1591
+.Lj1594:
+	movl	$62,-12(%ebp)
+	jmp	.Lj1591
+.Lj1595:
+	movl	$38,-12(%ebp)
+	jmp	.Lj1591
+.Lj1596:
+	movl	$100,-12(%ebp)
+	jmp	.Lj1591
+.Lj1597:
+	movl	$101,-12(%ebp)
+	jmp	.Lj1591
+.Lj1598:
+	movl	$54,-12(%ebp)
+	jmp	.Lj1591
+.Lj1592:
+.Lj1591:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	movl	-8(%ebp),%eax
+	incl	64(%eax)
+.Lj1590:
+	movl	-4(%ebp),%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__GENCODE$TOBJDATA
+.Lj1583:
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__needaddrprefix$byte$$boolean
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__NEEDADDRPREFIX$BYTE$$BOOLEAN
+AASMCPU_TAICPU_$__NEEDADDRPREFIX$BYTE$$BOOLEAN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$20,%esp
+	movl	%eax,-8(%ebp)
+	movb	%dl,-4(%ebp)
+	movl	-8(%ebp),%edx
+	movzbl	-4(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movb	4(%eax),%al
+	cmpb	$2,%al
+	je	.Lj1626
+	jmp	.Lj1624
+.Lj1626:
+	movl	-8(%ebp),%edx
+	movzbl	-4(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movb	24(%eax),%al
+	testb	%al,%al
+	je	.Lj1625
+	jmp	.Lj1624
+.Lj1625:
+	movl	-8(%ebp),%edx
+	movzbl	-4(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	20(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj1628
+	jmp	.Lj1627
+.Lj1628:
+	movl	-8(%ebp),%edx
+	movzbl	-4(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	20(%eax),%eax
+	movl	%eax,-16(%ebp)
+	movb	-14(%ebp),%al
+	movb	%al,-20(%ebp)
+	movb	-20(%ebp),%al
+	cmpb	$5,%al
+	jne	.Lj1623
+	jmp	.Lj1627
+.Lj1627:
+	movl	-8(%ebp),%edx
+	movzbl	-4(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	16(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj1633
+	jmp	.Lj1624
+.Lj1633:
+	movl	-8(%ebp),%edx
+	movzbl	-4(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	16(%eax),%eax
+	movl	%eax,-16(%ebp)
+	movb	-14(%ebp),%al
+	movb	%al,-20(%ebp)
+	movb	-20(%ebp),%al
+	cmpb	$5,%al
+	jne	.Lj1623
+	jmp	.Lj1624
+.Lj1623:
+	movb	$1,-12(%ebp)
+	jmp	.Lj1638
+.Lj1624:
+	movb	$0,-12(%ebp)
+.Lj1638:
+	movb	-12(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_regval$tregister$$byte
+	.balign 16,0x90
+.globl	AASMCPU_REGVAL$TREGISTER$$BYTE
+AASMCPU_REGVAL$TREGISTER$$BYTE:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$280,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	call	CPUBASE_FINDREG_BY_NUMBER$TREGISTER$$TREGISTERINDEX
+	movb	%al,-12(%ebp)
+	movzbl	-12(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj1645
+	jmp	.Lj1646
+.Lj1645:
+	movzbl	-12(%ebp),%eax
+	movb	TC_AASMCPU_REGVAL$TREGISTER$$BYTE_OPCODE_TABLE(,%eax,1),%al
+	movb	%al,-8(%ebp)
+	jmp	.Lj1649
+.Lj1646:
+	leal	-272(%ebp),%edx
+	movl	-4(%ebp),%eax
+	call	CGBASE_GENERIC_REGNAME$TREGISTER$$SHORTSTRING
+	leal	-272(%ebp),%edx
+	movl	$0,-280(%ebp)
+	movl	$0,-276(%ebp)
+	leal	-280(%ebp),%ecx
+	movl	$8019,%eax
+	call	VERBOSE_MESSAGE1$LONGINT$SHORTSTRING$TMSGQUEUEEVENT
+	movb	$0,-8(%ebp)
+.Lj1649:
+	movb	-8(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_process_ea$toper$ea$longint$$boolean
+	.balign 16,0x90
+.globl	AASMCPU_PROCESS_EA$TOPER$EA$LONGINT$$BOOLEAN
+AASMCPU_PROCESS_EA$TOPER$EA$LONGINT$$BOOLEAN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$80,%esp
+	movl	%eax,-4(%ebp)
+	movl	%edx,-8(%ebp)
+	movl	%ecx,-12(%ebp)
+	movb	$0,-16(%ebp)
+	movl	-8(%ebp),%eax
+	movb	$0,%cl
+	movl	$7,%edx
+	call	SYSTEM_FILLCHAR$formal$LONGINT$BYTE
+	movl	-4(%ebp),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj1672
+	jmp	.Lj1673
+.Lj1672:
+	movl	-4(%ebp),%eax
+	movl	8(%eax),%eax
+	call	AASMCPU_REGVAL$TREGISTER$$BYTE
+	movb	%al,-32(%ebp)
+	movl	-12(%ebp),%eax
+	shll	$3,%eax
+	orl	$192,%eax
+	movzbl	-32(%ebp),%edx
+	orl	%edx,%eax
+	movl	-8(%ebp),%edx
+	movb	%al,3(%edx)
+	movl	-8(%ebp),%eax
+	movb	$1,2(%eax)
+	movl	-4(%ebp),%eax
+	movb	11(%eax),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj1685
+	jmp	.Lj1684
+.Lj1685:
+	movl	-4(%ebp),%eax
+	movw	8(%eax),%ax
+	movw	%ax,-68(%ebp)
+	movzwl	-68(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1682
+	jmp	.Lj1684
+.Lj1684:
+	movl	-4(%ebp),%eax
+	movb	11(%eax),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	cmpb	$4,%al
+	je	.Lj1690
+	jmp	.Lj1683
+.Lj1690:
+	movl	-4(%ebp),%eax
+	movw	8(%eax),%ax
+	movw	%ax,-68(%ebp)
+	movzwl	-68(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1682
+	jmp	.Lj1683
+.Lj1682:
+	movl	-8(%ebp),%eax
+	movb	$1,5(%eax)
+	movl	-8(%ebp),%eax
+	movb	6(%eax),%dl
+	orb	$65,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,6(%eax)
+	movl	-8(%ebp),%eax
+	incb	2(%eax)
+	jmp	.Lj1699
+.Lj1683:
+	movl	-4(%ebp),%eax
+	movb	11(%eax),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj1703
+	jmp	.Lj1701
+.Lj1703:
+	movl	-4(%ebp),%eax
+	movb	10(%eax),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj1702
+	jmp	.Lj1701
+.Lj1702:
+	movl	-4(%ebp),%eax
+	movw	8(%eax),%ax
+	movw	%ax,-68(%ebp)
+	movzwl	-68(%ebp),%eax
+	subl	$4,%eax
+	cmpl	$4,%eax
+	jb	.Lj1710
+.Lj1710:
+	jc	.Lj1700
+	jmp	.Lj1701
+.Lj1700:
+	movl	-8(%ebp),%eax
+	movb	$1,5(%eax)
+	movl	-8(%ebp),%eax
+	movb	6(%eax),%dl
+	orb	$64,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,6(%eax)
+	movl	-8(%ebp),%eax
+	incb	2(%eax)
+.Lj1701:
+.Lj1699:
+	movb	$1,-16(%ebp)
+	jmp	.Lj1662
+.Lj1673:
+	movl	-4(%ebp),%eax
+	movb	4(%eax),%al
+	cmpb	$2,%al
+	jne	.Lj1717
+	jmp	.Lj1718
+.Lj1717:
+	movl	$200409263,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj1718:
+	movl	-4(%ebp),%eax
+	movl	8(%eax),%eax
+	movl	20(%eax),%eax
+	movl	%eax,-52(%ebp)
+	movl	-4(%ebp),%eax
+	movl	8(%eax),%eax
+	movl	16(%eax),%eax
+	movl	%eax,-56(%ebp)
+	movb	-50(%ebp),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	movb	%al,-60(%ebp)
+	movb	-54(%ebp),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	movb	%al,-64(%ebp)
+	movl	-4(%ebp),%eax
+	movl	8(%eax),%eax
+	movb	25(%eax),%al
+	movb	%al,-28(%ebp)
+	movl	-4(%ebp),%eax
+	movl	8(%eax),%eax
+	movl	(%eax),%eax
+	movl	%eax,-48(%ebp)
+	movl	-4(%ebp),%eax
+	movl	8(%eax),%eax
+	movl	4(%eax),%eax
+	movl	%eax,-20(%ebp)
+	movl	-52(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj1742
+	jmp	.Lj1741
+.Lj1742:
+	movb	-49(%ebp),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	cmpb	$1,%al
+	jne	.Lj1739
+	jmp	.Lj1741
+.Lj1741:
+	movl	-56(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj1746
+	jmp	.Lj1740
+.Lj1746:
+	movl	-56(%ebp),%eax
+	cmpl	$83886080,%eax
+	jne	.Lj1745
+	jmp	.Lj1740
+.Lj1745:
+	movb	-53(%ebp),%al
+	movb	%al,-68(%ebp)
+	movb	-68(%ebp),%al
+	cmpb	$1,%al
+	jne	.Lj1739
+	jmp	.Lj1740
+.Lj1739:
+	movl	$200301081,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj1740:
+	movl	-56(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1753
+	jmp	.Lj1752
+.Lj1753:
+	movl	-52(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1751
+	jmp	.Lj1752
+.Lj1751:
+	movl	-8(%ebp),%eax
+	movb	$1,(%eax)
+	movl	-8(%ebp),%eax
+	movb	$4,1(%eax)
+	movl	-12(%ebp),%eax
+	shll	$3,%eax
+	orl	$4,%eax
+	movl	-8(%ebp),%edx
+	movb	%al,3(%edx)
+	movl	-8(%ebp),%eax
+	movb	$37,4(%eax)
+	jmp	.Lj1762
+.Lj1752:
+	movl	-56(%ebp),%eax
+	cmpl	$83886080,%eax
+	je	.Lj1765
+	jmp	.Lj1764
+.Lj1765:
+	movl	-52(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1763
+	jmp	.Lj1764
+.Lj1763:
+	movl	-8(%ebp),%eax
+	movb	$0,(%eax)
+	movl	-8(%ebp),%eax
+	movb	$4,1(%eax)
+	movl	-12(%ebp),%eax
+	shll	$3,%eax
+	orl	$5,%eax
+	movl	-8(%ebp),%edx
+	movb	%al,3(%edx)
+	jmp	.Lj1772
+.Lj1764:
+	movl	-52(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj1776
+	jmp	.Lj1775
+.Lj1776:
+	movb	-60(%ebp),%al
+	cmpb	$5,%al
+	jne	.Lj1773
+	jmp	.Lj1775
+.Lj1775:
+	movl	-56(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj1777
+	jmp	.Lj1774
+.Lj1777:
+	movb	-64(%ebp),%al
+	cmpb	$5,%al
+	jne	.Lj1773
+	jmp	.Lj1774
+.Lj1773:
+	movl	$0,-80(%ebp)
+	movl	$0,-76(%ebp)
+	leal	-80(%ebp),%edx
+	movl	$8020,%eax
+	call	VERBOSE_MESSAGE$LONGINT$TMSGQUEUEEVENT
+.Lj1774:
+	movl	-52(%ebp),%eax
+	cmpl	$17039367,%eax
+	je	.Lj1782
+	jmp	.Lj1784
+.Lj1784:
+	movzbl	-28(%ebp),%eax
+	cmpl	$1,%eax
+	jne	.Lj1788
+	jmp	.Lj1783
+.Lj1788:
+	movzbl	-28(%ebp),%eax
+	cmpl	$2,%eax
+	jne	.Lj1787
+	jmp	.Lj1783
+.Lj1787:
+	movzbl	-28(%ebp),%eax
+	cmpl	$4,%eax
+	jne	.Lj1786
+	jmp	.Lj1783
+.Lj1786:
+	movzbl	-28(%ebp),%eax
+	cmpl	$8,%eax
+	jne	.Lj1785
+	jmp	.Lj1783
+.Lj1785:
+	movl	-52(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj1782
+	jmp	.Lj1783
+.Lj1782:
+	jmp	.Lj1662
+.Lj1783:
+	movb	-53(%ebp),%al
+	movb	%al,-72(%ebp)
+	movb	-72(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj1792
+	jmp	.Lj1791
+.Lj1792:
+	movw	-56(%ebp),%ax
+	movw	%ax,-72(%ebp)
+	movzwl	-72(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1789
+	jmp	.Lj1791
+.Lj1791:
+	movb	-53(%ebp),%al
+	movb	%al,-72(%ebp)
+	movb	-72(%ebp),%al
+	cmpb	$4,%al
+	je	.Lj1797
+	jmp	.Lj1790
+.Lj1797:
+	movw	-56(%ebp),%ax
+	movw	%ax,-72(%ebp)
+	movzwl	-72(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1789
+	jmp	.Lj1790
+.Lj1789:
+	movl	-8(%ebp),%eax
+	movb	$1,5(%eax)
+	movl	-8(%ebp),%eax
+	movb	6(%eax),%dl
+	orb	$65,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,6(%eax)
+.Lj1790:
+	movb	-49(%ebp),%al
+	movb	%al,-72(%ebp)
+	movb	-72(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj1809
+	jmp	.Lj1808
+.Lj1809:
+	movw	-52(%ebp),%ax
+	movw	%ax,-72(%ebp)
+	movzwl	-72(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1806
+	jmp	.Lj1808
+.Lj1808:
+	movb	-49(%ebp),%al
+	movb	%al,-72(%ebp)
+	movb	-72(%ebp),%al
+	cmpb	$4,%al
+	je	.Lj1814
+	jmp	.Lj1807
+.Lj1814:
+	movw	-52(%ebp),%ax
+	movw	%ax,-72(%ebp)
+	movzwl	-72(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1806
+	jmp	.Lj1807
+.Lj1806:
+	movl	-8(%ebp),%eax
+	movb	$1,5(%eax)
+	movl	-8(%ebp),%eax
+	movb	6(%eax),%dl
+	orb	$66,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,6(%eax)
+.Lj1807:
+	movb	$1,-16(%ebp)
+	movl	-56(%ebp),%eax
+	testl	%eax,%eax
+	jl	.Lj1826
+	testl	%eax,%eax
+	je	.Lj1832
+	subl	$17104896,%eax
+	je	.Lj1827
+	decl	%eax
+	je	.Lj1828
+	decl	%eax
+	je	.Lj1829
+	decl	%eax
+	je	.Lj1830
+	decl	%eax
+	je	.Lj1833
+	decl	%eax
+	je	.Lj1834
+	decl	%eax
+	je	.Lj1832
+	decl	%eax
+	je	.Lj1831
+	decl	%eax
+	je	.Lj1827
+	decl	%eax
+	je	.Lj1828
+	decl	%eax
+	je	.Lj1829
+	decl	%eax
+	je	.Lj1830
+	decl	%eax
+	je	.Lj1831
+	decl	%eax
+	je	.Lj1832
+	decl	%eax
+	je	.Lj1833
+	decl	%eax
+	je	.Lj1834
+	jmp	.Lj1826
+.Lj1827:
+	movl	$0,-36(%ebp)
+	jmp	.Lj1825
+.Lj1828:
+	movl	$1,-36(%ebp)
+	jmp	.Lj1825
+.Lj1829:
+	movl	$2,-36(%ebp)
+	jmp	.Lj1825
+.Lj1830:
+	movl	$3,-36(%ebp)
+	jmp	.Lj1825
+.Lj1831:
+	movl	$4,-36(%ebp)
+	jmp	.Lj1825
+.Lj1832:
+	movl	$5,-36(%ebp)
+	jmp	.Lj1825
+.Lj1833:
+	movl	$6,-36(%ebp)
+	jmp	.Lj1825
+.Lj1834:
+	movl	$7,-36(%ebp)
+	jmp	.Lj1825
+.Lj1826:
+	jmp	.Lj1662
+.Lj1825:
+	movl	-52(%ebp),%eax
+	testl	%eax,%eax
+	jl	.Lj1852
+	testl	%eax,%eax
+	je	.Lj1857
+	subl	$17104896,%eax
+	je	.Lj1853
+	decl	%eax
+	je	.Lj1854
+	decl	%eax
+	je	.Lj1855
+	decl	%eax
+	je	.Lj1856
+	decl	%eax
+	je	.Lj1859
+	decl	%eax
+	je	.Lj1860
+	decl	%eax
+	je	.Lj1858
+	subl	$2,%eax
+	je	.Lj1853
+	decl	%eax
+	je	.Lj1854
+	decl	%eax
+	je	.Lj1855
+	decl	%eax
+	je	.Lj1856
+	decl	%eax
+	je	.Lj1857
+	decl	%eax
+	je	.Lj1858
+	decl	%eax
+	je	.Lj1859
+	decl	%eax
+	je	.Lj1860
+	jmp	.Lj1852
+.Lj1853:
+	movl	$0,-40(%ebp)
+	jmp	.Lj1851
+.Lj1854:
+	movl	$1,-40(%ebp)
+	jmp	.Lj1851
+.Lj1855:
+	movl	$2,-40(%ebp)
+	jmp	.Lj1851
+.Lj1856:
+	movl	$3,-40(%ebp)
+	jmp	.Lj1851
+.Lj1857:
+	movl	$4,-40(%ebp)
+	jmp	.Lj1851
+.Lj1858:
+	movl	$5,-40(%ebp)
+	jmp	.Lj1851
+.Lj1859:
+	movl	$6,-40(%ebp)
+	jmp	.Lj1851
+.Lj1860:
+	movl	$7,-40(%ebp)
+	jmp	.Lj1851
+.Lj1852:
+	jmp	.Lj1662
+.Lj1851:
+	movb	-28(%ebp),%al
+	subb	$1,%al
+	jbe	.Lj1879
+	decb	%al
+	je	.Lj1880
+	subb	$2,%al
+	je	.Lj1881
+	subb	$4,%al
+	je	.Lj1882
+	jmp	.Lj1878
+.Lj1879:
+	movl	$0,-44(%ebp)
+	jmp	.Lj1877
+.Lj1880:
+	movl	$1,-44(%ebp)
+	jmp	.Lj1877
+.Lj1881:
+	movl	$2,-44(%ebp)
+	jmp	.Lj1877
+.Lj1882:
+	movl	$3,-44(%ebp)
+	jmp	.Lj1877
+.Lj1878:
+	jmp	.Lj1662
+.Lj1877:
+	movl	-56(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1891
+	jmp	.Lj1893
+.Lj1893:
+	movl	-56(%ebp),%eax
+	cmpl	$17104902,%eax
+	jne	.Lj1896
+	jmp	.Lj1892
+.Lj1896:
+	movl	-56(%ebp),%eax
+	cmpl	$17104909,%eax
+	jne	.Lj1895
+	jmp	.Lj1892
+.Lj1895:
+	movl	-48(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1894
+	jmp	.Lj1892
+.Lj1894:
+	movl	-20(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1891
+	jmp	.Lj1892
+.Lj1891:
+	movb	$0,-24(%ebp)
+	jmp	.Lj1899
+.Lj1892:
+	movl	-48(%ebp),%eax
+	cmpl	$-128,%eax
+	jge	.Lj1903
+	jmp	.Lj1901
+.Lj1903:
+	movl	-48(%ebp),%eax
+	cmpl	$127,%eax
+	jle	.Lj1902
+	jmp	.Lj1901
+.Lj1902:
+	movl	-20(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1900
+	jmp	.Lj1901
+.Lj1900:
+	movb	$1,-24(%ebp)
+	jmp	.Lj1906
+.Lj1901:
+	movb	$2,-24(%ebp)
+.Lj1906:
+.Lj1899:
+	movl	-56(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1909
+	jmp	.Lj1911
+.Lj1911:
+	movzbl	-24(%ebp),%eax
+	cmpl	$2,%eax
+	je	.Lj1909
+	jmp	.Lj1910
+.Lj1909:
+	movl	-8(%ebp),%eax
+	movb	$4,1(%eax)
+	jmp	.Lj1914
+.Lj1910:
+	movl	-8(%ebp),%eax
+	movb	-24(%ebp),%dl
+	movb	%dl,1(%eax)
+.Lj1914:
+	movl	-52(%ebp),%eax
+	testl	%eax,%eax
+	je	.Lj1920
+	jmp	.Lj1918
+.Lj1920:
+	movl	-56(%ebp),%eax
+	cmpl	$17104903,%eax
+	jne	.Lj1919
+	jmp	.Lj1918
+.Lj1919:
+	movl	-56(%ebp),%eax
+	cmpl	$17104908,%eax
+	jne	.Lj1917
+	jmp	.Lj1918
+.Lj1917:
+	movl	-8(%ebp),%eax
+	movb	$0,(%eax)
+	movzbl	-24(%ebp),%eax
+	shll	$6,%eax
+	movl	-12(%ebp),%edx
+	shll	$3,%edx
+	orl	%edx,%eax
+	movl	-36(%ebp),%edx
+	orl	%edx,%eax
+	movl	-8(%ebp),%edx
+	movb	%al,3(%edx)
+	jmp	.Lj1925
+.Lj1918:
+	movl	-8(%ebp),%eax
+	movb	$1,(%eax)
+	movzbl	-24(%ebp),%eax
+	shll	$6,%eax
+	movl	-12(%ebp),%edx
+	shll	$3,%edx
+	orl	%edx,%eax
+	orl	$4,%eax
+	movl	-8(%ebp),%edx
+	movb	%al,3(%edx)
+	movl	-44(%ebp),%eax
+	shll	$6,%eax
+	movl	-40(%ebp),%edx
+	shll	$3,%edx
+	orl	%edx,%eax
+	movl	-36(%ebp),%edx
+	orl	%edx,%eax
+	movl	-8(%ebp),%edx
+	movb	%al,4(%edx)
+.Lj1925:
+.Lj1772:
+.Lj1762:
+	movl	-8(%ebp),%eax
+	movzbl	(%eax),%eax
+	incl	%eax
+	movl	-8(%ebp),%edx
+	movzbl	5(%edx),%edx
+	addl	%edx,%eax
+	movl	-8(%ebp),%edx
+	movzbl	1(%edx),%edx
+	addl	%edx,%eax
+	movl	-8(%ebp),%edx
+	movb	%al,2(%edx)
+	movb	$1,-16(%ebp)
+.Lj1662:
+	movb	-16(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__calcsize$pinsentry$$shortint
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__CALCSIZE$PINSENTRY$$SHORTINT
+AASMCPU_TAICPU_$__CALCSIZE$PINSENTRY$$SHORTINT:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$40,%esp
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movb	$0,-24(%ebp)
+	movl	-4(%ebp),%eax
+	leal	15(%eax),%eax
+	movl	%eax,-16(%ebp)
+	movl	-8(%ebp),%eax
+	movb	$0,73(%eax)
+	.balign 4,0x90
+.Lj1948:
+	movl	-16(%ebp),%eax
+	movb	(%eax),%al
+	movb	%al,-20(%ebp)
+	incl	-16(%ebp)
+	movb	-20(%ebp),%al
+	testb	%al,%al
+	je	.Lj1955
+	decb	%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1956
+	decb	%al
+	subb	$3,%al
+	jbe	.Lj1959
+	decb	%al
+	subb	$2,%al
+	jbe	.Lj1957
+	decb	%al
+	je	.Lj1958
+	decb	%al
+	jb	.Lj1954
+	subb	$1,%al
+	jbe	.Lj1960
+	decb	%al
+	subb	$4,%al
+	jbe	.Lj1960
+	subb	$2,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1960
+	subb	$2,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1961
+	subb	$2,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1962
+	decb	%al
+	je	.Lj1961
+	decb	%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1963
+	subb	$6,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1960
+	subb	$6,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1961
+	subb	$2,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1963
+	subb	$2,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1963
+	subb	$6,%al
+	jb	.Lj1954
+	subb	$127,%al
+	jbe	.Lj1971
+	decb	%al
+	subb	$2,%al
+	jbe	.Lj1964
+	subb	$6,%al
+	je	.Lj1966
+	decb	%al
+	jb	.Lj1954
+	subb	$1,%al
+	jbe	.Lj1968
+	subb	$6,%al
+	jb	.Lj1954
+	subb	$2,%al
+	jbe	.Lj1965
+	decb	%al
+	je	.Lj1968
+	decb	%al
+	je	.Lj1966
+	decb	%al
+	je	.Lj1968
+	decb	%al
+	je	.Lj1967
+	decb	%al
+	je	.Lj1968
+	subb	$2,%al
+	jb	.Lj1954
+	subb	$1,%al
+	jbe	.Lj1968
+	decb	%al
+	subb	$1,%al
+	jbe	.Lj1969
+	decb	%al
+	je	.Lj1970
+	jmp	.Lj1954
+.Lj1955:
+	jmp	.Lj1950
+	jmp	.Lj1953
+.Lj1956:
+	movzbl	-20(%ebp),%eax
+	addl	%eax,-16(%ebp)
+	movb	-20(%ebp),%al
+	addb	%al,-24(%ebp)
+	jmp	.Lj1953
+.Lj1957:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-33(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj1975
+	jmp	.Lj1974
+.Lj1975:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movw	-36(%ebp),%ax
+	movw	%ax,-40(%ebp)
+	movzwl	-40(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1972
+	jmp	.Lj1974
+.Lj1974:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-33(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$4,%al
+	je	.Lj1984
+	jmp	.Lj1973
+.Lj1984:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movw	-36(%ebp),%ax
+	movw	%ax,-40(%ebp)
+	movzwl	-40(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj1972
+	jmp	.Lj1973
+.Lj1972:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj1993
+	jmp	.Lj1994
+.Lj1993:
+	incb	-24(%ebp)
+.Lj1994:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	orb	$65,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+	jmp	.Lj1997
+.Lj1973:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-33(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj2001
+	jmp	.Lj1999
+.Lj2001:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-34(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj2000
+	jmp	.Lj1999
+.Lj2000:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movw	-36(%ebp),%ax
+	movw	%ax,-40(%ebp)
+	movzwl	-40(%ebp),%eax
+	subl	$4,%eax
+	cmpl	$4,%eax
+	jb	.Lj2014
+.Lj2014:
+	jc	.Lj1998
+	jmp	.Lj1999
+.Lj1998:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj2015
+	jmp	.Lj2016
+.Lj2015:
+	incb	-24(%ebp)
+.Lj2016:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	orb	$64,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+.Lj1999:
+.Lj1997:
+	incl	-16(%ebp)
+	incb	-24(%ebp)
+	jmp	.Lj1953
+.Lj1958:
+	incl	-16(%ebp)
+	incb	-24(%ebp)
+	jmp	.Lj1953
+.Lj1959:
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	cmpb	$2,%al
+	je	.Lj2019
+	jmp	.Lj2020
+.Lj2019:
+	addb	$2,-24(%ebp)
+	jmp	.Lj2021
+.Lj2020:
+	incb	-24(%ebp)
+.Lj2021:
+	jmp	.Lj1953
+.Lj1960:
+	incb	-24(%ebp)
+	jmp	.Lj1953
+.Lj1961:
+	addb	$2,-24(%ebp)
+	jmp	.Lj1953
+.Lj1962:
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	cmpb	$4,%al
+	je	.Lj2022
+	jmp	.Lj2023
+.Lj2022:
+	addb	$8,-24(%ebp)
+	jmp	.Lj2024
+.Lj2023:
+	addb	$4,-24(%ebp)
+.Lj2024:
+	jmp	.Lj1953
+.Lj1963:
+	addb	$4,-24(%ebp)
+	jmp	.Lj1953
+.Lj1964:
+	movzbl	-20(%ebp),%edx
+	subl	$192,%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__NEEDADDRPREFIX$BYTE$$BOOLEAN
+	testb	%al,%al
+	jne	.Lj2025
+	jmp	.Lj2026
+.Lj2025:
+	incb	-24(%ebp)
+.Lj2026:
+	jmp	.Lj1953
+.Lj1965:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	subl	$208,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	(%eax),%eax
+	andl	$31,%eax
+	cmpl	$2,%eax
+	jl	.Lj2032
+	subl	$2,%eax
+	je	.Lj2033
+	subl	$6,%eax
+	je	.Lj2034
+	jmp	.Lj2032
+.Lj2033:
+	incb	-24(%ebp)
+	jmp	.Lj2031
+.Lj2034:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj2035
+	jmp	.Lj2036
+.Lj2035:
+	incb	-24(%ebp)
+.Lj2036:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	orb	$72,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+	jmp	.Lj2031
+.Lj2032:
+.Lj2031:
+	jmp	.Lj1953
+.Lj1966:
+	incb	-24(%ebp)
+	jmp	.Lj1953
+.Lj1967:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj2039
+	jmp	.Lj2040
+.Lj2039:
+	incb	-24(%ebp)
+.Lj2040:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	orb	$72,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+	jmp	.Lj1953
+.Lj1968:
+	jmp	.Lj1953
+.Lj1969:
+	incb	-24(%ebp)
+	jmp	.Lj1953
+.Lj1970:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	cmpl	$72,%eax
+	je	.Lj2043
+	jmp	.Lj2044
+.Lj2043:
+	movl	-8(%ebp),%eax
+	movb	$0,73(%eax)
+	decb	-24(%ebp)
+	jmp	.Lj2047
+.Lj2044:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	andb	$247,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+.Lj2047:
+	jmp	.Lj1953
+.Lj1971:
+	movzbl	-20(%ebp),%eax
+	cmpl	$127,%eax
+	jl	.Lj2050
+	jmp	.Lj2051
+.Lj2050:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj2052
+	jmp	.Lj2053
+.Lj2052:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-33(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj2057
+	jmp	.Lj2056
+.Lj2057:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movw	-36(%ebp),%ax
+	movw	%ax,-40(%ebp)
+	movzwl	-40(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj2054
+	jmp	.Lj2056
+.Lj2056:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-33(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$4,%al
+	je	.Lj2066
+	jmp	.Lj2055
+.Lj2066:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movw	-36(%ebp),%ax
+	movw	%ax,-40(%ebp)
+	movzwl	-40(%ebp),%eax
+	cmpl	$8,%eax
+	jge	.Lj2054
+	jmp	.Lj2055
+.Lj2054:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj2075
+	jmp	.Lj2076
+.Lj2075:
+	incb	-24(%ebp)
+.Lj2076:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	orb	$68,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+	jmp	.Lj2079
+.Lj2055:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-33(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj2083
+	jmp	.Lj2081
+.Lj2083:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movb	-34(%ebp),%al
+	movb	%al,-40(%ebp)
+	movb	-40(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj2082
+	jmp	.Lj2081
+.Lj2082:
+	movl	-8(%ebp),%edx
+	movb	-20(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	%eax,-36(%ebp)
+	movw	-36(%ebp),%ax
+	movw	%ax,-40(%ebp)
+	movzwl	-40(%ebp),%eax
+	subl	$4,%eax
+	cmpl	$4,%eax
+	jb	.Lj2096
+.Lj2096:
+	jc	.Lj2080
+	jmp	.Lj2081
+.Lj2080:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	je	.Lj2097
+	jmp	.Lj2098
+.Lj2097:
+	incb	-24(%ebp)
+.Lj2098:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	orb	$64,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+.Lj2081:
+.Lj2079:
+.Lj2053:
+.Lj2051:
+	movl	-8(%ebp),%edx
+	movzbl	-20(%ebp),%eax
+	shrl	$3,%eax
+	andl	$7,%eax
+	movl	36(%edx,%eax,4),%eax
+	leal	-32(%ebp),%edx
+	movl	$0,%ecx
+	call	AASMCPU_PROCESS_EA$TOPER$EA$LONGINT$$BOOLEAN
+	testb	%al,%al
+	je	.Lj2101
+	jmp	.Lj2102
+.Lj2101:
+	movl	$0,-40(%ebp)
+	movl	$0,-36(%ebp)
+	leal	-40(%ebp),%edx
+	movl	$8009,%eax
+	call	VERBOSE_MESSAGE$LONGINT$TMSGQUEUEEVENT
+	jmp	.Lj2113
+.Lj2102:
+	movb	-30(%ebp),%al
+	addb	%al,-24(%ebp)
+.Lj2113:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj2116
+	jmp	.Lj2115
+.Lj2116:
+	movzbl	-26(%ebp),%eax
+	testl	%eax,%eax
+	jne	.Lj2114
+	jmp	.Lj2115
+.Lj2114:
+	decb	-24(%ebp)
+.Lj2115:
+	movl	-8(%ebp),%eax
+	movb	73(%eax),%dl
+	movb	-26(%ebp),%al
+	orb	%al,%dl
+	movl	-8(%ebp),%eax
+	movb	%dl,73(%eax)
+	jmp	.Lj1953
+.Lj1954:
+	movl	$200603141,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj1953:
+	jmp	.Lj1948
+.Lj1950:
+	movb	-24(%ebp),%al
+	movb	%al,-12(%ebp)
+	movb	-12(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__gencode$tobjdata
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__GENCODE$TOBJDATA
+AASMCPU_TAICPU_$__GENCODE$TOBJDATA:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$340,%esp
+	movl	%ebx,-340(%ebp)
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movl	-4(%ebp),%eax
+	movl	96(%eax),%eax
+	movl	-8(%ebp),%edx
+	movl	40(%eax),%eax
+	movl	64(%edx),%edx
+	cmpl	%edx,%eax
+	jne	.Lj2129
+	jmp	.Lj2130
+.Lj2129:
+	movl	$200130121,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2130:
+	movl	-8(%ebp),%eax
+	movl	60(%eax),%eax
+	leal	15(%eax),%eax
+	movl	%eax,-44(%ebp)
+	movb	$0,-32(%ebp)
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	cmpb	$2,%al
+	je	.Lj2139
+	jmp	.Lj2138
+.Lj2139:
+	movl	-44(%ebp),%eax
+	movb	(%eax),%al
+	cmpb	$4,%al
+	je	.Lj2137
+	jmp	.Lj2141
+.Lj2141:
+	movl	-44(%ebp),%eax
+	movb	(%eax),%al
+	cmpb	$6,%al
+	je	.Lj2137
+	jmp	.Lj2140
+.Lj2140:
+	movl	-44(%ebp),%eax
+	movb	(%eax),%al
+	cmpb	$1,%al
+	je	.Lj2142
+	jmp	.Lj2138
+.Lj2142:
+	movl	-44(%ebp),%eax
+	movb	2(%eax),%al
+	cmpb	$5,%al
+	je	.Lj2137
+	jmp	.Lj2143
+.Lj2143:
+	movl	-44(%ebp),%eax
+	movb	2(%eax),%al
+	cmpb	$7,%al
+	je	.Lj2137
+	jmp	.Lj2138
+.Lj2137:
+	movb	$102,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2138:
+	.balign 4,0x90
+.Lj2152:
+	movl	-44(%ebp),%eax
+	movb	(%eax),%al
+	movb	%al,-36(%ebp)
+	incl	-44(%ebp)
+	movb	-36(%ebp),%al
+	testb	%al,%al
+	je	.Lj2159
+	decb	%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2160
+	decb	%al
+	je	.Lj2161
+	decb	%al
+	je	.Lj2162
+	decb	%al
+	je	.Lj2161
+	decb	%al
+	je	.Lj2162
+	decb	%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2163
+	decb	%al
+	je	.Lj2164
+	decb	%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2166
+	decb	%al
+	je	.Lj2165
+	decb	%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2167
+	subb	$2,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2168
+	subb	$2,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2169
+	subb	$2,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2170
+	decb	%al
+	je	.Lj2185
+	decb	%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2171
+	subb	$6,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2172
+	subb	$6,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2185
+	subb	$2,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2173
+	subb	$2,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2174
+	subb	$134,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2175
+	subb	$6,%al
+	je	.Lj2176
+	decb	%al
+	jb	.Lj2158
+	subb	$1,%al
+	jbe	.Lj2184
+	subb	$6,%al
+	jb	.Lj2158
+	subb	$2,%al
+	jbe	.Lj2177
+	decb	%al
+	je	.Lj2178
+	decb	%al
+	je	.Lj2179
+	decb	%al
+	je	.Lj2178
+	decb	%al
+	je	.Lj2180
+	decb	%al
+	je	.Lj2184
+	subb	$2,%al
+	jb	.Lj2158
+	subb	$1,%al
+	jbe	.Lj2184
+	decb	%al
+	je	.Lj2181
+	decb	%al
+	je	.Lj2182
+	decb	%al
+	je	.Lj2183
+	jmp	.Lj2158
+.Lj2159:
+	jmp	.Lj2154
+	jmp	.Lj2157
+.Lj2160:
+	movl	-44(%ebp),%edx
+	movzbl	-36(%ebp),%ecx
+	movl	-4(%ebp),%eax
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	movzbl	-36(%ebp),%eax
+	addl	%eax,-44(%ebp)
+	jmp	.Lj2157
+.Lj2161:
+	movl	-8(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	8(%eax),%eax
+	testl	%eax,%eax
+	jl	.Lj2193
+	testl	%eax,%eax
+	je	.Lj2195
+	subl	$83886081,%eax
+	je	.Lj2194
+	decl	%eax
+	je	.Lj2195
+	decl	%eax
+	je	.Lj2196
+	decl	%eax
+	je	.Lj2197
+	jmp	.Lj2193
+.Lj2194:
+	movb	$14,-48(%ebp)
+	jmp	.Lj2192
+.Lj2195:
+	movb	$30,-48(%ebp)
+	jmp	.Lj2192
+.Lj2196:
+	movb	$6,-48(%ebp)
+	jmp	.Lj2192
+.Lj2197:
+	movb	$22,-48(%ebp)
+	jmp	.Lj2192
+.Lj2193:
+	movl	$777004,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2192:
+	movzbl	-36(%ebp),%eax
+	cmpl	$4,%eax
+	je	.Lj2208
+	jmp	.Lj2209
+.Lj2208:
+	incb	-48(%ebp)
+.Lj2209:
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2162:
+	movl	-8(%ebp),%eax
+	movl	36(%eax),%eax
+	movl	8(%eax),%eax
+	cmpl	$83886085,%eax
+	jl	.Lj2217
+	subl	$83886085,%eax
+	je	.Lj2218
+	decl	%eax
+	je	.Lj2219
+	jmp	.Lj2217
+.Lj2218:
+	movb	$160,-48(%ebp)
+	jmp	.Lj2216
+.Lj2219:
+	movb	$168,-48(%ebp)
+	jmp	.Lj2216
+.Lj2217:
+	movl	$777005,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2216:
+	movzbl	-36(%ebp),%eax
+	cmpl	$5,%eax
+	je	.Lj2226
+	jmp	.Lj2227
+.Lj2226:
+	incb	-48(%ebp)
+.Lj2227:
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2163:
+	movl	-8(%ebp),%edx
+	movzbl	-36(%ebp),%eax
+	subl	$8,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	call	AASMCPU_REGVAL$TREGISTER$$BYTE
+	movzbl	%al,%eax
+	movl	-44(%ebp),%edx
+	movzbl	(%edx),%edx
+	addl	%edx,%eax
+	movb	%al,-48(%ebp)
+	incl	-44(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2164:
+	movl	-8(%ebp),%eax
+	movzbl	32(%eax),%eax
+	movzbl	TC_AASMCPU_TAICPU_$_GENCODE$TOBJDATA_CONDVAL(,%eax,1),%eax
+	movl	-44(%ebp),%edx
+	movzbl	(%edx),%edx
+	addl	%edx,%eax
+	movb	%al,-48(%ebp)
+	incl	-44(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2165:
+	movb	$0,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2166:
+	movzbl	-36(%ebp),%edx
+	subl	$12,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	movl	-12(%ebp),%eax
+	cmpl	$-128,%eax
+	jl	.Lj2264
+	jmp	.Lj2266
+.Lj2266:
+	movl	-12(%ebp),%eax
+	cmpl	$127,%eax
+	jg	.Lj2264
+	jmp	.Lj2265
+.Lj2264:
+	movl	$0,-80(%ebp)
+	movl	$0,-76(%ebp)
+	leal	-80(%ebp),%eax
+	pushl	%eax
+	pushl	$255
+	leal	-336(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$-1,%edx
+	call	fpc_shortstr_sint
+	leal	-336(%ebp),%ecx
+	movl	$_$AASMCPU$_Ld18,%edx
+	movl	$8011,%eax
+	call	VERBOSE_MESSAGE2$LONGINT$SHORTSTRING$SHORTSTRING$TMSGQUEUEEVENT
+.Lj2265:
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2283
+	jmp	.Lj2284
+.Lj2283:
+	pushl	-16(%ebp)
+	movzbl	-24(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2295
+.Lj2284:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2295:
+	jmp	.Lj2157
+.Lj2167:
+	movzbl	-36(%ebp),%edx
+	subl	$16,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	movl	-12(%ebp),%eax
+	cmpl	$-256,%eax
+	jl	.Lj2306
+	jmp	.Lj2308
+.Lj2308:
+	movl	-12(%ebp),%eax
+	cmpl	$255,%eax
+	jg	.Lj2306
+	jmp	.Lj2307
+.Lj2306:
+	movl	$0,-80(%ebp)
+	movl	$0,-76(%ebp)
+	leal	-80(%ebp),%eax
+	pushl	%eax
+	pushl	$255
+	leal	-336(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$-1,%edx
+	call	fpc_shortstr_sint
+	leal	-336(%ebp),%ecx
+	movl	$_$AASMCPU$_Ld19,%edx
+	movl	$8011,%eax
+	call	VERBOSE_MESSAGE2$LONGINT$SHORTSTRING$SHORTSTRING$TMSGQUEUEEVENT
+.Lj2307:
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2325
+	jmp	.Lj2326
+.Lj2325:
+	pushl	-16(%ebp)
+	movzbl	-24(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2337
+.Lj2326:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2337:
+	jmp	.Lj2157
+.Lj2168:
+	movzbl	-36(%ebp),%edx
+	subl	$20,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	movl	-12(%ebp),%eax
+	cmpl	$0,%eax
+	jl	.Lj2348
+	jmp	.Lj2350
+.Lj2350:
+	movl	-12(%ebp),%eax
+	cmpl	$255,%eax
+	jg	.Lj2348
+	jmp	.Lj2349
+.Lj2348:
+	movl	$0,-80(%ebp)
+	movl	$0,-76(%ebp)
+	leal	-80(%ebp),%eax
+	pushl	%eax
+	pushl	$255
+	leal	-336(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$-1,%edx
+	call	fpc_shortstr_sint
+	leal	-336(%ebp),%ecx
+	movl	$_$AASMCPU$_Ld20,%edx
+	movl	$8011,%eax
+	call	VERBOSE_MESSAGE2$LONGINT$SHORTSTRING$SHORTSTRING$TMSGQUEUEEVENT
+.Lj2349:
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2367
+	jmp	.Lj2368
+.Lj2367:
+	pushl	-16(%ebp)
+	movzbl	-24(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2379
+.Lj2368:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2379:
+	jmp	.Lj2157
+.Lj2169:
+	movzbl	-36(%ebp),%edx
+	subl	$24,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	movl	-12(%ebp),%eax
+	cmpl	$-65536,%eax
+	jl	.Lj2390
+	jmp	.Lj2392
+.Lj2392:
+	movl	-12(%ebp),%eax
+	cmpl	$65535,%eax
+	jg	.Lj2390
+	jmp	.Lj2391
+.Lj2390:
+	movl	$0,-80(%ebp)
+	movl	$0,-76(%ebp)
+	leal	-80(%ebp),%eax
+	pushl	%eax
+	pushl	$255
+	leal	-336(%ebp),%ecx
+	movl	-12(%ebp),%eax
+	movl	$-1,%edx
+	call	fpc_shortstr_sint
+	leal	-336(%ebp),%ecx
+	movl	$_$AASMCPU$_Ld21,%edx
+	movl	$8011,%eax
+	call	VERBOSE_MESSAGE2$LONGINT$SHORTSTRING$SHORTSTRING$TMSGQUEUEEVENT
+.Lj2391:
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2409
+	jmp	.Lj2410
+.Lj2409:
+	pushl	-16(%ebp)
+	movzbl	-24(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$2,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2421
+.Lj2410:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$2,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2421:
+	jmp	.Lj2157
+.Lj2170:
+	movzbl	-36(%ebp),%edx
+	subl	$28,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	movl	-8(%ebp),%eax
+	movb	57(%eax),%al
+	cmpb	$4,%al
+	je	.Lj2432
+	jmp	.Lj2433
+.Lj2432:
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2434
+	jmp	.Lj2435
+.Lj2434:
+	pushl	-16(%ebp)
+	movzbl	-24(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$8,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2446
+.Lj2435:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$8,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2446:
+	jmp	.Lj2453
+.Lj2433:
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2454
+	jmp	.Lj2455
+.Lj2454:
+	pushl	-16(%ebp)
+	movzbl	-28(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2466
+.Lj2455:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2466:
+.Lj2453:
+	jmp	.Lj2157
+.Lj2171:
+	movzbl	-36(%ebp),%edx
+	subl	$32,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2477
+	jmp	.Lj2478
+.Lj2477:
+	pushl	-16(%ebp)
+	movzbl	-28(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2489
+.Lj2478:
+	leal	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2489:
+	jmp	.Lj2157
+.Lj2172:
+	movzbl	-36(%ebp),%edx
+	subl	$40,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INSEND$$LONGINT
+	movl	-12(%ebp),%edx
+	subl	%eax,%edx
+	movl	%edx,%eax
+	movl	%eax,-56(%ebp)
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2504
+	jmp	.Lj2505
+.Lj2504:
+	movl	-16(%ebp),%eax
+	call	OGBASE_TOBJSYMBOL_$__ADDRESS$$LONGINT
+	addl	%eax,-56(%ebp)
+.Lj2505:
+	movl	-56(%ebp),%eax
+	cmpl	$127,%eax
+	jg	.Lj2508
+	jmp	.Lj2510
+.Lj2510:
+	movl	-56(%ebp),%eax
+	cmpl	$-128,%eax
+	jl	.Lj2508
+	jmp	.Lj2509
+.Lj2508:
+	pushl	$255
+	leal	-328(%ebp),%ecx
+	movl	-56(%ebp),%eax
+	movl	$-1,%edx
+	call	fpc_shortstr_sint
+	leal	-328(%ebp),%edx
+	movl	$0,-336(%ebp)
+	movl	$0,-332(%ebp)
+	leal	-336(%ebp),%ecx
+	movl	$8012,%eax
+	call	VERBOSE_MESSAGE1$LONGINT$SHORTSTRING$TMSGQUEUEEVENT
+.Lj2509:
+	leal	-56(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2173:
+	movzbl	-36(%ebp),%edx
+	subl	$52,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2535
+	jmp	.Lj2536
+.Lj2535:
+	pushl	-16(%ebp)
+	movzbl	-20(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2547
+.Lj2536:
+	pushl	$0
+	movzbl	-28(%ebp),%eax
+	pushl	%eax
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INSEND$$LONGINT
+	movl	%eax,%edx
+	movl	-12(%ebp),%eax
+	subl	%edx,%eax
+	movl	%eax,%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+.Lj2547:
+	jmp	.Lj2157
+.Lj2174:
+	movzbl	-36(%ebp),%edx
+	subl	$56,%edx
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+	cmpl	$0,-16(%ebp)
+	jne	.Lj2564
+	jmp	.Lj2565
+.Lj2564:
+	pushl	-16(%ebp)
+	movzbl	-20(%ebp),%eax
+	pushl	%eax
+	movl	-12(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2576
+.Lj2565:
+	pushl	$0
+	movzbl	-28(%ebp),%eax
+	pushl	%eax
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__INSEND$$LONGINT
+	movl	%eax,%edx
+	movl	-12(%ebp),%eax
+	subl	%edx,%eax
+	movl	%eax,%edx
+	movl	-4(%ebp),%eax
+	movl	$4,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+.Lj2576:
+	jmp	.Lj2157
+.Lj2175:
+	movzbl	-36(%ebp),%edx
+	subl	$192,%edx
+	movl	-8(%ebp),%eax
+	call	AASMCPU_TAICPU_$__NEEDADDRPREFIX$BYTE$$BOOLEAN
+	testb	%al,%al
+	jne	.Lj2589
+	jmp	.Lj2590
+.Lj2589:
+	movb	$103,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2590:
+	jmp	.Lj2157
+.Lj2176:
+	movb	$103,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2177:
+	movl	-8(%ebp),%edx
+	movzbl	-36(%ebp),%eax
+	subl	$208,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	(%eax),%eax
+	andl	$31,%eax
+	cmpl	$2,%eax
+	jl	.Lj2612
+	subl	$2,%eax
+	je	.Lj2613
+	jmp	.Lj2612
+.Lj2613:
+	movb	$102,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2611
+.Lj2612:
+.Lj2611:
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX
+	jmp	.Lj2157
+.Lj2178:
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX
+	jmp	.Lj2157
+.Lj2179:
+	movb	$102,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX
+	jmp	.Lj2157
+.Lj2180:
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX
+	jmp	.Lj2157
+.Lj2181:
+	movb	$243,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX
+	jmp	.Lj2157
+.Lj2182:
+	movb	$242,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	jmp	.Lj2157
+.Lj2183:
+	jmp	.Lj2157
+.Lj2184:
+	movl	%ebp,%eax
+	call	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX
+	jmp	.Lj2157
+.Lj2185:
+	movl	$777006,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+	jmp	.Lj2157
+.Lj2158:
+	movl	-8(%ebp),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj2662
+	jmp	.Lj2661
+.Lj2662:
+	movb	-32(%ebp),%al
+	testb	%al,%al
+	je	.Lj2660
+	jmp	.Lj2661
+.Lj2660:
+	movl	$200603191,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2661:
+	movzbl	-36(%ebp),%eax
+	cmpl	$64,%eax
+	jge	.Lj2667
+	jmp	.Lj2666
+.Lj2667:
+	movb	-36(%ebp),%al
+	cmpb	$191,%al
+	jbe	.Lj2665
+	jmp	.Lj2666
+.Lj2665:
+	movzbl	-36(%ebp),%eax
+	cmpl	$127,%eax
+	jl	.Lj2668
+	jmp	.Lj2669
+.Lj2668:
+	movl	-8(%ebp),%edx
+	movb	-36(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj2670
+	jmp	.Lj2671
+.Lj2670:
+	movl	-8(%ebp),%edx
+	movb	-36(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	call	AASMCPU_REGVAL$TREGISTER$$BYTE
+	movzbl	%al,%eax
+	movl	%eax,-52(%ebp)
+	jmp	.Lj2676
+.Lj2671:
+	movl	-8(%ebp),%edx
+	movb	-36(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	16(%eax),%eax
+	call	AASMCPU_REGVAL$TREGISTER$$BYTE
+	movzbl	%al,%eax
+	movl	%eax,-52(%ebp)
+.Lj2676:
+	jmp	.Lj2681
+.Lj2669:
+	movb	-36(%ebp),%al
+	andb	$7,%al
+	movzbl	%al,%eax
+	movl	%eax,-52(%ebp)
+.Lj2681:
+	movzbl	-36(%ebp),%eax
+	shrl	$3,%eax
+	andl	$7,%eax
+	movl	%eax,-64(%ebp)
+	movl	-8(%ebp),%edx
+	movl	-64(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	-52(%ebp),%ecx
+	leal	-72(%ebp),%edx
+	call	AASMCPU_PROCESS_EA$TOPER$EA$LONGINT$$BOOLEAN
+	testb	%al,%al
+	je	.Lj2686
+	jmp	.Lj2687
+.Lj2686:
+	movl	$0,-80(%ebp)
+	movl	$0,-76(%ebp)
+	leal	-80(%ebp),%edx
+	movl	$8009,%eax
+	call	VERBOSE_MESSAGE$LONGINT$TMSGQUEUEEVENT
+.Lj2687:
+	leal	-48(%ebp),%eax
+	movl	%eax,-40(%ebp)
+	movl	-40(%ebp),%eax
+	movb	-69(%ebp),%dl
+	movb	%dl,(%eax)
+	incl	-40(%ebp)
+	cmpb	$0,-72(%ebp)
+	jne	.Lj2702
+	jmp	.Lj2703
+.Lj2702:
+	movl	-40(%ebp),%eax
+	movb	-68(%ebp),%dl
+	movb	%dl,(%eax)
+	incl	-40(%ebp)
+.Lj2703:
+	leal	-48(%ebp),%edx
+	movl	-40(%ebp),%eax
+	subl	%edx,%eax
+	movl	%eax,%edx
+	movl	%edx,-60(%ebp)
+	movl	-60(%ebp),%ecx
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+	movb	-71(%ebp),%al
+	testb	%al,%al
+	je	.Lj2716
+	decb	%al
+	je	.Lj2717
+	decb	%al
+	je	.Lj2718
+	subb	$2,%al
+	je	.Lj2718
+	jmp	.Lj2715
+.Lj2716:
+	jmp	.Lj2714
+.Lj2717:
+	movl	-8(%ebp),%eax
+	movl	-64(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	(%eax),%eax
+	andl	$2113536,%eax
+	cmpl	$2113536,%eax
+	je	.Lj2719
+	jmp	.Lj2720
+.Lj2719:
+	movl	-8(%ebp),%eax
+	movl	-64(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	8(%eax),%eax
+	movl	4(%eax),%edx
+	movl	-4(%ebp),%eax
+	call	OGBASE_TOBJDATA_$__SYMBOLREF$TASMSYMBOL$$TOBJSYMBOL
+	movl	%eax,-16(%ebp)
+	movl	-8(%ebp),%eax
+	movl	-64(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	8(%eax),%eax
+	movb	24(%eax),%al
+	cmpb	$2,%al
+	je	.Lj2727
+	jmp	.Lj2728
+.Lj2727:
+	movb	$7,-24(%ebp)
+	jmp	.Lj2731
+.Lj2728:
+	movb	$0,-24(%ebp)
+.Lj2731:
+	pushl	-16(%ebp)
+	movzbl	-24(%ebp),%eax
+	pushl	%eax
+	movl	-8(%ebp),%edx
+	movl	-64(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	(%eax),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	jmp	.Lj2744
+.Lj2720:
+	movl	-8(%ebp),%edx
+	movl	-64(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movb	(%eax),%al
+	movb	%al,-48(%ebp)
+	leal	-48(%ebp),%edx
+	movl	-4(%ebp),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2744:
+	incl	-60(%ebp)
+	jmp	.Lj2714
+.Lj2718:
+	movl	-8(%ebp),%eax
+	movl	-64(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	8(%eax),%eax
+	movl	4(%eax),%edx
+	movl	-4(%ebp),%eax
+	call	OGBASE_TOBJDATA_$__SYMBOLREF$TASMSYMBOL$$TOBJSYMBOL
+	movl	%eax,-16(%ebp)
+	movl	-8(%ebp),%eax
+	movl	-64(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	8(%eax),%eax
+	movb	24(%eax),%al
+	cmpb	$2,%al
+	je	.Lj2759
+	jmp	.Lj2760
+.Lj2759:
+	movb	$7,-24(%ebp)
+	jmp	.Lj2763
+.Lj2760:
+	movb	$1,-24(%ebp)
+.Lj2763:
+	pushl	-16(%ebp)
+	movzbl	-24(%ebp),%eax
+	pushl	%eax
+	movl	-8(%ebp),%edx
+	movl	-64(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movl	8(%eax),%eax
+	movl	(%eax),%edx
+	movzbl	-71(%ebp),%ecx
+	movl	-4(%ebp),%eax
+	movl	-4(%ebp),%ebx
+	movl	(%ebx),%ebx
+	call	*108(%ebx)
+	movzbl	-71(%ebp),%eax
+	addl	%eax,-60(%ebp)
+	jmp	.Lj2714
+.Lj2715:
+.Lj2714:
+	jmp	.Lj2776
+.Lj2666:
+	movl	$777007,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2776:
+.Lj2157:
+	jmp	.Lj2152
+.Lj2154:
+	movl	-340(%ebp),%ebx
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$_gencode$tobjdata_maybewriterex
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX
+AASMCPU_TAICPU_$_GENCODE$TOBJDATA_MAYBEWRITEREX:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$4,%esp
+	movl	%eax,-4(%ebp)
+	movl	-4(%ebp),%eax
+	movl	-8(%eax),%eax
+	movzbl	73(%eax),%eax
+	testl	%eax,%eax
+	jne	.Lj2781
+	jmp	.Lj2780
+.Lj2781:
+	movl	-4(%ebp),%eax
+	movb	-32(%eax),%al
+	testb	%al,%al
+	je	.Lj2779
+	jmp	.Lj2780
+.Lj2779:
+	movl	-4(%ebp),%eax
+	movb	$1,-32(%eax)
+	movl	-4(%ebp),%eax
+	movl	-8(%eax),%eax
+	leal	73(%eax),%edx
+	movl	-4(%ebp),%eax
+	movl	-4(%eax),%eax
+	movl	$1,%ecx
+	call	OGBASE_TOBJDATA_$__WRITEBYTES$formal$LONGINT
+.Lj2780:
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$_gencode$tobjdata_getvalsym$longint
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT
+AASMCPU_TAICPU_$_GENCODE$TOBJDATA_GETVALSYM$LONGINT:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$16,%esp
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	movl	-8(%eax),%edx
+	movl	-4(%ebp),%eax
+	movl	36(%edx,%eax,4),%eax
+	movb	4(%eax),%al
+	cmpb	$2,%al
+	jb	.Lj2791
+	subb	$2,%al
+	je	.Lj2792
+	decb	%al
+	je	.Lj2793
+	jmp	.Lj2791
+.Lj2792:
+	movl	-8(%ebp),%eax
+	movl	-8(%eax),%eax
+	movl	-4(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	8(%eax),%eax
+	movl	-8(%ebp),%edx
+	movl	(%eax),%eax
+	movl	%eax,-12(%edx)
+	movl	-8(%ebp),%eax
+	movl	-8(%eax),%eax
+	movl	-4(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	8(%eax),%eax
+	movl	4(%eax),%edx
+	movl	-8(%ebp),%eax
+	movl	-4(%eax),%eax
+	call	OGBASE_TOBJDATA_$__SYMBOLREF$TASMSYMBOL$$TOBJSYMBOL
+	movl	-8(%ebp),%edx
+	movl	%eax,-16(%edx)
+	movl	-8(%ebp),%eax
+	movl	-8(%eax),%eax
+	movl	-4(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	8(%eax),%eax
+	movb	24(%eax),%al
+	cmpb	$2,%al
+	je	.Lj2802
+	jmp	.Lj2803
+.Lj2802:
+	movl	-8(%ebp),%eax
+	movb	$8,-20(%eax)
+	movl	-8(%ebp),%eax
+	movb	$7,-24(%eax)
+	movl	-8(%ebp),%eax
+	movb	$7,-28(%eax)
+	jmp	.Lj2810
+.Lj2803:
+	movl	-8(%ebp),%eax
+	movb	$9,-20(%eax)
+	movl	-8(%ebp),%eax
+	movb	$0,-24(%eax)
+	movl	-8(%ebp),%eax
+	movb	$1,-28(%eax)
+.Lj2810:
+	jmp	.Lj2790
+.Lj2793:
+	movl	-8(%ebp),%eax
+	movl	-8(%eax),%eax
+	movl	-4(%ebp),%edx
+	movl	36(%eax,%edx,4),%eax
+	movl	-8(%ebp),%edx
+	movl	8(%eax),%eax
+	movl	%eax,-12(%edx)
+	movl	-8(%ebp),%eax
+	movl	$0,-16(%eax)
+	movl	-8(%ebp),%eax
+	movb	$0,-24(%eax)
+	movl	-8(%ebp),%eax
+	movb	$1,-28(%eax)
+	jmp	.Lj2790
+.Lj2791:
+	movl	$0,-16(%ebp)
+	movl	$0,-12(%ebp)
+	leal	-16(%ebp),%edx
+	movl	$8010,%eax
+	call	VERBOSE_MESSAGE$LONGINT$TMSGQUEUEEVENT
+.Lj2790:
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__is_same_reg_move$tregistertype$$boolean
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__IS_SAME_REG_MOVE$TREGISTERTYPE$$BOOLEAN
+AASMCPU_TAICPU_$__IS_SAME_REG_MOVE$TREGISTERTYPE$$BOOLEAN:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-8(%ebp)
+	movb	%dl,-4(%ebp)
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$194,%ax
+	je	.Lj2838
+	jmp	.Lj2839
+.Lj2839:
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$376,%ax
+	je	.Lj2838
+	jmp	.Lj2833
+.Lj2838:
+	movb	-4(%ebp),%al
+	cmpb	$1,%al
+	je	.Lj2837
+	jmp	.Lj2833
+.Lj2837:
+	movl	-8(%ebp),%eax
+	movzbl	33(%eax),%eax
+	cmpl	$2,%eax
+	je	.Lj2836
+	jmp	.Lj2833
+.Lj2836:
+	movl	-8(%ebp),%eax
+	movl	36(%eax),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj2835
+	jmp	.Lj2833
+.Lj2835:
+	movl	-8(%ebp),%eax
+	movl	40(%eax),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj2834
+	jmp	.Lj2833
+.Lj2834:
+	movl	-8(%ebp),%eax
+	movl	36(%eax),%ecx
+	movl	-8(%ebp),%eax
+	movl	40(%eax),%edx
+	movl	8(%ecx),%eax
+	movl	8(%edx),%edx
+	cmpl	%edx,%eax
+	je	.Lj2831
+	jmp	.Lj2833
+.Lj2833:
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$431,%ax
+	je	.Lj2844
+	jmp	.Lj2848
+.Lj2848:
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$198,%ax
+	je	.Lj2844
+	jmp	.Lj2847
+.Lj2847:
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$196,%ax
+	je	.Lj2844
+	jmp	.Lj2846
+.Lj2846:
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$424,%ax
+	je	.Lj2844
+	jmp	.Lj2845
+.Lj2845:
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$541,%ax
+	je	.Lj2844
+	jmp	.Lj2832
+.Lj2844:
+	movb	-4(%ebp),%al
+	cmpb	$4,%al
+	je	.Lj2843
+	jmp	.Lj2832
+.Lj2843:
+	movl	-8(%ebp),%eax
+	movzbl	33(%eax),%eax
+	cmpl	$2,%eax
+	je	.Lj2842
+	jmp	.Lj2832
+.Lj2842:
+	movl	-8(%ebp),%eax
+	movl	36(%eax),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj2841
+	jmp	.Lj2832
+.Lj2841:
+	movl	-8(%ebp),%eax
+	movl	40(%eax),%eax
+	movb	4(%eax),%al
+	cmpb	$1,%al
+	je	.Lj2840
+	jmp	.Lj2832
+.Lj2840:
+	movl	-8(%ebp),%eax
+	movl	36(%eax),%edx
+	movl	-8(%ebp),%eax
+	movl	40(%eax),%ecx
+	movl	8(%edx),%eax
+	movl	8(%ecx),%edx
+	cmpl	%edx,%eax
+	je	.Lj2831
+	jmp	.Lj2832
+.Lj2831:
+	movb	$1,-12(%ebp)
+	jmp	.Lj2849
+.Lj2832:
+	movb	$0,-12(%ebp)
+.Lj2849:
+	movb	-12(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_build_spilling_operation_type_table
+	.balign 16,0x90
+.globl	AASMCPU_BUILD_SPILLING_OPERATION_TYPE_TABLE
+AASMCPU_BUILD_SPILLING_OPERATION_TYPE_TABLE:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$8,%esp
+	movl	$2404,%eax
+	call	fpc_getmem
+	movl	%eax,U_AASMCPU_OPERATION_TYPE_TABLE
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movb	$0,%cl
+	movl	$2404,%edx
+	call	SYSTEM_FILLCHAR$formal$LONGINT$BYTE
+	movw	$0,-4(%ebp)
+	decw	-4(%ebp)
+	.balign 4,0x90
+.Lj2866:
+	incw	-4(%ebp)
+	movl	$1,-8(%ebp)
+	decl	-8(%ebp)
+	.balign 4,0x90
+.Lj2869:
+	incl	-8(%ebp)
+	movzwl	-4(%ebp),%eax
+	imull	$3,%eax
+	movl	-8(%ebp),%edx
+	movb	TC_AASMCPU_INSPROP-1(%eax,%edx,1),%al
+	cmpb	$39,%al
+	jb	.Lj2871
+	subb	$39,%al
+	je	.Lj2872
+	decb	%al
+	je	.Lj2873
+	decb	%al
+	jb	.Lj2871
+	subb	$1,%al
+	jbe	.Lj2874
+	decb	%al
+	je	.Lj2875
+	decb	%al
+	je	.Lj2876
+	decb	%al
+	jb	.Lj2871
+	subb	$1,%al
+	jbe	.Lj2877
+	decb	%al
+	je	.Lj2878
+	decb	%al
+	je	.Lj2879
+	decb	%al
+	jb	.Lj2871
+	subb	$1,%al
+	jbe	.Lj2880
+	jmp	.Lj2871
+.Lj2872:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movzwl	-4(%ebp),%edx
+	movb	$0,(%eax,%edx,4)
+	jmp	.Lj2870
+.Lj2873:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%edx
+	movzwl	-4(%ebp),%eax
+	movb	$1,(%edx,%eax,4)
+	jmp	.Lj2870
+.Lj2874:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movzwl	-4(%ebp),%edx
+	movb	$2,(%eax,%edx,4)
+	jmp	.Lj2870
+.Lj2875:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movzwl	-4(%ebp),%edx
+	movb	$0,1(%eax,%edx,4)
+	jmp	.Lj2870
+.Lj2876:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movzwl	-4(%ebp),%edx
+	movb	$1,1(%eax,%edx,4)
+	jmp	.Lj2870
+.Lj2877:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movzwl	-4(%ebp),%edx
+	movb	$2,1(%eax,%edx,4)
+	jmp	.Lj2870
+.Lj2878:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movzwl	-4(%ebp),%edx
+	movb	$0,2(%eax,%edx,4)
+	jmp	.Lj2870
+.Lj2879:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%edx
+	movzwl	-4(%ebp),%eax
+	movb	$1,2(%edx,%eax,4)
+	jmp	.Lj2870
+.Lj2880:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%edx
+	movzwl	-4(%ebp),%eax
+	movb	$2,2(%edx,%eax,4)
+	jmp	.Lj2870
+.Lj2871:
+.Lj2870:
+	cmpl	$3,-8(%ebp)
+	jl	.Lj2869
+	cmpw	$600,-4(%ebp)
+	jb	.Lj2866
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	movb	$2,577(%eax)
+	leave
+	ret
+
+.section .text.n_aasmcpu_taicpu_$__spilling_get_operation_type$longint$$topertype
+	.balign 16,0x90
+.globl	AASMCPU_TAICPU_$__SPILLING_GET_OPERATION_TYPE$LONGINT$$TOPERTYPE
+AASMCPU_TAICPU_$__SPILLING_GET_OPERATION_TYPE$LONGINT$$TOPERTYPE:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$12,%esp
+	movl	%eax,-8(%ebp)
+	movl	%edx,-4(%ebp)
+	movl	-8(%ebp),%eax
+	movw	48(%eax),%ax
+	cmpw	$198,%ax
+	je	.Lj2905
+	jmp	.Lj2904
+.Lj2905:
+	movl	-8(%ebp),%eax
+	movzbl	33(%eax),%eax
+	cmpl	$2,%eax
+	je	.Lj2903
+	jmp	.Lj2904
+.Lj2903:
+	movl	-4(%ebp),%eax
+	testl	%eax,%eax
+	jl	.Lj2907
+	testl	%eax,%eax
+	je	.Lj2908
+	decl	%eax
+	je	.Lj2909
+	jmp	.Lj2907
+.Lj2908:
+	movb	$0,-12(%ebp)
+	jmp	.Lj2906
+.Lj2909:
+	movb	$1,-12(%ebp)
+	jmp	.Lj2906
+.Lj2907:
+	movl	$200506055,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2906:
+	jmp	.Lj2916
+.Lj2904:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%ecx
+	movl	-8(%ebp),%eax
+	movzwl	48(%eax),%eax
+	movl	-4(%ebp),%edx
+	leal	(%ecx,%eax,4),%eax
+	movb	(%eax,%edx,1),%al
+	movb	%al,-12(%ebp)
+.Lj2916:
+	movb	-12(%ebp),%al
+	leave
+	ret
+
+.section .text.n_aasmcpu_spilling_create_load$treference$tregister$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_SPILLING_CREATE_LOAD$TREFERENCE$TREGISTER$$TAICPU
+AASMCPU_SPILLING_CREATE_LOAD$TREFERENCE$TREGISTER$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$16,%esp
+	movl	%eax,-4(%ebp)
+	movl	%edx,-8(%ebp)
+	movb	-5(%ebp),%al
+	movb	%al,-16(%ebp)
+	movb	-16(%ebp),%al
+	cmpb	$1,%al
+	jb	.Lj2922
+	decb	%al
+	je	.Lj2923
+	subb	$3,%al
+	je	.Lj2924
+	jmp	.Lj2922
+.Lj2923:
+	movl	-8(%ebp),%eax
+	call	CPUBASE_REG2OPSIZE$TREGISTER$$TOPSIZE
+	pushl	%eax
+	movl	-4(%ebp),%eax
+	pushl	%eax
+	pushl	-8(%ebp)
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$194,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REF_REG$TASMOP$TOPSIZE$TREFERENCE$TREGISTER$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj2921
+.Lj2924:
+	movb	-6(%ebp),%al
+	movb	%al,-16(%ebp)
+	movb	-16(%ebp),%al
+	cmpb	$9,%al
+	jb	.Lj2944
+	subb	$9,%al
+	je	.Lj2946
+	decb	%al
+	je	.Lj2945
+	decb	%al
+	je	.Lj2947
+	jmp	.Lj2944
+.Lj2945:
+	movl	-8(%ebp),%eax
+	call	CPUBASE_REG2OPSIZE$TREGISTER$$TOPSIZE
+	pushl	%eax
+	movl	-4(%ebp),%eax
+	pushl	%eax
+	pushl	-8(%ebp)
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$198,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REF_REG$TASMOP$TOPSIZE$TREFERENCE$TREGISTER$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj2943
+.Lj2946:
+	movl	-8(%ebp),%eax
+	call	CPUBASE_REG2OPSIZE$TREGISTER$$TOPSIZE
+	pushl	%eax
+	movl	-4(%ebp),%eax
+	pushl	%eax
+	pushl	-8(%ebp)
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$431,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REF_REG$TASMOP$TOPSIZE$TREFERENCE$TREGISTER$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj2943
+.Lj2947:
+	pushl	$0
+	movl	-4(%ebp),%eax
+	pushl	%eax
+	pushl	-8(%ebp)
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$196,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REF_REG$TASMOP$TOPSIZE$TREFERENCE$TREGISTER$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj2943
+.Lj2944:
+	movl	$200506043,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2943:
+	jmp	.Lj2921
+.Lj2922:
+	movl	$200401041,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj2921:
+	movl	-12(%ebp),%eax
+	leave
+	ret
+
+.section .text.n_aasmcpu_spilling_create_store$tregister$treference$$taicpu
+	.balign 16,0x90
+.globl	AASMCPU_SPILLING_CREATE_STORE$TREGISTER$TREFERENCE$$TAICPU
+AASMCPU_SPILLING_CREATE_STORE$TREGISTER$TREFERENCE$$TAICPU:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$16,%esp
+	movl	%eax,-4(%ebp)
+	movl	%edx,-8(%ebp)
+	movb	-1(%ebp),%al
+	movb	%al,-16(%ebp)
+	movb	-16(%ebp),%al
+	cmpb	$1,%al
+	jb	.Lj3003
+	decb	%al
+	je	.Lj3004
+	subb	$3,%al
+	je	.Lj3005
+	jmp	.Lj3003
+.Lj3004:
+	movl	-4(%ebp),%eax
+	call	CPUBASE_REG2OPSIZE$TREGISTER$$TOPSIZE
+	pushl	%eax
+	pushl	-4(%ebp)
+	movl	-8(%ebp),%eax
+	pushl	%eax
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$194,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREFERENCE$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj3002
+.Lj3005:
+	movb	-2(%ebp),%al
+	movb	%al,-16(%ebp)
+	movb	-16(%ebp),%al
+	cmpb	$9,%al
+	jb	.Lj3025
+	subb	$9,%al
+	je	.Lj3027
+	decb	%al
+	je	.Lj3026
+	decb	%al
+	je	.Lj3028
+	jmp	.Lj3025
+.Lj3026:
+	movl	-4(%ebp),%eax
+	call	CPUBASE_REG2OPSIZE$TREGISTER$$TOPSIZE
+	pushl	%eax
+	pushl	-4(%ebp)
+	movl	-8(%ebp),%eax
+	pushl	%eax
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$198,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREFERENCE$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj3024
+.Lj3027:
+	movl	-4(%ebp),%eax
+	call	CPUBASE_REG2OPSIZE$TREGISTER$$TOPSIZE
+	pushl	%eax
+	pushl	-4(%ebp)
+	movl	-8(%ebp),%eax
+	pushl	%eax
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$431,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREFERENCE$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj3024
+.Lj3028:
+	pushl	$0
+	pushl	-4(%ebp)
+	movl	-8(%ebp),%eax
+	pushl	%eax
+	movl	$VMT_AASMCPU_TAICPU,%edx
+	movw	$196,%cx
+	movl	$0,%eax
+	call	AASMCPU_TAICPU_$__OP_REG_REF$TASMOP$TOPSIZE$TREGISTER$TREFERENCE$$TAICPU
+	movl	%eax,-12(%ebp)
+	jmp	.Lj3024
+.Lj3025:
+	movl	$200506042,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj3024:
+	jmp	.Lj3002
+.Lj3003:
+	movl	$200401041,%eax
+	call	VERBOSE_INTERNALERROR$LONGINT
+.Lj3002:
+	movl	-12(%ebp),%eax
+	leave
+	ret
+
+.section .text.n_aasmcpu_buildinstabcache
+	.balign 16,0x90
+.globl	AASMCPU_BUILDINSTABCACHE
+AASMCPU_BUILDINSTABCACHE:
+	pushl	%ebp
+	movl	%esp,%ebp
+	subl	$4,%esp
+	movl	$2404,%eax
+	call	fpc_getmem
+	movl	%eax,U_AASMCPU_INSTABCACHE
+	movl	U_AASMCPU_INSTABCACHE,%eax
+	movb	$255,%cl
+	movl	$2404,%edx
+	call	SYSTEM_FILLCHAR$formal$LONGINT$BYTE
+	movl	$0,-4(%ebp)
+	jmp	.Lj3098
+	.balign 4,0x90
+.Lj3097:
+	movl	U_AASMCPU_INSTABCACHE,%edx
+	movl	-4(%ebp),%eax
+	imull	$31,%eax
+	movzwl	TC_AASMCPU_INSTAB(,%eax),%eax
+	movl	(%edx,%eax,4),%eax
+	cmpl	$-1,%eax
+	je	.Lj3100
+	jmp	.Lj3101
+.Lj3100:
+	movl	U_AASMCPU_INSTABCACHE,%ecx
+	movl	-4(%ebp),%eax
+	imull	$31,%eax
+	movzwl	TC_AASMCPU_INSTAB(,%eax),%eax
+	movl	-4(%ebp),%edx
+	movl	%edx,(%ecx,%eax,4)
+.Lj3101:
+	incl	-4(%ebp)
+.Lj3098:
+	movl	-4(%ebp),%eax
+	cmpl	$1378,%eax
+	jl	.Lj3097
+	jmp	.Lj3099
+.Lj3099:
+	leave
+	ret
+
+.section .text.n_aasmcpu_initasm
+	.balign 16,0x90
+.globl	AASMCPU_INITASM
+AASMCPU_INITASM:
+	pushl	%ebp
+	movl	%esp,%ebp
+	call	AASMCPU_BUILD_SPILLING_OPERATION_TYPE_TABLE
+	cmpl	$0,U_AASMCPU_INSTABCACHE
+	jne	.Lj3107
+	jmp	.Lj3106
+.Lj3106:
+	call	AASMCPU_BUILDINSTABCACHE
+.Lj3107:
+	leave
+	ret
+
+.section .text.n_aasmcpu_doneasm
+	.balign 16,0x90
+.globl	AASMCPU_DONEASM
+AASMCPU_DONEASM:
+	pushl	%ebp
+	movl	%esp,%ebp
+	cmpl	$0,U_AASMCPU_OPERATION_TYPE_TABLE
+	jne	.Lj3110
+	jmp	.Lj3111
+.Lj3110:
+	movl	U_AASMCPU_OPERATION_TYPE_TABLE,%eax
+	call	fpc_freemem
+	movl	$0,U_AASMCPU_OPERATION_TYPE_TABLE
+.Lj3111:
+	cmpl	$0,U_AASMCPU_INSTABCACHE
+	jne	.Lj3116
+	jmp	.Lj3117
+.Lj3116:
+	movl	U_AASMCPU_INSTABCACHE,%eax
+	call	fpc_freemem
+	movl	$0,U_AASMCPU_INSTABCACHE
+.Lj3117:
+	leave
+	ret
+
+.section .text.n__aasmcpu_init
+	.balign 16,0x90
+.globl	INIT$_AASMCPU
+INIT$_AASMCPU:
+.globl	_AASMCPU_init
+_AASMCPU_init:
+	pushl	%ebp
+	movl	%esp,%ebp
+	movl	$VMT_AASMCPU_TAI_ALIGN,%eax
+	movl	%eax,U_AASMTAI_CAI_ALIGN
+	movl	$VMT_AASMCPU_TAICPU,%eax
+	movl	%eax,U_AASMTAI_CAI_CPU
+	leave
+	ret
+# End asmlist al_procedures
+# Begin asmlist al_globals
+
+.section .bss
+	.balign 4
+	.comm	U_AASMCPU_INSTABCACHE,4
+
+.section .bss
+	.balign 4
+	.comm	U_AASMCPU_OPERATION_TYPE_TABLE,4
+
+.section .data.n__$AASMCPU$_Ld22
+	.balign 4
+.globl	_$AASMCPU$_Ld22
+_$AASMCPU$_Ld22:
+	.byte	9
+	.ascii	"tai_align"
+
+.section .data.n_VMT_AASMCPU_TAI_ALIGN
+	.balign 4
+.globl	VMT_AASMCPU_TAI_ALIGN
+VMT_AASMCPU_TAI_ALIGN:
+	.long	28,-28
+	.long	VMT_AASMTAI_TAI_ALIGN_ABSTRACT
+	.long	_$AASMCPU$_Ld22
+	.long	0,0
+	.long	_$AASMCPU$_Ld23
+	.long	0,0,0,0,0
+	.long	CCLASSES_TLINKEDLISTITEM_$__DESTROY
+	.long	SYSTEM_TOBJECT_$__NEWINSTANCE$$TOBJECT
+	.long	SYSTEM_TOBJECT_$__FREEINSTANCE
+	.long	SYSTEM_TOBJECT_$__SAFECALLEXCEPTION$TOBJECT$POINTER$$LONGINT
+	.long	SYSTEM_TOBJECT_$__DEFAULTHANDLER$formal
+	.long	SYSTEM_TOBJECT_$__AFTERCONSTRUCTION
+	.long	SYSTEM_TOBJECT_$__BEFOREDESTRUCTION
+	.long	SYSTEM_TOBJECT_$__DEFAULTHANDLERSTR$formal
+	.long	CCLASSES_TLINKEDLISTITEM_$__GETCOPY$$TLINKEDLISTITEM
+	.long	AASMTAI_TAI_ALIGN_ABSTRACT_$__PPULOAD$TAITYPE$TCOMPILERPPUFILE$$TAI_ALIGN_ABSTRACT
+	.long	AASMTAI_TAI_ALIGN_ABSTRACT_$__PPUWRITE$TCOMPILERPPUFILE
+	.long	AASMTAI_TAI_$__BUILDDEREFIMPL
+	.long	AASMTAI_TAI_$__DEREFIMPL
+	.long	AASMCPU_TAI_ALIGN_$__CREATE$BYTE$$TAI_ALIGN
+	.long	AASMCPU_TAI_ALIGN_$__CREATE_OP$BYTE$BYTE$$TAI_ALIGN
+	.long	AASMCPU_TAI_ALIGN_$__CALCULATEFILLBUF$TFILLBUFFER$$PCHAR
+	.long	0
+
+.section .data.n__$AASMCPU$_Ld25
+	.balign 4
+.globl	_$AASMCPU$_Ld25
+_$AASMCPU$_Ld25:
+	.byte	6
+	.ascii	"taicpu"
+
+.section .data.n_VMT_AASMCPU_TAICPU
+	.balign 4
+.globl	VMT_AASMCPU_TAICPU
+VMT_AASMCPU_TAICPU:
+	.long	74,-74
+	.long	VMT_AASMSYM_TAI_CPU_ABSTRACT_SYM
+	.long	_$AASMCPU$_Ld25
+	.long	0,0
+	.long	_$AASMCPU$_Ld26
+	.long	0,0,0,0,0
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__DESTROY
+	.long	SYSTEM_TOBJECT_$__NEWINSTANCE$$TOBJECT
+	.long	SYSTEM_TOBJECT_$__FREEINSTANCE
+	.long	SYSTEM_TOBJECT_$__SAFECALLEXCEPTION$TOBJECT$POINTER$$LONGINT
+	.long	SYSTEM_TOBJECT_$__DEFAULTHANDLER$formal
+	.long	SYSTEM_TOBJECT_$__AFTERCONSTRUCTION
+	.long	SYSTEM_TOBJECT_$__BEFOREDESTRUCTION
+	.long	SYSTEM_TOBJECT_$__DEFAULTHANDLERSTR$formal
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__GETCOPY$$TLINKEDLISTITEM
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__PPULOAD$TAITYPE$TCOMPILERPPUFILE$$TAI_CPU_ABSTRACT
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__PPUWRITE$TCOMPILERPPUFILE
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__BUILDDEREFIMPL
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__DEREFIMPL
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__PPULOADOPER$TCOMPILERPPUFILE$TOPER
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__PPUWRITEOPER$TCOMPILERPPUFILE$TOPER
+	.long	AASMSYM_TAI_CPU_ABSTRACT_SYM_$__PPUBUILDDEREFIMPLOPER$TOPER
+	.long	AASMSYM_TAI_CPU_ABSTRACT_SYM_$__PPUDEREFOPER$TOPER
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__CREATE$TASMOP$$TAI_CPU_ABSTRACT
+	.long	AASMCPU_TAICPU_$__IS_SAME_REG_MOVE$TREGISTERTYPE$$BOOLEAN
+	.long	AASMCPU_TAICPU_$__SPILLING_GET_OPERATION_TYPE$LONGINT$$TOPERTYPE
+	.long	AASMTAI_TAI_CPU_ABSTRACT_$__SPILLING_GET_OPERATION_TYPE_REF$LONGINT$TREGISTER$$TOPERTYPE
+	.long	AASMCPU_TAICPU_$__PASS1$TOBJDATA$$LONGINT
+	.long	AASMCPU_TAICPU_$__PASS2$TOBJDATA
+	.long	AASMCPU_TAICPU_$__RESETPASS1
+	.long	AASMCPU_TAICPU_$__RESETPASS2
+	.long	0
+
+.section .data.n_THREADVARLIST_AASMCPU
+	.balign 4
+.globl	THREADVARLIST_AASMCPU
+THREADVARLIST_AASMCPU:
+	.long	0
+# End asmlist al_globals
+# Begin asmlist al_const
+# End asmlist al_const
+# Begin asmlist al_typedconsts
+
+.section .rodata.n__$AASMCPU$_Ld1
+	.balign 4
+.globl	_$AASMCPU$_Ld1
+_$AASMCPU$_Ld1:
+	.ascii	"\001[\000"
+
+.section .rodata.n__$AASMCPU$_Ld2
+	.balign 4
+.globl	_$AASMCPU$_Ld2
+_$AASMCPU$_Ld2:
+	.ascii	"\001 \000"
+
+.section .rodata.n__$AASMCPU$_Ld3
+	.balign 4
+.globl	_$AASMCPU$_Ld3
+_$AASMCPU$_Ld3:
+	.ascii	"\001,\000"
+
+.section .rodata.n__$AASMCPU$_Ld4
+	.balign 4
+.globl	_$AASMCPU$_Ld4
+_$AASMCPU$_Ld4:
+	.ascii	"\006xmmreg\000"
+
+.section .rodata.n__$AASMCPU$_Ld5
+	.balign 4
+.globl	_$AASMCPU$_Ld5
+_$AASMCPU$_Ld5:
+	.ascii	"\006mmxreg\000"
+
+.section .rodata.n__$AASMCPU$_Ld6
+	.balign 4
+.globl	_$AASMCPU$_Ld6
+_$AASMCPU$_Ld6:
+	.ascii	"\006fpureg\000"
+
+.section .rodata.n__$AASMCPU$_Ld7
+	.balign 4
+.globl	_$AASMCPU$_Ld7
+_$AASMCPU$_Ld7:
+	.ascii	"\003reg\000"
+
+.section .rodata.n__$AASMCPU$_Ld8
+	.balign 4
+.globl	_$AASMCPU$_Ld8
+_$AASMCPU$_Ld8:
+	.ascii	"\003imm\000"
+
+.section .rodata.n__$AASMCPU$_Ld9
+	.balign 4
+.globl	_$AASMCPU$_Ld9
+_$AASMCPU$_Ld9:
+	.ascii	"\003mem\000"
+
+.section .rodata.n__$AASMCPU$_Ld10
+	.balign 4
+.globl	_$AASMCPU$_Ld10
+_$AASMCPU$_Ld10:
+	.ascii	"\003???\000"
+
+.section .rodata.n__$AASMCPU$_Ld11
+	.balign 4
+.globl	_$AASMCPU$_Ld11
+_$AASMCPU$_Ld11:
+	.ascii	"\0018\000"
+
+.section .rodata.n__$AASMCPU$_Ld12
+	.balign 4
+.globl	_$AASMCPU$_Ld12
+_$AASMCPU$_Ld12:
+	.ascii	"\00216\000"
+
+.section .rodata.n__$AASMCPU$_Ld13
+	.balign 4
+.globl	_$AASMCPU$_Ld13
+_$AASMCPU$_Ld13:
+	.ascii	"\00232\000"
+
+.section .rodata.n__$AASMCPU$_Ld14
+	.balign 4
+.globl	_$AASMCPU$_Ld14
+_$AASMCPU$_Ld14:
+	.ascii	"\00264\000"
+
+.section .rodata.n__$AASMCPU$_Ld15
+	.balign 4
+.globl	_$AASMCPU$_Ld15
+_$AASMCPU$_Ld15:
+	.ascii	"\002??\000"
+
+.section .rodata.n__$AASMCPU$_Ld16
+	.balign 4
+.globl	_$AASMCPU$_Ld16
+_$AASMCPU$_Ld16:
+	.ascii	"\001s\000"
+
+.section .rodata.n__$AASMCPU$_Ld17
+	.balign 4
+.globl	_$AASMCPU$_Ld17
+_$AASMCPU$_Ld17:
+	.ascii	"\001]\000"
+
+.section .rodata.n__$AASMCPU$_Ld18
+	.balign 4
+.globl	_$AASMCPU$_Ld18
+_$AASMCPU$_Ld18:
+	.ascii	"\013signed byte\000"
+
+.section .rodata.n__$AASMCPU$_Ld19
+	.balign 4
+.globl	_$AASMCPU$_Ld19
+_$AASMCPU$_Ld19:
+	.ascii	"\004byte\000"
+
+.section .rodata.n__$AASMCPU$_Ld20
+	.balign 4
+.globl	_$AASMCPU$_Ld20
+_$AASMCPU$_Ld20:
+	.ascii	"\015unsigned byte\000"
+
+.section .rodata.n__$AASMCPU$_Ld21
+	.balign 4
+.globl	_$AASMCPU$_Ld21
+_$AASMCPU$_Ld21:
+	.ascii	"\004word\000"
+# End asmlist al_typedconsts
+# Begin asmlist al_rotypedconsts
+
+.section .data.n_tc_aasmcpu_insprop
+.globl	TC_AASMCPU_INSPROP
+TC_AASMCPU_INSPROP:
+	.byte	0,0,0,25,36,0,25,36,0,25,36,0,25,36,0,46,39,37,46,39,36,46,39,36,36,0,0,39,0,0,44,36,39,44,36,39,42,0,0,36,39,43
+	.byte	46,39,36,46,39,36,46,39,36,39,52,0,25,0,0,25,11,0,36,0,0,33,0,0,36,0,0,0,0,0,36,0,0,39,43,36,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,25,11,0,25,0,0,25,0,0,25,0,0,42,36,0,17,11,36,38,0,0,21,0,0,38,0,0,38,0,0,38,39,0,38,39,0,39,38
+	.byte	0,40,38,0,38,0,0,38,0,0,38,35,0,38,35,0,38,35,0,38,35,0,38,35,0,38,35,0,38,35,0,38,35,0,38,0,0,36,0,0,38,36,0,38,0,0
+	.byte	38,0,0,38,0,0,38,0,0,38,0,0,38,39,0,38,39,0,38,39,0,38,39,0,52,0,0,38,0,0,38,0,0,38,39,0,38,0,0,38,0,0,38,39,0,38,39,0
+	.byte	38,39,0,38,39,0,38,0,0,38,0,0,40,0,0,40,0,0,40,0,0,38,39,0,38,39,0,39,38,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,38
+	.byte	0,0,38,0,0,38,0,0,39,38,0,39,38,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,40,0,0,40,0,0,40,0,0,38,0,0,38,0,0,38,0,0,38,0
+	.byte	0,38,0,0,38,0,0,40,0,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,40,0,0,40,0,0,40,0,0,40,38,0,40,0,0,39,38,0,39,38,0,39,38,0,39
+	.byte	38,0,38,0,0,0,0,0,36,0,0,38,36,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,38,0,0,0,0,0,52,0,0,52,0,0,17,11,36,17,11
+	.byte	36,44,39,0,42,36,0,51,24,3,51,24,3,51,24,3,52,0,0,52,0,0,52,0,0,0,0,0,0,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,2,0
+	.byte	0,2,0,0,2,0,0,39,0,0,9,35,0,44,0,0,52,0,0,44,39,0,44,39,0,21,14,0,44,39,0,44,39,0,0,0,0,44,39,0,0,0,0,39,0,0,0,0,0,0,0,0,52
+	.byte	0,0,52,0,0,0,0,0,9,23,0,9,23,0,9,23,0,18,0,0,18,35,0,18,35,0,18,35,0,18,35,0,44,36,0,44,39,0,0,0,0,0,0,0,44,39,0,39,44,0
+	.byte	39,44,0,52,0,0,52,0,0,52,0,0,52,0,0,44,39,0,44,39,0,17,11,36,0,0,0,42,0,0,0,0,0,42,36,0,46,39,36,39,43,0,52,0,0,52,0,0
+	.byte	52,0,0,52,0,0,52,0,0,52,0,0,46,39,0,46,39,0,46,39,0,46,39,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,40
+	.byte	21,0,52,0,0,52,0,0,52,0,0,21,36,0,21,36,0,21,36,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,39,21,0,52,0,0
+	.byte	52,0,0,52,0,0,21,35,0,21,35,0,21,35,0,46,39,0,46,39,37,46,39,37,52,0,0,9,11,0,9,11,0,9,11,0,18,37,0,18,37,0,18,37,0
+	.byte	18,37,0,18,37,0,52,0,0,52,0,0,52,0,0,46,39,37,46,39,37,52,0,0,52,0,0,52,0,0,36,1,0,46,39,37,9,35,0,46,39,36,46,39,37
+	.byte	52,0,0,52,0,0,52,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,0,0,46,39,36,50,37,43,46,39,36,50,37,43,40,0,0,40,0,0,52,0,0,52
+	.byte	0,0,52,0,0,40,0,0,36,0,0,34,0,0,36,0,0,1,51,24,1,51,24,1,51,24,40,0,0,46,39,36,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0
+	.byte	52,0,0,36,39,43,52,0,0,52,0,0,52,0,0,36,0,0,36,0,0,0,0,0,0,0,0,52,0,0,52,0,0,52,0,0,52,0,0,41,45,0,9,4,0,9,4,0,46,39,36,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,39,44,35,35,0,0,35,40,0,46,39,0,46,39,0,46,39,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,44,39,0,44,39,0,44,39
+	.byte	0,44,39,0,44,39,0,44,39,0,46,39,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,39,44,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0
+	.byte	52,0,0,44,39,0,52,0,0,46,39,0,46,39,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,46,39,0,46,39,0,52,0,0,46,39,0,46,39
+	.byte	0,52,0,0,52,0,0,52,0,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,46,39,0
+	.byte	46,39,0,46,39,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0
+	.byte	52,0,0,52,0,0,52,0,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39,0,44,39
+	.byte	0,44,39,0,44,39,0,44,39,0,44,39,0,46,39,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,39,44,0,52,0,0,52,0,0,52,0,0,52,0,0,46,39
+	.byte	0,46,39,0,46,39,0,52,0,0,46,39,0,46,39,0,46,39,0,46,39,0,52,0,0,52,0,0,52,0,0,46,39,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0
+	.byte	0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,52,0,0,44,39,0,44,39,0,77,63,0,52,0,0,52,0,0,52,0,0,52
+	.byte	0,0,52,0,0,52,0,0,52,0,0
+
+.section .data.n_tc_aasmcpu_instab
+.globl	TC_AASMCPU_INSTAB
+TC_AASMCPU_INSTAB:
+	.short	0
+	.byte	0
+	.long	0,0,0
+	.byte	0,0,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	1
+	.byte	0
+	.long	0,0,0
+	.byte	1,55,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	2
+	.byte	0
+	.long	0,0,0
+	.byte	2,213,10,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	2
+	.byte	1
+	.long	8192,0,0
+	.byte	1,213,20,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	3
+	.byte	0
+	.long	0,0,0
+	.byte	2,212,10,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	3
+	.byte	1
+	.long	8192,0,0
+	.byte	1,212,20,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	4
+	.byte	0
+	.long	0,0,0
+	.byte	1,63,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	5
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,17,65,0,0,0,0,0,0,0
+	.long	1
+	.short	5
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,19,72,0,0,0,0,0,0,0
+	.long	1
+	.short	5
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,16,65,0,0,0,0,0,0,0
+	.long	0
+	.short	5
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,18,72,0,0,0,0,0,0,0
+	.long	0
+	.short	5
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,130,13,0,0,0,0,0,0
+	.long	0
+	.short	5
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,21,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	5
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,130,33,0,0,0,0,0,0
+	.long	50331664
+	.short	5
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,21,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	5
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,129,130,25,0,0,0,0,0,0
+	.long	8
+	.short	5
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,20,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	5
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,130,17,0,0,0,0,0,0
+	.long	4
+	.short	6
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,1,65,0,0,0,0,0,0,0
+	.long	1
+	.short	6
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,3,72,0,0,0,0,0,0,0
+	.long	1
+	.short	6
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,15,65,0,0,0,0,0,0,0,0
+	.long	0
+	.short	6
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,2,72,0,0,0,0,0,0,0
+	.long	1
+	.short	6
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,128,13,0,0,0,0,0,0
+	.long	0
+	.short	6
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,5,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	6
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,128,33,0,0,0,0,0,0
+	.long	50331664
+	.short	6
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,5,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	6
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,129,128,25,0,0,0,0,0,0
+	.long	8
+	.short	6
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,4,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	6
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,128,17,0,0,0,0,0,0
+	.long	4
+	.short	7
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,33,65,0,0,0,0,0,0,0
+	.long	1
+	.short	7
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,35,72,0,0,0,0,0,0,0
+	.long	1
+	.short	7
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,32,65,0,0,0,0,0,0,0
+	.long	0
+	.short	7
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,34,72,0,0,0,0,0,0,0
+	.long	0
+	.short	7
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,132,13,0,0,0,0,0,0
+	.long	0
+	.short	7
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,37,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	7
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,132,33,0,0,0,0,0,0
+	.long	50331664
+	.short	7
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,37,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	7
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,129,132,25,0,0,0,0,0,0
+	.long	8
+	.short	7
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,36,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	7
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,132,17,0,0,0,0,0,0
+	.long	4
+	.short	8
+	.byte	2
+	.long	2101250,2101250,0
+	.byte	192,1,99,65,0,0,0,0,0,0,0,0
+	.long	33555456
+	.short	8
+	.byte	2
+	.long	2113536,2101250,0
+	.byte	192,1,99,65,0,0,0,0,0,0,0,0
+	.long	33555457
+	.short	9
+	.byte	2
+	.long	2101262,2113536,0
+	.byte	193,208,1,98,72,0,0,0,0,0,0,0
+	.long	16777216
+	.short	10
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,2,15,188,72,0,0,0,0,0,0
+	.long	50331649
+	.short	11
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,2,15,189,72,0,0,0,0,0,0
+	.long	50331649
+	.short	12
+	.byte	1
+	.long	2101260,0,0
+	.byte	208,1,15,8,200,0,0,0,0,0,0,0
+	.long	67108864
+	.short	13
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,163,65,0,0,0,0,0,0
+	.long	50331649
+	.short	13
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,2,15,186,132,21,0,0,0,0,0
+	.long	50331652
+	.short	14
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,187,65,0,0,0,0,0,0
+	.long	50331649
+	.short	14
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,2,15,186,135,21,0,0,0,0,0
+	.long	50331652
+	.short	15
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,179,65,0,0,0,0,0,0
+	.long	50331649
+	.short	15
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,2,15,186,134,21,0,0,0,0,0
+	.long	50331652
+	.short	16
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,171,65,0,0,0,0,0,0
+	.long	50331649
+	.short	16
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,2,15,186,133,21,0,0,0,0,0
+	.long	50331652
+	.short	17
+	.byte	1
+	.long	8192,0,0
+	.byte	208,1,232,52,0,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,255,130,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	1
+	.long	8256,0,0
+	.byte	208,1,232,52,0,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	1
+	.long	8224,0,0
+	.byte	208,1,154,28,31,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	1
+	.long	2113600,0,0
+	.byte	192,208,1,255,130,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	1
+	.long	2113568,0,0
+	.byte	192,208,1,255,131,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	2
+	.long	8192,8192,0
+	.byte	215,1,154,29,24,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	2
+	.long	8194,8192,0
+	.byte	212,1,154,25,24,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	2
+	.long	8192,8194,0
+	.byte	212,1,154,25,24,0,0,0,0,0,0,0
+	.long	0
+	.short	17
+	.byte	2
+	.long	8196,8192,0
+	.byte	213,1,154,33,24,0,0,0,0,0,0,0
+	.long	50331648
+	.short	17
+	.byte	2
+	.long	8192,8196,0
+	.byte	213,1,154,33,24,0,0,0,0,0,0,0
+	.long	50331648
+	.short	18
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,152,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	19
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,153,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	20
+	.byte	0
+	.long	0,0,0
+	.byte	1,248,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	21
+	.byte	0
+	.long	0,0,0
+	.byte	1,252,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	22
+	.byte	0
+	.long	0,0,0
+	.byte	1,250,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	23
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,6,0,0,0,0,0,0,0,0,0
+	.long	33554688
+	.short	24
+	.byte	0
+	.long	0,0,0
+	.byte	1,245,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	25
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,57,65,0,0,0,0,0,0,0
+	.long	1
+	.short	25
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,59,72,0,0,0,0,0,0,0
+	.long	1
+	.short	25
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,56,65,0,0,0,0,0,0,0
+	.long	0
+	.short	25
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,58,72,0,0,0,0,0,0,0
+	.long	0
+	.short	25
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,135,13,0,0,0,0,0,0
+	.long	0
+	.short	25
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,61,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	25
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,135,33,0,0,0,0,0,0
+	.long	50331664
+	.short	25
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,61,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	25
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,129,135,25,0,0,0,0,0,0
+	.long	8
+	.short	25
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,60,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	25
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,135,17,0,0,0,0,0,0
+	.long	4
+	.short	25
+	.byte	2
+	.long	2113536,8196,0
+	.byte	213,192,1,129,135,33,0,0,0,0,0,0
+	.long	50331664
+	.short	25
+	.byte	2
+	.long	2113536,8194,0
+	.byte	192,212,1,129,135,25,0,0,0,0,0,0
+	.long	8
+	.short	25
+	.byte	2
+	.long	2113536,8193,0
+	.byte	192,211,1,128,135,17,0,0,0,0,0,0
+	.long	4
+	.short	26
+	.byte	0
+	.long	0,0,0
+	.byte	218,1,166,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	27
+	.byte	0
+	.long	0,0,0
+	.byte	218,213,1,167,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	27
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	1,242,217,2,15,194,72,22,0,0,0,0
+	.long	134348900
+	.short	27
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	1,242,193,217,2,15,194,72,22,0,0,0
+	.long	134348900
+	.short	28
+	.byte	0
+	.long	0,0,0
+	.byte	218,212,1,167,0,0,0,0,0,0,0,0
+	.long	0
+	.short	29
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,177,65,0,0,0,0,0,0
+	.long	83886081
+	.short	29
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,2,15,176,65,0,0,0,0,0,0
+	.long	83886080
+	.short	30
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,167,65,0,0,0,0,0,0
+	.long	67108865
+	.short	30
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,2,15,166,65,0,0,0,0,0,0
+	.long	67112960
+	.short	31
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,199,129,0,0,0,0,0,0
+	.long	83886080
+	.short	32
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,162,0,0,0,0,0,0,0,0,0
+	.long	83886080
+	.short	33
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,153,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	34
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,152,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	35
+	.byte	0
+	.long	0,0,0
+	.byte	1,39,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	36
+	.byte	0
+	.long	0,0,0
+	.byte	1,47,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	37
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,255,129,0,0,0,0,0,0,0
+	.long	0
+	.short	37
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,254,129,0,0,0,0,0,0,0
+	.long	0
+	.short	38
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,247,134,0,0,0,0,0,0,0
+	.long	0
+	.short	38
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,246,134,0,0,0,0,0,0,0
+	.long	0
+	.short	39
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,119,0,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	40
+	.byte	2
+	.long	8192,8192,0
+	.byte	1,200,24,21,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	41
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,240,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	42
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,225,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	43
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	43
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	43
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,193,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	43
+	.byte	1
+	.long	16777728,0,0
+	.byte	1,220,8,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	43
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,220,8,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	43
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	43
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	44
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,193,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	44
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,222,8,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	44
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,222,8,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	45
+	.byte	1
+	.long	2113552,0,0
+	.byte	192,211,1,223,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	45
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,223,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	46
+	.byte	1
+	.long	2113552,0,0
+	.byte	192,211,1,223,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	46
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,223,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	47
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,224,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	48
+	.byte	0
+	.long	0,0,0
+	.byte	3,155,219,226,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	49
+	.byte	0
+	.long	0,0,0
+	.byte	2,218,193,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	49
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,218,8,192,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	49
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,218,9,192,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	50
+	.byte	0
+	.long	0,0,0
+	.byte	2,218,209,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	50
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,218,8,208,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	50
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,218,9,208,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	51
+	.byte	0
+	.long	0,0,0
+	.byte	2,218,201,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	51
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,218,8,200,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	51
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,218,9,200,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	52
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,193,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	52
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,219,8,192,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	52
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,219,9,192,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	53
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,209,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	53
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,219,8,208,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	53
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,219,9,208,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	54
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,201,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	54
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,219,8,200,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	54
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,219,9,200,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	55
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,217,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	55
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,219,8,216,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	55
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,219,9,216,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	56
+	.byte	0
+	.long	0,0,0
+	.byte	2,218,217,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	56
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,218,8,216,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	56
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,218,9,216,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	57
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	57
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	57
+	.byte	0
+	.long	0,0,0
+	.byte	2,216,209,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	57
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,208,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	57
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,208,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	58
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,241,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	58
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,219,8,240,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	58
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,219,9,240,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	59
+	.byte	0
+	.long	0,0,0
+	.byte	2,223,241,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	59
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,223,8,240,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	59
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,223,9,240,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	60
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	60
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	60
+	.byte	0
+	.long	0,0,0
+	.byte	2,216,217,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	60
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,216,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	60
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,216,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	61
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,217,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	62
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,255,0,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	63
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,246,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	64
+	.byte	0
+	.long	0,0,0
+	.byte	3,155,219,225,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	65
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	65
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	65
+	.byte	0
+	.long	0,0,0
+	.byte	2,220,241,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	65
+	.byte	1
+	.long	16777728,0,0
+	.byte	1,220,8,240,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	65
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,220,8,240,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	65
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,240,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	65
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,240,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	66
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,241,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	66
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,222,8,240,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	66
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,222,8,240,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	67
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,135,0,0,0,0,0,0,0
+	.long	8192
+	.short	67
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,135,0,0,0,0,0,0,0
+	.long	8192
+	.short	67
+	.byte	0
+	.long	0,0,0
+	.byte	2,220,249,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	67
+	.byte	1
+	.long	16777728,0,0
+	.byte	1,220,8,248,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	67
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,220,8,248,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	67
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,248,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	67
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,248,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	68
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,249,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	68
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,222,8,248,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	68
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,222,8,248,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	69
+	.byte	0
+	.long	0,0,256
+	.byte	2,15,14,0,0,0,0,0,0,0,0,0
+	.long	83918848
+	.short	70
+	.byte	0
+	.long	0,0,0
+	.byte	3,155,219,224,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	71
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,221,8,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	72
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	72
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	73
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	73
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	74
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	74
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	75
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	75
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	76
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,135,0,0,0,0,0,0,0
+	.long	8192
+	.short	76
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,135,0,0,0,0,0,0,0
+	.long	8192
+	.short	77
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,219,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	77
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,223,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	77
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,223,133,0,0,0,0,0,0,0
+	.long	8192
+	.short	78
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,129,0,0,0,0,0,0,0
+	.long	8192
+	.short	78
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,129,0,0,0,0,0,0,0
+	.long	8192
+	.short	79
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,247,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	80
+	.byte	0
+	.long	0,0,0
+	.byte	3,155,219,227,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	81
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,219,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	81
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,212,1,223,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	82
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,219,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	82
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,212,1,223,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	82
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,223,135,0,0,0,0,0,0,0
+	.long	8192
+	.short	83
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,221,129,0,0,0,0,0,0,0
+	.long	151003136
+	.short	83
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,219,129,0,0,0,0,0,0,0
+	.long	151003136
+	.short	83
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,223,129,0,0,0,0,0,0,0
+	.long	151003136
+	.short	84
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	84
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	85
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,211,1,222,133,0,0,0,0,0,0,0
+	.long	8192
+	.short	85
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,218,133,0,0,0,0,0,0,0
+	.long	8192
+	.short	86
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,217,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	86
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,221,128,0,0,0,0,0,0,0
+	.long	8192
+	.short	86
+	.byte	1
+	.long	2113552,0,0
+	.byte	192,211,1,219,133,0,0,0,0,0,0,0
+	.long	8192
+	.short	86
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,217,8,192,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	87
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,232,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	88
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,217,133,0,0,0,0,0,0,0
+	.long	8200
+	.short	89
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,217,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	90
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,234,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	91
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,233,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	92
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,236,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	93
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,237,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	94
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,235,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	95
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,238,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	96
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,129,0,0,0,0,0,0,0
+	.long	8192
+	.short	96
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,129,0,0,0,0,0,0,0
+	.long	8192
+	.short	96
+	.byte	0
+	.long	0,0,0
+	.byte	2,220,201,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	96
+	.byte	1
+	.long	16777728,0,0
+	.byte	1,220,8,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	96
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,220,8,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	96
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	96
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	97
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,201,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	97
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,222,8,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	97
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,222,8,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	98
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,226,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	99
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,225,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	100
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,224,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	101
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,227,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	102
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,208,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	103
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,221,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	104
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,217,135,0,0,0,0,0,0,0
+	.long	8200
+	.short	105
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,217,134,0,0,0,0,0,0,0
+	.long	8192
+	.short	106
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,221,135,0,0,0,0,0,0,0
+	.long	8200
+	.short	106
+	.byte	1
+	.long	2166786,0,0
+	.byte	2,223,224,0,0,0,0,0,0,0,0,0
+	.long	33562624
+	.short	107
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,243,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	108
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,248,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	109
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,245,0,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	110
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,242,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	111
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,252,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	112
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,1,221,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	113
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,155,221,134,0,0,0,0,0,0
+	.long	8192
+	.short	114
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,253,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	115
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,228,0,0,0,0,0,0,0,0,0
+	.long	33562624
+	.short	116
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,254,0,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	117
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,251,0,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	118
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,250,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	119
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,217,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	119
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,221,130,0,0,0,0,0,0,0
+	.long	8192
+	.short	119
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,221,8,208,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	120
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,155,217,135,0,0,0,0,0,0
+	.long	8200
+	.short	121
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,155,217,134,0,0,0,0,0,0
+	.long	8192
+	.short	122
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,217,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	122
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,221,131,0,0,0,0,0,0,0
+	.long	8192
+	.short	122
+	.byte	1
+	.long	2113552,0,0
+	.byte	192,211,1,219,135,0,0,0,0,0,0,0
+	.long	8192
+	.short	122
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,221,8,216,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	123
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,155,221,135,0,0,0,0,0,0
+	.long	8200
+	.short	123
+	.byte	0
+	.long	0,0,0
+	.byte	3,155,223,224,0,0,0,0,0,0,0,0
+	.long	33562624
+	.short	123
+	.byte	1
+	.long	2166786,0,0
+	.byte	3,155,223,224,0,0,0,0,0,0,0,0
+	.long	33562624
+	.short	124
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	124
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,132,0,0,0,0,0,0,0
+	.long	8192
+	.short	124
+	.byte	0
+	.long	0,0,0
+	.byte	2,220,225,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	124
+	.byte	1
+	.long	16777728,0,0
+	.byte	1,220,8,224,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	124
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,220,8,224,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	124
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,224,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	124
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,224,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	125
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,225,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	125
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,222,8,224,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	125
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,222,8,224,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	126
+	.byte	1
+	.long	2113540,0,0
+	.byte	192,211,1,216,133,0,0,0,0,0,0,0
+	.long	8192
+	.short	126
+	.byte	1
+	.long	2113544,0,0
+	.byte	192,211,1,220,133,0,0,0,0,0,0,0
+	.long	8192
+	.short	126
+	.byte	0
+	.long	0,0,0
+	.byte	2,220,233,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	126
+	.byte	1
+	.long	16777728,0,0
+	.byte	1,220,8,232,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	126
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,220,8,232,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	126
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,216,8,232,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	126
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,216,9,232,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	127
+	.byte	0
+	.long	0,0,0
+	.byte	2,222,233,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	127
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,222,8,232,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	127
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,222,8,232,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	128
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,228,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	129
+	.byte	0
+	.long	0,0,0
+	.byte	2,221,225,0,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	129
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,221,8,224,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	129
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,221,9,224,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	130
+	.byte	0
+	.long	0,0,0
+	.byte	2,219,233,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	130
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,219,8,232,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	130
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,219,9,232,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	131
+	.byte	0
+	.long	0,0,0
+	.byte	2,223,233,0,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	131
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,223,8,232,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	131
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,223,9,232,0,0,0,0,0,0,0,0
+	.long	100671488
+	.short	132
+	.byte	0
+	.long	0,0,0
+	.byte	2,221,233,0,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	132
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,221,8,232,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	132
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,221,9,232,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	133
+	.byte	0
+	.long	0,0,0
+	.byte	2,218,233,0,0,0,0,0,0,0,0,0
+	.long	50339840
+	.short	134
+	.byte	0
+	.long	0,0,0
+	.byte	1,155,0,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	135
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,229,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	136
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,201,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	136
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,217,8,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	136
+	.byte	2
+	.long	16777216,16779264,0
+	.byte	1,217,8,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	136
+	.byte	2
+	.long	16779264,16777216,0
+	.byte	1,217,9,200,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	137
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,244,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	138
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,241,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	139
+	.byte	0
+	.long	0,0,0
+	.byte	2,217,249,0,0,0,0,0,0,0,0,0
+	.long	8192
+	.short	140
+	.byte	0
+	.long	0,0,0
+	.byte	1,244,0,0,0,0,0,0,0,0,0,0
+	.long	256
+	.short	141
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,167,65,0,0,0,0,0,0
+	.long	50335745
+	.short	142
+	.byte	0
+	.long	0,0,0
+	.byte	1,241,0,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	143
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,247,135,0,0,0,0,0,0,0
+	.long	0
+	.short	143
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,246,135,0,0,0,0,0,0,0
+	.long	0
+	.short	144
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,2,15,175,72,0,0,0,0,0,0
+	.long	50331649
+	.short	144
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,247,133,0,0,0,0,0,0,0
+	.long	0
+	.short	144
+	.byte	3
+	.long	2101260,2097152,8449
+	.byte	193,208,1,107,72,14,0,0,0,0,0,0
+	.long	33554433
+	.short	144
+	.byte	3
+	.long	2101260,2097152,8192
+	.byte	193,208,1,105,72,34,0,0,0,0,0,0
+	.long	33554545
+	.short	144
+	.byte	2
+	.long	2101260,8449,0
+	.byte	208,1,107,64,13,0,0,0,0,0,0,0
+	.long	33554432
+	.short	144
+	.byte	2
+	.long	2101260,8192,0
+	.byte	208,1,105,64,33,0,0,0,0,0,0,0
+	.long	33554448
+	.short	144
+	.byte	3
+	.long	2101250,2097152,8449
+	.byte	193,212,1,107,72,14,0,0,0,0,0,0
+	.long	33554433
+	.short	144
+	.byte	3
+	.long	2101250,2097152,8192
+	.byte	193,212,1,105,72,26,0,0,0,0,0,0
+	.long	33554537
+	.short	144
+	.byte	2
+	.long	2101250,8449,0
+	.byte	212,1,107,64,13,0,0,0,0,0,0,0
+	.long	33554432
+	.short	144
+	.byte	2
+	.long	2101250,8192,0
+	.byte	212,1,105,64,25,0,0,0,0,0,0,0
+	.long	33554440
+	.short	144
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,246,133,0,0,0,0,0,0,0
+	.long	0
+	.short	145
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,228,21,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	145
+	.byte	2
+	.long	2166798,8192,0
+	.byte	208,1,229,21,0,0,0,0,0,0,0,0
+	.long	4
+	.short	145
+	.byte	2
+	.long	2166785,2363394,0
+	.byte	1,236,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	145
+	.byte	2
+	.long	2166798,2363394,0
+	.byte	208,1,237,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	146
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,255,128,0,0,0,0,0,0,0
+	.long	0
+	.short	146
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,254,128,0,0,0,0,0,0,0
+	.long	0
+	.short	147
+	.byte	0
+	.long	0,0,0
+	.byte	1,108,0,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	148
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,109,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	149
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,109,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	150
+	.byte	1
+	.long	8192,0,0
+	.byte	1,205,20,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	151
+	.byte	0
+	.long	0,0,0
+	.byte	1,241,0,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	152
+	.byte	0
+	.long	0,0,0
+	.byte	1,241,0,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	153
+	.byte	0
+	.long	0,0,0
+	.byte	1,204,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	154
+	.byte	0
+	.long	0,0,0
+	.byte	1,204,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	155
+	.byte	0
+	.long	0,0,0
+	.byte	1,206,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	156
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,8,0,0,0,0,0,0,0,0,0
+	.long	67109120
+	.short	157
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,1,135,0,0,0,0,0,0,0
+	.long	67109120
+	.short	158
+	.byte	0
+	.long	0,0,0
+	.byte	215,1,207,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	159
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,207,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	160
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,207,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	162
+	.byte	1
+	.long	8192,0,0
+	.byte	2,103,227,40,0,0,0,0,0,0,0,0
+	.long	167772160
+	.short	163
+	.byte	1
+	.long	8192,0,0
+	.byte	1,227,40,0,0,0,0,0,0,0,0,0
+	.long	167772160
+	.short	164
+	.byte	1
+	.long	8193,0,0
+	.byte	1,235,40,0,0,0,0,0,0,0,0,0
+	.long	-2147483648
+	.short	164
+	.byte	1
+	.long	8206,0,0
+	.byte	208,1,233,52,0,0,0,0,0,0,0,0
+	.long	-2147483648
+	.short	164
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,255,132,0,0,0,0,0,0,0
+	.long	0
+	.short	164
+	.byte	1
+	.long	8320,0,0
+	.byte	1,235,40,0,0,0,0,0,0,0,0,0
+	.long	-2147483648
+	.short	164
+	.byte	1
+	.long	8256,0,0
+	.byte	208,1,233,52,0,0,0,0,0,0,0,0
+	.long	-2147483648
+	.short	164
+	.byte	1
+	.long	8224,0,0
+	.byte	208,1,234,28,31,0,0,0,0,0,0,0
+	.long	-2147483648
+	.short	164
+	.byte	1
+	.long	2113600,0,0
+	.byte	192,208,1,255,132,0,0,0,0,0,0,0
+	.long	0
+	.short	164
+	.byte	1
+	.long	2113568,0,0
+	.byte	192,208,1,255,133,0,0,0,0,0,0,0
+	.long	0
+	.short	164
+	.byte	2
+	.long	8192,8192,0
+	.byte	215,1,234,29,24,0,0,0,0,0,0,0
+	.long	0
+	.short	164
+	.byte	2
+	.long	8192,8194,0
+	.byte	212,1,234,25,24,0,0,0,0,0,0,0
+	.long	0
+	.short	164
+	.byte	2
+	.long	8192,8196,0
+	.byte	213,1,234,33,24,0,0,0,0,0,0,0
+	.long	50331648
+	.short	165
+	.byte	0
+	.long	0,0,0
+	.byte	1,159,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	166
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,2,15,2,72,0,0,0,0,0,0
+	.long	33555457
+	.short	167
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,255,130,0,0,0,0,0,0,0
+	.long	0
+	.short	167
+	.byte	1
+	.long	2113600,0,0
+	.byte	192,208,1,255,130,0,0,0,0,0,0,0
+	.long	0
+	.short	167
+	.byte	1
+	.long	2113568,0,0
+	.byte	192,208,1,255,131,0,0,0,0,0,0,0
+	.long	0
+	.short	168
+	.byte	2
+	.long	2101254,2113536,0
+	.byte	193,208,1,197,72,0,0,0,0,0,0,0
+	.long	0
+	.short	169
+	.byte	2
+	.long	2101260,2113536,0
+	.byte	193,208,1,141,72,0,0,0,0,0,0,0
+	.long	0
+	.short	169
+	.byte	2
+	.long	2101260,8192,0
+	.byte	193,208,1,141,72,0,0,0,0,0,0,0
+	.long	16
+	.short	170
+	.byte	0
+	.long	0,0,0
+	.byte	1,201,0,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	171
+	.byte	2
+	.long	2101254,2113536,0
+	.byte	193,208,1,196,72,0,0,0,0,0,0,0
+	.long	0
+	.short	172
+	.byte	2
+	.long	2101254,2113536,0
+	.byte	193,208,2,15,180,72,0,0,0,0,0,0
+	.long	50331648
+	.short	173
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,1,130,0,0,0,0,0,0,0
+	.long	33554688
+	.short	174
+	.byte	2
+	.long	2101254,2113536,0
+	.byte	193,208,2,15,181,72,0,0,0,0,0,0
+	.long	50331648
+	.short	175
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,1,131,0,0,0,0,0,0,0
+	.long	33554688
+	.short	176
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,255,132,0,0,0,0,0,0,0
+	.long	0
+	.short	176
+	.byte	1
+	.long	2113568,0,0
+	.byte	192,208,1,255,133,0,0,0,0,0,0,0
+	.long	0
+	.short	176
+	.byte	1
+	.long	2113600,0,0
+	.byte	192,208,1,255,132,0,0,0,0,0,0,0
+	.long	0
+	.short	177
+	.byte	1
+	.long	2097154,0,0
+	.byte	192,1,15,15,130,0,0,0,0,0,0,0
+	.long	33555712
+	.short	178
+	.byte	1
+	.long	2097154,0,0
+	.byte	192,2,15,1,134,0,0,0,0,0,0,0
+	.long	33554688
+	.short	179
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,7,0,0,0,0,0,0,0,0,0
+	.long	50335744
+	.short	180
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,5,0,0,0,0,0,0,0,0,0
+	.long	33558528
+	.short	181
+	.byte	0
+	.long	0,0,0
+	.byte	1,240,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	182
+	.byte	0
+	.long	0,0,0
+	.byte	1,172,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	183
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,173,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	184
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,173,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	185
+	.byte	1
+	.long	8192,0,0
+	.byte	202,1,226,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	185
+	.byte	2
+	.long	8192,2232322,0
+	.byte	200,1,226,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	185
+	.byte	2
+	.long	8192,2232332,0
+	.byte	201,1,226,40,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	186
+	.byte	1
+	.long	8192,0,0
+	.byte	202,1,225,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	186
+	.byte	2
+	.long	8192,2232322,0
+	.byte	200,1,225,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	186
+	.byte	2
+	.long	8192,2232332,0
+	.byte	201,1,225,40,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	187
+	.byte	1
+	.long	8192,0,0
+	.byte	202,1,224,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	187
+	.byte	2
+	.long	8192,2232322,0
+	.byte	200,1,224,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	187
+	.byte	2
+	.long	8192,2232332,0
+	.byte	201,1,224,40,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	188
+	.byte	1
+	.long	8192,0,0
+	.byte	202,1,224,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	188
+	.byte	2
+	.long	8192,2232322,0
+	.byte	200,1,224,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	188
+	.byte	2
+	.long	8192,2232332,0
+	.byte	201,1,224,40,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	189
+	.byte	1
+	.long	8192,0,0
+	.byte	202,1,225,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	189
+	.byte	2
+	.long	8192,2232322,0
+	.byte	200,1,225,40,0,0,0,0,0,0,0,0
+	.long	0
+	.short	189
+	.byte	2
+	.long	8192,2232332,0
+	.byte	201,1,225,40,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	190
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,2,15,3,72,0,0,0,0,0,0
+	.long	33555457
+	.short	191
+	.byte	2
+	.long	2101262,2113536,0
+	.byte	193,208,2,15,178,72,0,0,0,0,0,0
+	.long	50331648
+	.short	192
+	.byte	1
+	.long	2097154,0,0
+	.byte	192,1,15,15,131,0,0,0,0,0,0,0
+	.long	33555712
+	.short	193
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,200,0,0,0,0,0,0,0,0
+	.long	150994944
+	.short	193
+	.byte	3
+	.long	2166788,2232324,2363396
+	.byte	3,15,1,200,0,0,0,0,0,0,0,0
+	.long	150994944
+	.short	194
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,137,65,0,0,0,0,0,0,0
+	.long	1
+	.short	194
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,139,72,0,0,0,0,0,0,0
+	.long	1
+	.short	194
+	.byte	2
+	.long	2101260,8192,0
+	.byte	208,8,184,29,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	194
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,199,128,33,0,0,0,0,0,0
+	.long	50331664
+	.short	194
+	.byte	2
+	.long	2101250,8192,0
+	.byte	212,8,184,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	194
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,199,128,25,0,0,0,0,0,0
+	.long	8
+	.short	194
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,136,65,0,0,0,0,0,0,0
+	.long	0
+	.short	194
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,138,72,0,0,0,0,0,0,0
+	.long	1
+	.short	194
+	.byte	2
+	.long	2101249,8192,0
+	.byte	211,8,176,17,0,0,0,0,0,0,0,0
+	.long	4
+	.short	194
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,198,128,17,0,0,0,0,0,0
+	.long	4
+	.short	194
+	.byte	2
+	.long	2097158,17305602,0
+	.byte	192,208,1,140,129,0,0,0,0,0,0,0
+	.long	0
+	.short	194
+	.byte	2
+	.long	2097158,34082818,0
+	.byte	192,208,1,140,65,0,0,0,0,0,0,0
+	.long	0
+	.short	194
+	.byte	2
+	.long	2097158,67637250,0
+	.byte	192,208,1,140,65,0,0,0,0,0,0,0
+	.long	50331648
+	.short	194
+	.byte	2
+	.long	34082818,2097158,0
+	.byte	193,209,1,142,72,0,0,0,0,0,0,0
+	.long	1
+	.short	194
+	.byte	2
+	.long	67637250,2097158,0
+	.byte	193,209,1,142,72,0,0,0,0,0,0,0
+	.long	50331649
+	.short	194
+	.byte	2
+	.long	2101256,135271428,0
+	.byte	2,15,32,132,0,0,0,0,0,0,0,0
+	.long	251658496
+	.short	194
+	.byte	2
+	.long	2101256,135270404,0
+	.byte	2,15,32,65,0,0,0,0,0,0,0,0
+	.long	184549632
+	.short	194
+	.byte	2
+	.long	2101256,269488132,0
+	.byte	2,15,33,65,0,0,0,0,0,0,0,0
+	.long	184549632
+	.short	194
+	.byte	2
+	.long	2101256,537923588,0
+	.byte	2,15,36,65,0,0,0,0,0,0,0,0
+	.long	184549632
+	.short	194
+	.byte	2
+	.long	135271428,2101256,0
+	.byte	2,15,34,140,0,0,0,0,0,0,0,0
+	.long	251658496
+	.short	194
+	.byte	2
+	.long	135270404,2101256,0
+	.byte	2,15,34,72,0,0,0,0,0,0,0,0
+	.long	184549632
+	.short	194
+	.byte	2
+	.long	269488132,2101256,0
+	.byte	2,15,35,72,0,0,0,0,0,0,0,0
+	.long	184549632
+	.short	194
+	.byte	2
+	.long	537923588,2101256,0
+	.byte	2,15,38,72,0,0,0,0,0,0,0,0
+	.long	184549632
+	.short	195
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,110,72,0,0,0,0,0,0,0
+	.long	83902480
+	.short	195
+	.byte	2
+	.long	2101280,2101252,0
+	.byte	2,15,110,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	195
+	.byte	2
+	.long	2113536,2101280,0
+	.byte	192,2,15,126,65,0,0,0,0,0,0,0
+	.long	83902480
+	.short	195
+	.byte	2
+	.long	2101252,2101280,0
+	.byte	2,15,126,65,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	195
+	.byte	2
+	.long	2101264,2101252,0
+	.byte	1,102,211,2,15,110,72,0,0,0,0,0
+	.long	134348800
+	.short	195
+	.byte	2
+	.long	2101252,2101264,0
+	.byte	1,102,211,2,15,126,65,0,0,0,0,0
+	.long	134348800
+	.short	195
+	.byte	2
+	.long	2101264,2101256,0
+	.byte	1,102,214,2,15,110,72,0,0,0,0,0
+	.long	134348800
+	.short	195
+	.byte	2
+	.long	2101256,2101264,0
+	.byte	1,102,214,2,15,126,65,0,0,0,0,0
+	.long	134348800
+	.short	195
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	1,102,214,2,15,126,65,0,0,0,0,0
+	.long	134348800
+	.short	195
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,214,2,15,110,72,0,0,0,0,0
+	.long	134348800
+	.short	196
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,111,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	196
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,111,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	196
+	.byte	2
+	.long	2113536,2101280,0
+	.byte	192,2,15,127,65,0,0,0,0,0,0,0
+	.long	83902465
+	.short	196
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,127,65,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	196
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,126,72,0,0,0,0,0,0
+	.long	134348800
+	.short	196
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,214,72,0,0,0,0,0
+	.long	134348800
+	.short	196
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,1,102,211,2,15,214,65,0,0,0,0
+	.long	134348800
+	.short	196
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,126,72,0,0,0,0,0,0
+	.long	134348800
+	.short	197
+	.byte	0
+	.long	0,0,0
+	.byte	1,164,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	198
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,165,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	198
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,16,72,0,0,0,0,0
+	.long	134348800
+	.short	198
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,17,72,0,0,0,0,0
+	.long	134348800
+	.short	198
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,1,242,211,2,15,17,65,0,0,0,0
+	.long	134348800
+	.short	198
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,16,72,0,0,0,0
+	.long	134348800
+	.short	199
+	.byte	0
+	.long	0,0,0
+	.byte	214,1,165,0,0,0,0,0,0,0,0,0
+	.long	167772160
+	.short	200
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,165,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	201
+	.byte	2
+	.long	2101260,2097154,0
+	.byte	193,208,2,15,191,72,0,0,0,0,0,0
+	.long	50331648
+	.short	201
+	.byte	2
+	.long	2101262,2097153,0
+	.byte	193,208,2,15,190,72,0,0,0,0,0,0
+	.long	50331648
+	.short	202
+	.byte	2
+	.long	2101260,2097154,0
+	.byte	193,208,2,15,183,72,0,0,0,0,0,0
+	.long	50331648
+	.short	202
+	.byte	2
+	.long	2101262,2097153,0
+	.byte	193,208,2,15,182,72,0,0,0,0,0,0
+	.long	50331648
+	.short	203
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,247,132,0,0,0,0,0,0,0
+	.long	0
+	.short	203
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,246,132,0,0,0,0,0,0,0
+	.long	0
+	.short	204
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,201,0,0,0,0,0,0,0,0
+	.long	150994944
+	.short	204
+	.byte	2
+	.long	2166788,2232324,0
+	.byte	3,15,1,201,0,0,0,0,0,0,0,0
+	.long	150994944
+	.short	205
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,247,131,0,0,0,0,0,0,0
+	.long	0
+	.short	205
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,246,131,0,0,0,0,0,0,0
+	.long	0
+	.short	206
+	.byte	0
+	.long	0,0,0
+	.byte	1,144,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	207
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,247,130,0,0,0,0,0,0,0
+	.long	0
+	.short	207
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,246,130,0,0,0,0,0,0,0
+	.long	0
+	.short	208
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,9,65,0,0,0,0,0,0,0
+	.long	1
+	.short	208
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,11,72,0,0,0,0,0,0,0
+	.long	1
+	.short	208
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,8,65,0,0,0,0,0,0,0
+	.long	0
+	.short	208
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,10,72,0,0,0,0,0,0,0
+	.long	1
+	.short	208
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,129,13,0,0,0,0,0,0
+	.long	0
+	.short	208
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,13,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	208
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,129,33,0,0,0,0,0,0
+	.long	50331664
+	.short	208
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,13,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	208
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,129,129,25,0,0,0,0,0,0
+	.long	8
+	.short	208
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,12,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	208
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,129,17,0,0,0,0,0,0
+	.long	4
+	.short	209
+	.byte	2
+	.long	8192,2166785,0
+	.byte	1,230,20,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	209
+	.byte	2
+	.long	8192,2166786,0
+	.byte	212,1,231,20,0,0,0,0,0,0,0,0
+	.long	4
+	.short	209
+	.byte	2
+	.long	8192,2166788,0
+	.byte	213,1,231,20,0,0,0,0,0,0,0,0
+	.long	50331652
+	.short	209
+	.byte	2
+	.long	2363394,2166785,0
+	.byte	1,238,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	209
+	.byte	2
+	.long	2363394,2166786,0
+	.byte	212,1,239,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	209
+	.byte	2
+	.long	2363394,2166788,0
+	.byte	213,1,239,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	210
+	.byte	0
+	.long	0,0,0
+	.byte	1,110,0,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	211
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,111,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	212
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,111,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	213
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,107,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	213
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,107,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	213
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,107,72,0,0,0,0,0
+	.long	134348800
+	.short	213
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,107,72,0,0,0,0,0
+	.long	134348801
+	.short	214
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,99,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	214
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,99,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	214
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,99,72,0,0,0,0,0
+	.long	134348800
+	.short	214
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,99,72,0,0,0,0,0
+	.long	134348801
+	.short	215
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,103,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	215
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,103,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	215
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,103,72,0,0,0,0,0
+	.long	134348800
+	.short	215
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,103,72,0,0,0,0,0
+	.long	134348801
+	.short	216
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,252,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	216
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,252,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	216
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,252,72,0,0,0,0,0
+	.long	134348800
+	.short	216
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,252,72,0,0,0,0,0
+	.long	134348801
+	.short	217
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,254,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	217
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,254,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	217
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,254,72,0,0,0,0,0
+	.long	134348800
+	.short	217
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,254,72,0,0,0,0,0
+	.long	134348801
+	.short	218
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,236,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	218
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,236,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	218
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,236,72,0,0,0,0,0
+	.long	134348801
+	.short	218
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,236,72,0,0,0,0,0
+	.long	134348800
+	.short	219
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,81,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	219
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,81,72,0,0,0,0,0,0,0,0
+	.long	251674624
+	.short	220
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,237,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	220
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,237,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	220
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,237,72,0,0,0,0,0
+	.long	134348801
+	.short	220
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,237,72,0,0,0,0,0
+	.long	134348800
+	.short	221
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,220,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	221
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,220,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	221
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,220,72,0,0,0,0,0
+	.long	134348801
+	.short	221
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,220,72,0,0,0,0,0
+	.long	134348800
+	.short	222
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,221,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	222
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,221,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	222
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,221,72,0,0,0,0,0
+	.long	134348801
+	.short	222
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,221,72,0,0,0,0,0
+	.long	134348800
+	.short	223
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,253,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	223
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,253,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	223
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,253,72,0,0,0,0,0
+	.long	134348800
+	.short	223
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,253,72,0,0,0,0,0
+	.long	134348801
+	.short	224
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,219,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	224
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,219,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	224
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,219,72,0,0,0,0,0
+	.long	134348800
+	.short	224
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,219,72,0,0,0,0,0
+	.long	134348801
+	.short	225
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,223,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	225
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,223,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	225
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,223,72,0,0,0,0,0
+	.long	134348800
+	.short	225
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,223,72,0,0,0,0,0
+	.long	134348801
+	.short	226
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,80,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	226
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,80,72,0,0,0,0,0,0,0,0
+	.long	251674624
+	.short	227
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,191,0,0,0,0,0
+	.long	83918849
+	.short	227
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,191,0,0,0,0,0,0
+	.long	83918848
+	.short	228
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,116,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	228
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,116,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	228
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,116,72,0,0,0,0,0
+	.long	134348800
+	.short	228
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,116,72,0,0,0,0,0
+	.long	134348801
+	.short	229
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,118,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	229
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,118,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	229
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,118,72,0,0,0,0,0
+	.long	134348800
+	.short	229
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,118,72,0,0,0,0,0
+	.long	134348801
+	.short	230
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,117,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	230
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,117,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	230
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,117,72,0,0,0,0,0
+	.long	134348800
+	.short	230
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,117,72,0,0,0,0,0
+	.long	134348801
+	.short	231
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,100,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	231
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,100,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	231
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,100,72,0,0,0,0,0
+	.long	134348800
+	.short	231
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,100,72,0,0,0,0,0
+	.long	134348801
+	.short	232
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,102,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	232
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,102,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	232
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,102,72,0,0,0,0,0
+	.long	134348800
+	.short	232
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,102,72,0,0,0,0,0
+	.long	134348801
+	.short	233
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,101,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	233
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,101,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	233
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,101,72,0,0,0,0,0
+	.long	134348800
+	.short	233
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,101,72,0,0,0,0,0
+	.long	134348801
+	.short	234
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,84,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	235
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,29,0,0,0,0,0
+	.long	83918849
+	.short	235
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,29,0,0,0,0,0,0
+	.long	83918848
+	.short	236
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,174,0,0,0,0,0
+	.long	83918849
+	.short	236
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,174,0,0,0,0,0,0
+	.long	83918848
+	.short	237
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,158,0,0,0,0,0
+	.long	83918849
+	.short	237
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,158,0,0,0,0,0,0
+	.long	83918848
+	.short	238
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,176,0,0,0,0,0
+	.long	83918849
+	.short	238
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,176,0,0,0,0,0,0
+	.long	83918848
+	.short	239
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,144,0,0,0,0,0
+	.long	83918849
+	.short	239
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,144,0,0,0,0,0,0
+	.long	83918848
+	.short	240
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,160,0,0,0,0,0
+	.long	83918849
+	.short	240
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,160,0,0,0,0,0,0
+	.long	83918848
+	.short	241
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,164,0,0,0,0,0
+	.long	83918849
+	.short	241
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,164,0,0,0,0,0,0
+	.long	83918848
+	.short	242
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,148,0,0,0,0,0
+	.long	83918849
+	.short	242
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,148,0,0,0,0,0,0
+	.long	83918848
+	.short	243
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,180,0,0,0,0,0
+	.long	83918849
+	.short	243
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,180,0,0,0,0,0,0
+	.long	83918848
+	.short	244
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,150,0,0,0,0,0
+	.long	83918849
+	.short	244
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,150,0,0,0,0,0,0
+	.long	83918848
+	.short	245
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,166,0,0,0,0,0
+	.long	83918849
+	.short	245
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,166,0,0,0,0,0,0
+	.long	83918848
+	.short	246
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,182,0,0,0,0,0
+	.long	83918849
+	.short	246
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,182,0,0,0,0,0,0
+	.long	83918848
+	.short	247
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,167,0,0,0,0,0
+	.long	83918849
+	.short	247
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,167,0,0,0,0,0,0
+	.long	83918848
+	.short	248
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,151,0,0,0,0,0
+	.long	83918849
+	.short	248
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,151,0,0,0,0,0,0
+	.long	83918848
+	.short	249
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,154,0,0,0,0,0
+	.long	83918849
+	.short	249
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,154,0,0,0,0,0,0
+	.long	83918848
+	.short	250
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,170,0,0,0,0,0
+	.long	83918849
+	.short	250
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,170,0,0,0,0,0,0
+	.long	83918848
+	.short	251
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,13,0,0,0,0,0
+	.long	83918849
+	.short	251
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,13,0,0,0,0,0,0
+	.long	83918848
+	.short	252
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,94,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	253
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,245,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	253
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,245,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	253
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,245,72,0,0,0,0,0
+	.long	134348801
+	.short	253
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,245,72,0,0,0,0,0
+	.long	134348800
+	.short	254
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,82,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	254
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,82,72,0,0,0,0,0,0,0,0
+	.long	251674624
+	.short	255
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,93,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	255
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,93,72,0,0,0,0,0,0,0,0
+	.long	251674624
+	.short	256
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,183,0,0,0,0,0
+	.long	83918849
+	.short	256
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,183,0,0,0,0,0,0
+	.long	83918848
+	.short	257
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,89,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	257
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,89,72,0,0,0,0,0,0,0,0
+	.long	251674624
+	.short	258
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,229,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	258
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,229,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	258
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,229,72,0,0,0,0,0
+	.long	134348801
+	.short	258
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,229,72,0,0,0,0,0
+	.long	134348800
+	.short	259
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,213,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	259
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,213,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	259
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,213,72,0,0,0,0,0
+	.long	134348801
+	.short	259
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,213,72,0,0,0,0,0
+	.long	134348800
+	.short	260
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,92,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	261
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,91,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	262
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,90,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	263
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,88,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	264
+	.byte	1
+	.long	2101262,0,0
+	.byte	208,8,88,221,0,0,0,0,0,0,0,0
+	.long	0
+	.short	264
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,143,128,221,0,0,0,0,0,0
+	.long	0
+	.short	264
+	.byte	1
+	.long	17305602,0,0
+	.byte	1,15,0,0,0,0,0,0,0,0,0,0
+	.long	4096
+	.short	264
+	.byte	1
+	.long	34082818,0,0
+	.byte	4,0,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	264
+	.byte	1
+	.long	67637250,0,0
+	.byte	1,15,5,221,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	265
+	.byte	0
+	.long	0,0,0
+	.byte	215,1,97,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	266
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,97,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	267
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,97,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	268
+	.byte	0
+	.long	0,0,0
+	.byte	215,1,157,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	269
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,157,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	270
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,157,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	271
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,235,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	271
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,235,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	271
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,235,72,0,0,0,0,0
+	.long	134348801
+	.short	271
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,235,72,0,0,0,0,0
+	.long	134348800
+	.short	272
+	.byte	1
+	.long	2113536,256,0
+	.byte	2,15,13,128,0,0,0,0,0,0,0,0
+	.long	83918849
+	.short	273
+	.byte	1
+	.long	2113536,256,0
+	.byte	2,15,13,129,0,0,0,0,0,0,0,0
+	.long	83918849
+	.short	274
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,242,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	274
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,242,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	274
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,114,134,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	274
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,242,72,0,0,0,0,0
+	.long	134348801
+	.short	274
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,242,72,0,0,0,0,0
+	.long	134348800
+	.short	274
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,114,134,21,0,0,0,0
+	.long	134348868
+	.short	275
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,115,135,21,0,0,0,0
+	.long	134348868
+	.short	276
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,243,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	276
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,243,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	276
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,115,134,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	276
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,243,72,0,0,0,0,0
+	.long	134348801
+	.short	276
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,243,72,0,0,0,0,0
+	.long	134348800
+	.short	276
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,115,134,21,0,0,0,0
+	.long	134348868
+	.short	277
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,241,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	277
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,241,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	277
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,113,134,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	277
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,241,72,0,0,0,0,0
+	.long	134348801
+	.short	277
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,241,72,0,0,0,0,0
+	.long	134348800
+	.short	277
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,113,134,21,0,0,0,0
+	.long	134348868
+	.short	278
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,226,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	278
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,226,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	278
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,114,132,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	278
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,226,72,0,0,0,0,0
+	.long	134348801
+	.short	278
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,226,72,0,0,0,0,0
+	.long	134348800
+	.short	278
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,114,132,21,0,0,0,0
+	.long	134348868
+	.short	279
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,225,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	279
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,225,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	279
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,113,132,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	279
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,225,72,0,0,0,0,0
+	.long	134348801
+	.short	279
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,225,72,0,0,0,0,0
+	.long	134348800
+	.short	279
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,113,132,21,0,0,0,0
+	.long	134348868
+	.short	280
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,210,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	280
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,210,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	280
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,114,130,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	280
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,210,72,0,0,0,0,0
+	.long	134348801
+	.short	280
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,210,72,0,0,0,0,0
+	.long	134348800
+	.short	280
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,114,130,21,0,0,0,0
+	.long	134348868
+	.short	281
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,211,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	281
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,211,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	281
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,115,130,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	281
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,211,72,0,0,0,0,0
+	.long	134348801
+	.short	281
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,211,72,0,0,0,0,0
+	.long	134348800
+	.short	281
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,115,130,21,0,0,0,0
+	.long	134348868
+	.short	282
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,209,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	282
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,209,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	282
+	.byte	2
+	.long	2101280,8192,0
+	.byte	2,15,113,130,21,0,0,0,0,0,0,0
+	.long	83902464
+	.short	282
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,209,72,0,0,0,0,0
+	.long	134348801
+	.short	282
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,209,72,0,0,0,0,0
+	.long	134348800
+	.short	282
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,113,130,21,0,0,0,0
+	.long	134348868
+	.short	283
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,248,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	283
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,248,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	283
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,248,72,0,0,0,0,0
+	.long	134348801
+	.short	283
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,248,72,0,0,0,0,0
+	.long	134348800
+	.short	284
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,250,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	284
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,250,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	284
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,250,72,0,0,0,0,0
+	.long	134348801
+	.short	284
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,250,72,0,0,0,0,0
+	.long	134348800
+	.short	285
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,232,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	285
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,232,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	285
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,232,72,0,0,0,0,0
+	.long	134348801
+	.short	285
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,232,72,0,0,0,0,0
+	.long	134348800
+	.short	286
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,85,72,0,0,0,0,0,0,0
+	.long	251674625
+	.short	286
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,85,72,0,0,0,0,0,0,0,0
+	.long	251674624
+	.short	287
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,233,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	287
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,233,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	287
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,233,72,0,0,0,0,0
+	.long	134348801
+	.short	287
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,233,72,0,0,0,0,0
+	.long	134348800
+	.short	288
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,216,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	288
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,216,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	288
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,216,72,0,0,0,0,0
+	.long	134348801
+	.short	288
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,216,72,0,0,0,0,0
+	.long	134348800
+	.short	289
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,217,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	289
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,217,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	289
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,217,72,0,0,0,0,0
+	.long	134348801
+	.short	289
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,217,72,0,0,0,0,0
+	.long	134348800
+	.short	290
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,249,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	290
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,249,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	290
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,249,72,0,0,0,0,0
+	.long	134348801
+	.short	290
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,249,72,0,0,0,0,0
+	.long	134348800
+	.short	291
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,104,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	291
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,104,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	291
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,104,72,0,0,0,0,0
+	.long	134348801
+	.short	291
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,104,72,0,0,0,0,0
+	.long	134348800
+	.short	292
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,106,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	292
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,106,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	292
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,106,72,0,0,0,0,0
+	.long	134348801
+	.short	292
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,106,72,0,0,0,0,0
+	.long	134348800
+	.short	293
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,105,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	293
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,105,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	293
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,105,72,0,0,0,0,0
+	.long	134348801
+	.short	293
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,105,72,0,0,0,0,0
+	.long	134348800
+	.short	294
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,96,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	294
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,96,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	294
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,96,72,0,0,0,0,0
+	.long	134348801
+	.short	294
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,96,72,0,0,0,0,0
+	.long	134348800
+	.short	295
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,98,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	295
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,98,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	295
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,98,72,0,0,0,0,0
+	.long	134348801
+	.short	295
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,98,72,0,0,0,0,0
+	.long	134348800
+	.short	296
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,97,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	296
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,97,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	296
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,97,72,0,0,0,0,0
+	.long	134348801
+	.short	296
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,97,72,0,0,0,0,0
+	.long	134348800
+	.short	297
+	.byte	1
+	.long	2101262,0,0
+	.byte	208,8,80,221,0,0,0,0,0,0,0,0
+	.long	0
+	.short	297
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,1,255,134,221,0,0,0,0,0,0
+	.long	0
+	.short	297
+	.byte	1
+	.long	8196,0,0
+	.byte	213,1,104,32,221,0,0,0,0,0,0,0
+	.long	50331648
+	.short	297
+	.byte	1
+	.long	8194,0,0
+	.byte	212,1,104,24,221,0,0,0,0,0,0,0
+	.long	33554432
+	.short	297
+	.byte	1
+	.long	8449,0,0
+	.byte	1,106,12,221,0,0,0,0,0,0,0,0
+	.long	33554432
+	.short	298
+	.byte	0
+	.long	0,0,0
+	.byte	215,1,96,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	299
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,96,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	300
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,96,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	301
+	.byte	0
+	.long	0,0,0
+	.byte	215,1,156,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	302
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,156,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	303
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,156,0,0,0,0,0,0,0,0,0
+	.long	16777216
+	.short	304
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,239,72,0,0,0,0,0,0,0
+	.long	83902465
+	.short	304
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,239,72,0,0,0,0,0,0,0,0
+	.long	83902464
+	.short	304
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,239,72,0,0,0,0,0
+	.long	134348801
+	.short	304
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,239,72,0,0,0,0,0
+	.long	134348800
+	.short	305
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,130,0,0,0,0,0,0,0
+	.long	0
+	.short	305
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,130,0,0,0,0,0,0,0
+	.long	0
+	.short	305
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,130,21,0,0,0,0,0,0
+	.long	4
+	.short	305
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,130,0,0,0,0,0,0,0
+	.long	0
+	.short	305
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,130,0,0,0,0,0,0,0
+	.long	0
+	.short	305
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,130,21,0,0,0,0,0,0
+	.long	16777220
+	.short	306
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,131,0,0,0,0,0,0,0
+	.long	0
+	.short	306
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,131,0,0,0,0,0,0,0
+	.long	0
+	.short	306
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,131,21,0,0,0,0,0,0
+	.long	4
+	.short	306
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,131,0,0,0,0,0,0,0
+	.long	0
+	.short	306
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,131,0,0,0,0,0,0,0
+	.long	0
+	.short	306
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,131,21,0,0,0,0,0,0
+	.long	16777220
+	.short	307
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,54,0,0,0,0,0,0,0,0,0
+	.long	251658752
+	.short	308
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,50,0,0,0,0,0,0,0,0,0
+	.long	83886336
+	.short	309
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,51,0,0,0,0,0,0,0,0,0
+	.long	100663296
+	.short	310
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,49,0,0,0,0,0,0,0,0,0
+	.long	83886080
+	.short	311
+	.byte	0
+	.long	0,0,0
+	.byte	1,243,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	312
+	.byte	0
+	.long	0,0,0
+	.byte	1,243,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	313
+	.byte	0
+	.long	0,0,0
+	.byte	1,242,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	314
+	.byte	0
+	.long	0,0,0
+	.byte	1,242,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	315
+	.byte	0
+	.long	0,0,0
+	.byte	1,243,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	316
+	.byte	0
+	.long	0,0,0
+	.byte	1,195,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	316
+	.byte	1
+	.long	8192,0,0
+	.byte	1,194,24,0,0,0,0,0,0,0,0,0
+	.long	8
+	.short	317
+	.byte	0
+	.long	0,0,0
+	.byte	1,203,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	317
+	.byte	1
+	.long	8192,0,0
+	.byte	1,202,24,0,0,0,0,0,0,0,0,0
+	.long	8
+	.short	318
+	.byte	0
+	.long	0,0,0
+	.byte	1,195,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	318
+	.byte	1
+	.long	8192,0,0
+	.byte	1,194,24,0,0,0,0,0,0,0,0,0
+	.long	8
+	.short	319
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,128,0,0,0,0,0,0,0
+	.long	0
+	.short	319
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,128,0,0,0,0,0,0,0
+	.long	0
+	.short	319
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,128,21,0,0,0,0,0,0
+	.long	4
+	.short	319
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,128,0,0,0,0,0,0,0
+	.long	0
+	.short	319
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,128,0,0,0,0,0,0,0
+	.long	0
+	.short	319
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,128,21,0,0,0,0,0,0
+	.long	16777220
+	.short	320
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,129,0,0,0,0,0,0,0
+	.long	0
+	.short	320
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,129,0,0,0,0,0,0,0
+	.long	0
+	.short	320
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,129,21,0,0,0,0,0,0
+	.long	4
+	.short	320
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,129,0,0,0,0,0,0,0
+	.long	0
+	.short	320
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,129,0,0,0,0,0,0,0
+	.long	0
+	.short	320
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,129,21,0,0,0,0,0,0
+	.long	16777220
+	.short	321
+	.byte	2
+	.long	528386,2113552,0
+	.byte	193,2,15,121,65,0,0,0,0,0,0,0
+	.long	251658752
+	.short	322
+	.byte	1
+	.long	2113552,0,0
+	.byte	192,2,15,123,128,0,0,0,0,0,0,0
+	.long	251658752
+	.short	323
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,170,0,0,0,0,0,0,0,0,0
+	.long	83886592
+	.short	325
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,132,0,0,0,0,0,0,0
+	.long	0
+	.short	325
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,132,0,0,0,0,0,0,0
+	.long	0
+	.short	325
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,132,21,0,0,0,0,0,0
+	.long	4
+	.short	325
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,132,0,0,0,0,0,0,0
+	.long	0
+	.short	325
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,132,0,0,0,0,0,0,0
+	.long	0
+	.short	325
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,132,21,0,0,0,0,0,0
+	.long	16777220
+	.short	326
+	.byte	0
+	.long	0,0,0
+	.byte	1,214,0,0,0,0,0,0,0,0,0,0
+	.long	4096
+	.short	327
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,135,0,0,0,0,0,0,0
+	.long	0
+	.short	327
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,135,0,0,0,0,0,0,0
+	.long	0
+	.short	327
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,135,21,0,0,0,0,0,0
+	.long	4
+	.short	327
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,135,0,0,0,0,0,0,0
+	.long	0
+	.short	327
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,135,0,0,0,0,0,0,0
+	.long	0
+	.short	327
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,135,21,0,0,0,0,0,0
+	.long	16777220
+	.short	328
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,25,65,0,0,0,0,0,0,0
+	.long	1
+	.short	328
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,27,72,0,0,0,0,0,0,0
+	.long	1
+	.short	328
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,131,13,0,0,0,0,0,0
+	.long	0
+	.short	328
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,24,65,0,0,0,0,0,0,0
+	.long	0
+	.short	328
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,26,72,0,0,0,0,0,0,0
+	.long	1
+	.short	328
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,29,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	328
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,131,33,0,0,0,0,0,0
+	.long	50331664
+	.short	328
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,29,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	328
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,208,1,129,131,25,0,0,0,0,0,0
+	.long	8
+	.short	328
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,28,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	328
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,131,17,0,0,0,0,0,0
+	.long	4
+	.short	329
+	.byte	0
+	.long	0,0,0
+	.byte	218,1,174,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	330
+	.byte	0
+	.long	0,0,0
+	.byte	218,213,1,175,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	331
+	.byte	0
+	.long	0,0,0
+	.byte	218,212,1,175,0,0,0,0,0,0,0,0
+	.long	0
+	.short	332
+	.byte	0
+	.long	0,0,0
+	.byte	1,46,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	333
+	.byte	0
+	.long	0,0,0
+	.byte	1,62,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	334
+	.byte	0
+	.long	0,0,0
+	.byte	1,38,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	335
+	.byte	0
+	.long	0,0,0
+	.byte	1,100,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	336
+	.byte	0
+	.long	0,0,0
+	.byte	1,101,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	337
+	.byte	0
+	.long	0,0,0
+	.byte	1,54,0,0,0,0,0,0,0,0,0,0
+	.long	1073741824
+	.short	338
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,1,128,0,0,0,0,0,0,0
+	.long	33554432
+	.short	339
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,132,0,0,0,0,0,0,0
+	.long	0
+	.short	339
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,132,0,0,0,0,0,0,0
+	.long	0
+	.short	339
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,132,21,0,0,0,0,0,0
+	.long	16777224
+	.short	339
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,132,0,0,0,0,0,0,0
+	.long	0
+	.short	339
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,132,0,0,0,0,0,0,0
+	.long	0
+	.short	339
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,132,21,0,0,0,0,0,0
+	.long	16777220
+	.short	340
+	.byte	3
+	.long	2097166,2101262,8192
+	.byte	192,209,2,15,164,65,22,0,0,0,0,0
+	.long	50331750
+	.short	340
+	.byte	3
+	.long	2097166,2101262,2232321
+	.byte	192,209,2,15,165,65,0,0,0,0,0,0
+	.long	50331649
+	.short	341
+	.byte	2
+	.long	2097166,8396800,0
+	.byte	192,208,1,209,133,0,0,0,0,0,0,0
+	.long	0
+	.short	341
+	.byte	2
+	.long	2097166,2232321,0
+	.byte	192,208,1,211,133,0,0,0,0,0,0,0
+	.long	0
+	.short	341
+	.byte	2
+	.long	2097166,8192,0
+	.byte	192,208,1,193,133,21,0,0,0,0,0,0
+	.long	16777224
+	.short	341
+	.byte	2
+	.long	2097153,8396800,0
+	.byte	192,211,1,208,133,0,0,0,0,0,0,0
+	.long	0
+	.short	341
+	.byte	2
+	.long	2097153,2232321,0
+	.byte	192,211,1,210,133,0,0,0,0,0,0,0
+	.long	0
+	.short	341
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,192,133,21,0,0,0,0,0,0
+	.long	16777220
+	.short	342
+	.byte	3
+	.long	2097166,2101262,8192
+	.byte	192,209,2,15,172,65,22,0,0,0,0,0
+	.long	50331750
+	.short	342
+	.byte	3
+	.long	2097166,2101262,2232321
+	.byte	192,209,2,15,173,65,0,0,0,0,0,0
+	.long	50331649
+	.short	343
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,1,129,0,0,0,0,0,0,0
+	.long	33554432
+	.short	344
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,1,15,15,128,0,0,0,0,0,0,0
+	.long	33554432
+	.short	344
+	.byte	1
+	.long	2101262,0,0
+	.byte	208,1,15,15,128,0,0,0,0,0,0,0
+	.long	33554432
+	.short	345
+	.byte	0
+	.long	0,0,0
+	.byte	1,241,0,0,0,0,0,0,0,0,0,0
+	.long	50335744
+	.short	346
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,56,0,0,0,0,0,0,0,0,0
+	.long	251658240
+	.short	347
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,126,0,0,0,0,0,0,0,0,0
+	.long	251658240
+	.short	348
+	.byte	1
+	.long	2097166,0,0
+	.byte	192,208,2,15,1,132,0,0,0,0,0,0
+	.long	33554432
+	.short	349
+	.byte	0
+	.long	0,0,0
+	.byte	1,249,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	350
+	.byte	0
+	.long	0,0,0
+	.byte	1,253,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	351
+	.byte	0
+	.long	0,0,0
+	.byte	1,251,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	352
+	.byte	0
+	.long	0,0,0
+	.byte	1,170,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	353
+	.byte	0
+	.long	0,0,0
+	.byte	213,1,171,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	354
+	.byte	0
+	.long	0,0,0
+	.byte	212,1,171,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	355
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,1,15,15,129,0,0,0,0,0,0,0
+	.long	33555456
+	.short	355
+	.byte	1
+	.long	2101262,0,0
+	.byte	208,1,15,15,129,0,0,0,0,0,0,0
+	.long	33555456
+	.short	356
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,41,65,0,0,0,0,0,0,0
+	.long	1
+	.short	356
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,43,72,0,0,0,0,0,0,0
+	.long	1
+	.short	356
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,40,65,0,0,0,0,0,0,0
+	.long	0
+	.short	356
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,42,72,0,0,0,0,0,0,0
+	.long	1
+	.short	356
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,133,13,0,0,0,0,0,0
+	.long	0
+	.short	356
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,45,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	356
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,133,33,0,0,0,0,0,0
+	.long	16
+	.short	356
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,45,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	356
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,129,133,25,0,0,0,0,0,0
+	.long	8
+	.short	356
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,44,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	356
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,133,17,0,0,0,0,0,0
+	.long	4
+	.short	357
+	.byte	2
+	.long	2113552,528386,0
+	.byte	192,2,15,120,65,0,0,0,0,0,0,0
+	.long	251658752
+	.short	358
+	.byte	1
+	.long	2113552,0,0
+	.byte	192,2,15,122,128,0,0,0,0,0,0,0
+	.long	251658752
+	.short	359
+	.byte	1
+	.long	2113552,0,0
+	.byte	192,2,15,124,128,0,0,0,0,0,0,0
+	.long	251658752
+	.short	360
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,5,0,0,0,0,0,0,0,0,0
+	.long	234881024
+	.short	361
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,52,0,0,0,0,0,0,0,0,0
+	.long	100663296
+	.short	362
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,53,0,0,0,0,0,0,0,0,0
+	.long	100663552
+	.short	363
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,7,0,0,0,0,0,0,0,0,0
+	.long	234881280
+	.short	364
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,133,65,0,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2101262,2113536,0
+	.byte	193,208,1,133,72,0,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2101249,2101249,0
+	.byte	192,211,1,132,65,0,0,0,0,0,0,0
+	.long	0
+	.short	364
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	193,211,1,132,72,0,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2166788,8192,0
+	.byte	213,1,169,33,0,0,0,0,0,0,0,0
+	.long	50331649
+	.short	364
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,169,25,0,0,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,168,17,0,0,0,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2097156,8192,0
+	.byte	213,192,1,247,128,33,0,0,0,0,0,0
+	.long	50331649
+	.short	364
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,247,128,25,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,246,128,17,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2113536,8196,0
+	.byte	213,192,1,247,128,33,0,0,0,0,0,0
+	.long	50331649
+	.short	364
+	.byte	2
+	.long	2113536,8194,0
+	.byte	192,212,1,247,128,25,0,0,0,0,0,0
+	.long	1
+	.short	364
+	.byte	2
+	.long	2113536,8193,0
+	.byte	192,1,246,128,17,0,0,0,0,0,0,0
+	.long	1
+	.short	365
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,185,0,0,0,0,0,0,0,0,0
+	.long	33558528
+	.short	366
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,11,0,0,0,0,0,0,0,0,0
+	.long	33554432
+	.short	367
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,2,15,17,65,0,0,0,0,0,0
+	.long	50335745
+	.short	367
+	.byte	2
+	.long	2101262,2113536,0
+	.byte	193,208,2,15,19,72,0,0,0,0,0,0
+	.long	50335745
+	.short	367
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,2,15,16,65,0,0,0,0,0,0
+	.long	50335744
+	.short	367
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,2,15,18,72,0,0,0,0,0,0
+	.long	50335744
+	.short	368
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,1,15,15,132,0,0,0,0,0,0,0
+	.long	33555456
+	.short	368
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,1,15,15,132,0,0,0,0,0,0,0
+	.long	33555456
+	.short	368
+	.byte	1
+	.long	2101250,0,0
+	.byte	192,1,15,15,132,0,0,0,0,0,0,0
+	.long	33555456
+	.short	369
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,1,15,15,133,0,0,0,0,0,0,0
+	.long	33555456
+	.short	369
+	.byte	1
+	.long	2113538,0,0
+	.byte	192,1,15,15,133,0,0,0,0,0,0,0
+	.long	33555456
+	.short	369
+	.byte	1
+	.long	2101250,0,0
+	.byte	192,1,15,15,133,0,0,0,0,0,0,0
+	.long	33555456
+	.short	370
+	.byte	0
+	.long	0,0,0
+	.byte	1,155,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	371
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,9,0,0,0,0,0,0,0,0,0
+	.long	67109120
+	.short	372
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,55,0,0,0,0,0,0,0,0,0
+	.long	251658752
+	.short	373
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,48,0,0,0,0,0,0,0,0,0
+	.long	83886336
+	.short	374
+	.byte	2
+	.long	2113536,2101262,0
+	.byte	192,208,2,15,193,65,0,0,0,0,0,0
+	.long	67108865
+	.short	374
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,2,15,192,65,0,0,0,0,0,0,0
+	.long	67108864
+	.short	375
+	.byte	2
+	.long	2101250,2113536,0
+	.byte	193,212,2,15,166,72,0,0,0,0,0,0
+	.long	50335752
+	.short	375
+	.byte	2
+	.long	2101250,2101250,0
+	.byte	193,212,2,15,166,72,0,0,0,0,0,0
+	.long	50335744
+	.short	375
+	.byte	2
+	.long	2101252,2113536,0
+	.byte	213,193,2,15,166,72,0,0,0,0,0,0
+	.long	50335760
+	.short	375
+	.byte	2
+	.long	2101252,2101252,0
+	.byte	213,193,2,15,166,72,0,0,0,0,0,0
+	.long	50335744
+	.short	376
+	.byte	2
+	.long	2166786,2101250,0
+	.byte	212,9,144,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	376
+	.byte	2
+	.long	2166788,2101252,0
+	.byte	213,9,144,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	376
+	.byte	2
+	.long	2166792,2101256,0
+	.byte	214,9,144,0,0,0,0,0,0,0,0,0
+	.long	167772160
+	.short	376
+	.byte	2
+	.long	2101250,2166786,0
+	.byte	212,8,144,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	376
+	.byte	2
+	.long	2101252,2166788,0
+	.byte	213,8,144,0,0,0,0,0,0,0,0,0
+	.long	50331648
+	.short	376
+	.byte	2
+	.long	2101256,2166792,0
+	.byte	214,8,144,0,0,0,0,0,0,0,0,0
+	.long	167772160
+	.short	376
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,135,72,0,0,0,0,0,0,0
+	.long	1
+	.short	376
+	.byte	2
+	.long	2113536,2101262,0
+	.byte	192,208,1,135,65,0,0,0,0,0,0,0
+	.long	1
+	.short	376
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,134,72,0,0,0,0,0,0,0
+	.long	0
+	.short	376
+	.byte	2
+	.long	2113537,2101249,0
+	.byte	192,211,1,134,65,0,0,0,0,0,0,0
+	.long	0
+	.short	377
+	.byte	0
+	.long	0,0,0
+	.byte	1,215,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	378
+	.byte	0
+	.long	0,0,0
+	.byte	1,215,0,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	379
+	.byte	2
+	.long	2097152,2101262,0
+	.byte	192,208,1,49,65,0,0,0,0,0,0,0
+	.long	1
+	.short	379
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,51,72,0,0,0,0,0,0,0
+	.long	1
+	.short	379
+	.byte	2
+	.long	2097153,2101249,0
+	.byte	192,211,1,48,65,0,0,0,0,0,0,0
+	.long	0
+	.short	379
+	.byte	2
+	.long	2101249,2097153,0
+	.byte	193,211,1,50,72,0,0,0,0,0,0,0
+	.long	0
+	.short	379
+	.byte	2
+	.long	2097166,8449,0
+	.byte	192,208,1,131,134,13,0,0,0,0,0,0
+	.long	0
+	.short	379
+	.byte	2
+	.long	2166796,8192,0
+	.byte	208,1,53,33,0,0,0,0,0,0,0,0
+	.long	50331664
+	.short	379
+	.byte	2
+	.long	2097164,8192,0
+	.byte	192,208,1,129,134,33,0,0,0,0,0,0
+	.long	50331664
+	.short	379
+	.byte	2
+	.long	2166786,8192,0
+	.byte	212,1,53,25,0,0,0,0,0,0,0,0
+	.long	8
+	.short	379
+	.byte	2
+	.long	2097154,8192,0
+	.byte	192,212,1,129,134,25,0,0,0,0,0,0
+	.long	8
+	.short	379
+	.byte	2
+	.long	2166785,8192,0
+	.byte	1,52,17,0,0,0,0,0,0,0,0,0
+	.long	4
+	.short	379
+	.byte	2
+	.long	2097153,8192,0
+	.byte	192,211,1,128,134,17,0,0,0,0,0,0
+	.long	4
+	.short	380
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,167,192,0,0,0,0,0,0,0,0
+	.long	251658240
+	.short	381
+	.byte	0
+	.long	0,0,0
+	.byte	219,3,15,167,200,0,0,0,0,0,0,0
+	.long	251658240
+	.short	382
+	.byte	0
+	.long	0,0,0
+	.byte	219,3,15,167,208,0,0,0,0,0,0,0
+	.long	251658240
+	.short	383
+	.byte	0
+	.long	0,0,0
+	.byte	219,3,15,167,224,0,0,0,0,0,0,0
+	.long	251658240
+	.short	384
+	.byte	0
+	.long	0,0,0
+	.byte	219,3,15,167,232,0,0,0,0,0,0,0
+	.long	251658240
+	.short	385
+	.byte	2
+	.long	2101262,2097152,0
+	.byte	193,208,1,15,11,64,72,0,0,0,0,0
+	.long	100663297
+	.short	386
+	.byte	1
+	.long	8193,0,0
+	.byte	11,112,40,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	386
+	.byte	1
+	.long	8198,0,0
+	.byte	208,1,15,11,128,52,0,0,0,0,0,0
+	.long	-2097152000
+	.short	386
+	.byte	1
+	.long	8320,0,0
+	.byte	11,112,40,0,0,0,0,0,0,0,0,0
+	.long	0
+	.short	386
+	.byte	1
+	.long	8256,0,0
+	.byte	208,1,15,11,128,52,0,0,0,0,0,0
+	.long	-2097152000
+	.short	387
+	.byte	1
+	.long	2097153,0,0
+	.byte	192,211,1,15,11,144,128,0,0,0,0,0
+	.long	50331648
+	.short	388
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,88,72,0,0,0,0,0,0
+	.long	117506048
+	.short	388
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	217,2,15,88,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	389
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,88,72,0,0,0,0,0,0
+	.long	117506048
+	.short	389
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,2,15,88,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	390
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,85,72,0,0,0,0,0,0
+	.long	117506048
+	.short	390
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,85,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	391
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,84,72,0,0,0,0,0,0
+	.long	117506048
+	.short	391
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,84,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	392
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,0,0,0,0,0
+	.long	117506048
+	.short	392
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,0,0,0,0,0
+	.long	117506048
+	.short	393
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,0,0,0,0,0
+	.long	117506048
+	.short	393
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,0,0,0,0,0
+	.long	117506048
+	.short	394
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,2,0,0,0,0
+	.long	117506048
+	.short	394
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,2,0,0,0,0
+	.long	117506048
+	.short	395
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,2,0,0,0,0
+	.long	117506048
+	.short	395
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,2,0,0,0,0
+	.long	117506048
+	.short	396
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,1,0,0,0,0
+	.long	117506048
+	.short	396
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,1,0,0,0,0
+	.long	117506048
+	.short	397
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,1,0,0,0,0
+	.long	117506048
+	.short	397
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,1,0,0,0,0
+	.long	117506048
+	.short	398
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,4,0,0,0,0
+	.long	117506048
+	.short	398
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,4,0,0,0,0
+	.long	117506048
+	.short	399
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,4,0,0,0,0
+	.long	117506048
+	.short	399
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,4,0,0,0,0
+	.long	117506048
+	.short	400
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,6,0,0,0,0
+	.long	117506048
+	.short	400
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,6,0,0,0,0
+	.long	117506048
+	.short	401
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,6,0,0,0,0
+	.long	117506048
+	.short	401
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,6,0,0,0,0
+	.long	117506048
+	.short	402
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,5,0,0,0,0
+	.long	117506048
+	.short	402
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,5,0,0,0,0
+	.long	117506048
+	.short	403
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,5,0,0,0,0
+	.long	117506048
+	.short	403
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,5,0,0,0,0
+	.long	117506048
+	.short	404
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,7,0,0,0,0
+	.long	117506048
+	.short	404
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,7,0,0,0,0
+	.long	117506048
+	.short	405
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,7,0,0,0,0
+	.long	117506048
+	.short	405
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,7,0,0,0,0
+	.long	117506048
+	.short	406
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,194,72,1,3,0,0,0,0
+	.long	117506048
+	.short	406
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,194,72,1,3,0,0,0,0
+	.long	117506048
+	.short	407
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,194,72,1,3,0,0,0,0
+	.long	117506048
+	.short	407
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,194,72,1,3,0,0,0,0
+	.long	117506048
+	.short	408
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	193,217,2,15,194,72,18,0,0,0,0,0
+	.long	117506148
+	.short	408
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	211,217,2,15,194,72,18,0,0,0,0,0
+	.long	117506148
+	.short	409
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	219,193,2,15,194,72,18,0,0,0,0,0
+	.long	117506148
+	.short	409
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	219,211,2,15,194,72,18,0,0,0,0,0
+	.long	117506148
+	.short	410
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,47,72,0,0,0,0,0,0
+	.long	117506048
+	.short	410
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,47,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	411
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,42,72,0,0,0,0,0,0
+	.long	117522432
+	.short	411
+	.byte	2
+	.long	2101264,2101280,0
+	.byte	211,217,2,15,42,72,0,0,0,0,0,0
+	.long	117522432
+	.short	412
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,217,2,15,45,72,0,0,0,0,0,0
+	.long	117522432
+	.short	412
+	.byte	2
+	.long	2101280,2101264,0
+	.byte	211,217,2,15,45,72,0,0,0,0,0,0
+	.long	117522432
+	.short	413
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,209,2,15,42,72,0,0,0,0,0
+	.long	117506048
+	.short	413
+	.byte	2
+	.long	2101264,2101260,0
+	.byte	219,211,209,2,15,42,72,0,0,0,0,0
+	.long	117506048
+	.short	414
+	.byte	2
+	.long	2101260,2113536,0
+	.byte	219,193,208,2,15,45,72,0,0,0,0,0
+	.long	117506048
+	.short	414
+	.byte	2
+	.long	2101260,2101264,0
+	.byte	219,211,208,2,15,45,72,0,0,0,0,0
+	.long	117506048
+	.short	415
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,217,2,15,44,72,0,0,0,0,0,0
+	.long	117522432
+	.short	415
+	.byte	2
+	.long	2101280,2101264,0
+	.byte	211,217,2,15,44,72,0,0,0,0,0,0
+	.long	117522432
+	.short	416
+	.byte	2
+	.long	2101260,2113536,0
+	.byte	219,193,208,2,15,44,72,0,0,0,0,0
+	.long	117506048
+	.short	416
+	.byte	2
+	.long	2101260,2101264,0
+	.byte	219,211,208,2,15,44,72,0,0,0,0,0
+	.long	117506048
+	.short	417
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,94,72,0,0,0,0,0,0
+	.long	117506048
+	.short	417
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,94,72,0,0,0,0,0,0
+	.long	117506048
+	.short	418
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,94,72,0,0,0,0,0,0
+	.long	117506048
+	.short	418
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,94,72,0,0,0,0,0,0
+	.long	117506048
+	.short	419
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,174,130,0,0,0,0,0,0
+	.long	117506064
+	.short	420
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,95,72,0,0,0,0,0,0
+	.long	117506048
+	.short	420
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,95,72,0,0,0,0,0,0
+	.long	117506048
+	.short	421
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,95,72,0,0,0,0,0,0
+	.long	117506048
+	.short	421
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,95,72,0,0,0,0,0,0
+	.long	117506048
+	.short	422
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,93,72,0,0,0,0,0,0
+	.long	117506048
+	.short	422
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,93,72,0,0,0,0,0,0
+	.long	117506048
+	.short	423
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,93,72,0,0,0,0,0,0
+	.long	117506048
+	.short	423
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,93,72,0,0,0,0,0,0
+	.long	117506048
+	.short	424
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,40,72,0,0,0,0,0,0
+	.long	117506048
+	.short	424
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,211,2,15,41,65,0,0,0,0,0,0
+	.long	117506048
+	.short	424
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,40,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	424
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,41,65,0,0,0,0,0,0,0
+	.long	117506048
+	.short	425
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,22,72,0,0,0,0,0,0
+	.long	117506048
+	.short	425
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,211,2,15,23,65,0,0,0,0,0,0
+	.long	117506048
+	.short	426
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,22,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	427
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,18,72,0,0,0,0,0,0
+	.long	117506048
+	.short	427
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,211,2,15,19,65,0,0,0,0,0,0
+	.long	117506048
+	.short	428
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,18,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	429
+	.byte	2
+	.long	2101252,2101264,0
+	.byte	211,2,15,80,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	430
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	211,2,15,43,65,0,0,0,0,0,0,0
+	.long	117506048
+	.short	431
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,16,72,0,0,0,0,0
+	.long	117506048
+	.short	431
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	219,192,211,2,15,17,65,0,0,0,0,0
+	.long	117506048
+	.short	431
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,16,72,0,0,0,0,0,0
+	.long	117506048
+	.short	431
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,17,65,0,0,0,0,0,0
+	.long	117506048
+	.short	432
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,16,72,0,0,0,0,0,0
+	.long	117506048
+	.short	432
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,217,2,15,17,65,0,0,0,0,0,0
+	.long	117506048
+	.short	432
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,16,72,0,0,0,0,0,0
+	.long	117506048
+	.short	432
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,17,65,0,0,0,0,0,0
+	.long	117506048
+	.short	433
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,89,72,0,0,0,0,0,0
+	.long	117506048
+	.short	433
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,89,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	434
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,89,72,0,0,0,0,0
+	.long	117506048
+	.short	434
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,89,72,0,0,0,0,0,0
+	.long	117506048
+	.short	435
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,86,72,0,0,0,0,0,0
+	.long	117506048
+	.short	435
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,86,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	436
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,83,72,0,0,0,0,0,0
+	.long	117506048
+	.short	436
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,83,72,0,0,0,0,0,0
+	.long	117506048
+	.short	437
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,83,72,0,0,0,0,0
+	.long	117506048
+	.short	437
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,83,72,0,0,0,0,0,0
+	.long	117506048
+	.short	438
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,82,72,0,0,0,0,0,0
+	.long	117506048
+	.short	438
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,82,72,0,0,0,0,0,0
+	.long	117506048
+	.short	439
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,82,72,0,0,0,0,0
+	.long	117506048
+	.short	439
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,82,72,0,0,0,0,0,0
+	.long	117506048
+	.short	440
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	193,211,2,15,198,72,18,0,0,0,0,0
+	.long	117506148
+	.short	440
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	211,2,15,198,72,18,0,0,0,0,0,0
+	.long	117506148
+	.short	441
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,81,72,0,0,0,0,0,0
+	.long	117506048
+	.short	441
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,81,72,0,0,0,0,0,0
+	.long	117506048
+	.short	442
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,81,72,0,0,0,0,0,0
+	.long	117506048
+	.short	442
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,81,72,0,0,0,0,0,0
+	.long	117506048
+	.short	443
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,174,131,0,0,0,0,0,0
+	.long	117506064
+	.short	444
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,2,15,92,72,0,0,0,0,0,0
+	.long	117506048
+	.short	444
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,217,2,15,92,72,0,0,0,0,0,0
+	.long	117506048
+	.short	445
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,92,72,0,0,0,0,0
+	.long	117506048
+	.short	445
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,92,72,0,0,0,0,0,0
+	.long	117506048
+	.short	446
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,46,72,0,0,0,0,0,0
+	.long	117506048
+	.short	446
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,46,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	447
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,21,72,0,0,0,0,0,0
+	.long	117506048
+	.short	447
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,21,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	448
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,20,72,0,0,0,0,0,0
+	.long	117506048
+	.short	448
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,20,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	449
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,87,72,0,0,0,0,0,0
+	.long	117506048
+	.short	449
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,87,72,0,0,0,0,0,0,0
+	.long	117506048
+	.short	450
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,174,129,0,0,0,0,0,0,0
+	.long	100737024
+	.short	451
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,174,128,0,0,0,0,0,0,0
+	.long	100737024
+	.short	452
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,24,128,0,0,0,0,0,0
+	.long	117440512
+	.short	453
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,24,129,0,0,0,0,0,0
+	.long	117440512
+	.short	454
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,24,130,0,0,0,0,0,0
+	.long	117440512
+	.short	455
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,24,131,0,0,0,0,0,0
+	.long	117440512
+	.short	456
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,174,248,0,0,0,0,0,0,0,0
+	.long	117440512
+	.short	457
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,247,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	458
+	.byte	2
+	.long	2113536,2101280,0
+	.byte	2,15,231,65,0,0,0,0,0,0,0,0
+	.long	117456897
+	.short	459
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,224,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	459
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,224,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	459
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,224,72,0,0,0,0,0
+	.long	134348800
+	.short	459
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,224,72,0,0,0,0
+	.long	134348801
+	.short	460
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,227,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	460
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,227,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	460
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,227,72,0,0,0,0,0
+	.long	134348800
+	.short	460
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,227,72,0,0,0,0
+	.long	134348801
+	.short	461
+	.byte	3
+	.long	2101252,2101280,8192
+	.byte	2,15,197,72,18,0,0,0,0,0,0,0
+	.long	117456996
+	.short	461
+	.byte	3
+	.long	2101252,2101264,8192
+	.byte	1,102,211,2,15,197,72,22,0,0,0,0
+	.long	134348900
+	.short	462
+	.byte	3
+	.long	2101280,2101250,8192
+	.byte	2,15,196,72,18,0,0,0,0,0,0,0
+	.long	117456996
+	.short	462
+	.byte	3
+	.long	2101280,2101252,8192
+	.byte	2,15,196,72,18,0,0,0,0,0,0,0
+	.long	117456996
+	.short	462
+	.byte	3
+	.long	2101280,2113536,8192
+	.byte	193,2,15,196,72,18,0,0,0,0,0,0
+	.long	117456996
+	.short	462
+	.byte	3
+	.long	2101280,2113538,8192
+	.byte	193,2,15,196,72,18,0,0,0,0,0,0
+	.long	117456996
+	.short	462
+	.byte	3
+	.long	2101264,2101250,8192
+	.byte	3,102,15,196,72,22,0,0,0,0,0,0
+	.long	134348900
+	.short	462
+	.byte	3
+	.long	2101264,2101252,8192
+	.byte	1,102,211,2,15,196,72,22,0,0,0,0
+	.long	134348900
+	.short	462
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	1,102,193,2,15,196,72,22,0,0,0,0
+	.long	134348900
+	.short	462
+	.byte	3
+	.long	2101264,2113538,8192
+	.byte	1,102,193,2,15,196,72,22,0,0,0,0
+	.long	134348900
+	.short	463
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,238,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	463
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,238,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	463
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,238,72,0,0,0,0,0
+	.long	134348800
+	.short	463
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,238,72,0,0,0,0,0
+	.long	134348801
+	.short	464
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,222,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	464
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,222,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	464
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,222,72,0,0,0,0,0
+	.long	134348800
+	.short	464
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,222,72,0,0,0,0,0
+	.long	134348801
+	.short	465
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,234,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	465
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,234,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	465
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,234,72,0,0,0,0,0
+	.long	134348800
+	.short	465
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,234,72,0,0,0,0,0
+	.long	134348801
+	.short	466
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,218,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	466
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,218,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	466
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,218,72,0,0,0,0,0
+	.long	134348800
+	.short	466
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,218,72,0,0,0,0,0
+	.long	134348801
+	.short	467
+	.byte	2
+	.long	2101252,2101280,0
+	.byte	2,15,215,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	467
+	.byte	2
+	.long	2101252,2101264,0
+	.byte	1,102,211,2,15,215,72,0,0,0,0,0
+	.long	134348800
+	.short	468
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,228,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	468
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,228,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	468
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,228,72,0,0,0,0,0
+	.long	134348800
+	.short	468
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,228,72,0,0,0,0,0
+	.long	134348801
+	.short	469
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,246,72,0,0,0,0,0,0,0,0
+	.long	117456896
+	.short	469
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,246,72,0,0,0,0,0,0,0
+	.long	117456897
+	.short	469
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,246,72,0,0,0,0,0
+	.long	134348800
+	.short	469
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,2,15,246,72,0,0,0,0,0
+	.long	134348801
+	.short	470
+	.byte	3
+	.long	2101280,2101280,8192
+	.byte	2,15,112,72,18,0,0,0,0,0,0,0
+	.long	117456996
+	.short	470
+	.byte	3
+	.long	2101280,2113536,8192
+	.byte	193,2,15,112,72,18,0,0,0,0,0,0
+	.long	117456998
+	.short	471
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,138,0,0,0,0,0
+	.long	83918849
+	.short	471
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,138,0,0,0,0,0,0
+	.long	83918848
+	.short	472
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,142,0,0,0,0,0
+	.long	83918849
+	.short	472
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,142,0,0,0,0,0,0
+	.long	83918848
+	.short	473
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,12,0,0,0,0,0
+	.long	83918849
+	.short	473
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,12,0,0,0,0,0,0
+	.long	83918848
+	.short	474
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,28,0,0,0,0,0
+	.long	83918849
+	.short	474
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,28,0,0,0,0,0,0
+	.long	83918848
+	.short	475
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,15,72,1,187,0,0,0,0,0
+	.long	83918849
+	.short	475
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,15,72,1,187,0,0,0,0,0,0
+	.long	83918849
+	.short	476
+	.byte	1
+	.long	16777216,0,0
+	.byte	1,223,8,192,0,0,0,0,0,0,0,0
+	.long	83927040
+	.short	477
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,247,72,0,0,0,0,0
+	.long	134348800
+	.short	478
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,211,2,15,174,135,0,0,0,0,0,0
+	.long	134348800
+	.short	479
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	1,102,192,211,2,15,231,65,0,0,0,0
+	.long	134348801
+	.short	480
+	.byte	2
+	.long	2113536,2101260,0
+	.byte	192,208,2,15,195,65,0,0,0,0,0,0
+	.long	134348801
+	.short	481
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	1,102,192,211,2,15,43,65,0,0,0,0
+	.long	134348801
+	.short	482
+	.byte	0
+	.long	0,0,0
+	.byte	219,1,144,0,0,0,0,0,0,0,0,0
+	.long	134348800
+	.short	483
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,174,232,0,0,0,0,0,0,0,0
+	.long	134348800
+	.short	484
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,174,240,0,0,0,0,0,0,0,0
+	.long	134348800
+	.short	485
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,111,72,0,0,0,0,0
+	.long	134348800
+	.short	485
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	1,102,192,211,2,15,127,65,0,0,0,0
+	.long	134348801
+	.short	485
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,111,72,0,0,0,0
+	.long	134348801
+	.short	485
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,127,72,0,0,0,0,0
+	.long	134348800
+	.short	486
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,111,72,0,0,0,0,0,0
+	.long	134348800
+	.short	486
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	219,192,211,2,15,127,65,0,0,0,0,0
+	.long	134348801
+	.short	486
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,111,72,0,0,0,0,0
+	.long	134348801
+	.short	486
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,127,72,0,0,0,0,0,0
+	.long	134348800
+	.short	487
+	.byte	2
+	.long	2101280,2101264,0
+	.byte	1,242,211,2,15,214,72,0,0,0,0,0
+	.long	134348800
+	.short	488
+	.byte	2
+	.long	2101264,2101280,0
+	.byte	219,211,2,15,214,72,0,0,0,0,0,0
+	.long	134348800
+	.short	489
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,212,72,0,0,0,0,0,0,0,0
+	.long	134348800
+	.short	489
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,212,72,0,0,0,0,0,0,0
+	.long	134348801
+	.short	489
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,212,72,0,0,0,0,0
+	.long	134348800
+	.short	489
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,212,72,0,0,0,0
+	.long	134348801
+	.short	490
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,244,72,0,0,0,0,0,0,0,0
+	.long	134348800
+	.short	490
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,244,72,0,0,0,0,0,0,0
+	.long	134348801
+	.short	490
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,244,72,0,0,0,0,0
+	.long	134348800
+	.short	490
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,244,72,0,0,0,0
+	.long	134348801
+	.short	491
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	1,102,211,2,15,112,72,18,0,0,0,0
+	.long	134348900
+	.short	491
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	1,102,193,211,2,15,112,72,18,0,0,0
+	.long	134348902
+	.short	492
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	219,211,2,15,112,72,18,0,0,0,0,0
+	.long	134348900
+	.short	492
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	219,193,211,2,15,112,72,18,0,0,0,0
+	.long	134348902
+	.short	493
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	1,242,211,2,15,112,72,18,0,0,0,0
+	.long	134348900
+	.short	493
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	193,1,242,211,2,15,112,72,18,0,0,0
+	.long	134348902
+	.short	494
+	.byte	2
+	.long	2101264,8192,0
+	.byte	1,102,211,2,15,115,131,21,0,0,0,0
+	.long	134348868
+	.short	495
+	.byte	2
+	.long	2101280,2101280,0
+	.byte	2,15,251,72,0,0,0,0,0,0,0,0
+	.long	134348800
+	.short	495
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,2,15,251,72,0,0,0,0,0,0,0
+	.long	134348801
+	.short	495
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,251,72,0,0,0,0,0
+	.long	134348800
+	.short	495
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,251,72,0,0,0,0
+	.long	134348801
+	.short	496
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,109,72,0,0,0,0,0
+	.long	134348800
+	.short	496
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,109,72,0,0,0,0
+	.long	134348801
+	.short	497
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,108,72,0,0,0,0,0
+	.long	134348800
+	.short	497
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,108,72,0,0,0,0
+	.long	134348801
+	.short	498
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,88,72,0,0,0,0
+	.long	134348800
+	.short	498
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,217,2,15,88,72,0,0,0,0
+	.long	134348801
+	.short	499
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,88,72,0,0,0,0
+	.long	134348800
+	.short	499
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,242,193,217,2,15,88,72,0,0,0,0
+	.long	134348800
+	.short	500
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,85,72,0,0,0,0
+	.long	134348800
+	.short	500
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,217,2,15,85,72,0,0,0,0
+	.long	134348801
+	.short	501
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,84,72,0,0,0,0
+	.long	134348800
+	.short	501
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,217,2,15,84,72,0,0,0,0
+	.long	134348801
+	.short	502
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,217,2,15,194,72,1,0,0,0
+	.long	134348801
+	.short	502
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,0,0,0
+	.long	134348800
+	.short	503
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,242,193,217,2,15,194,72,1,0,0,0
+	.long	134348800
+	.short	503
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,194,72,1,0,0,0
+	.long	134348800
+	.short	504
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,217,2,15,194,72,1,2,0,0
+	.long	134348801
+	.short	504
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,2,0,0
+	.long	134348800
+	.short	505
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,242,193,217,2,15,194,72,1,2,0,0
+	.long	134348800
+	.short	505
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,194,72,1,2,0,0
+	.long	134348800
+	.short	506
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,217,2,15,194,72,1,1,0,0
+	.long	134348801
+	.short	506
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,1,0,0
+	.long	134348800
+	.short	507
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,242,193,217,2,15,194,72,1,1,0,0
+	.long	134348800
+	.short	507
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,194,72,1,1,0,0
+	.long	134348800
+	.short	508
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,102,211,2,15,194,72,1,4,0
+	.long	134348801
+	.short	508
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,4,0,0
+	.long	134348800
+	.short	508
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,242,211,2,15,194,72,1,4,0
+	.long	134348800
+	.short	508
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,194,72,1,4,0,0
+	.long	134348800
+	.short	509
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,102,211,2,15,194,72,1,6,0
+	.long	134348801
+	.short	509
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,6,0,0
+	.long	134348800
+	.short	510
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,242,211,2,15,194,72,1,6,0
+	.long	134348800
+	.short	510
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,194,72,1,6,0,0
+	.long	134348800
+	.short	511
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,102,211,2,15,194,72,1,5,0
+	.long	134348801
+	.short	511
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,5,0,0
+	.long	134348800
+	.short	512
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,242,211,2,15,194,72,1,5,0
+	.long	134348800
+	.short	512
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,194,72,1,5,0,0
+	.long	134348800
+	.short	513
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,102,211,2,15,194,72,1,7,0
+	.long	134348801
+	.short	513
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,7,0,0
+	.long	134348800
+	.short	514
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,242,211,2,15,194,72,1,7,0
+	.long	134348800
+	.short	514
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,217,2,15,194,72,1,7,0,0
+	.long	134348800
+	.short	515
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,102,211,2,15,194,72,1,3,0
+	.long	134348801
+	.short	515
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,217,2,15,194,72,1,3,0,0
+	.long	134348800
+	.short	516
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,217,1,242,211,2,15,194,72,1,3,0
+	.long	134348800
+	.short	516
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,217,2,15,194,72,1,3,0,0,0
+	.long	134348800
+	.short	517
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	1,102,217,2,15,194,72,22,0,0,0,0
+	.long	134348900
+	.short	517
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	193,217,1,102,211,2,15,194,72,22,0,0
+	.long	134348902
+	.short	518
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,47,72,0,0,0,0,0
+	.long	134348800
+	.short	518
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	1,102,193,211,2,15,47,72,0,0,0,0
+	.long	134348800
+	.short	519
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,2,15,230,72,0,0,0,0,0,0,0
+	.long	134348800
+	.short	519
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,230,72,0,0,0,0,0
+	.long	134348800
+	.short	520
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,91,72,0,0,0,0,0,0,0
+	.long	134348800
+	.short	520
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,91,72,0,0,0,0,0,0
+	.long	134348801
+	.short	521
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,230,72,0,0,0,0,0
+	.long	134348800
+	.short	521
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,230,72,0,0,0,0
+	.long	134348801
+	.short	522
+	.byte	2
+	.long	2101280,2101264,0
+	.byte	1,102,211,2,15,45,72,0,0,0,0,0
+	.long	134348800
+	.short	522
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,1,102,211,2,15,45,72,0,0,0,0
+	.long	134348800
+	.short	523
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,90,72,0,0,0,0,0
+	.long	134348800
+	.short	523
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,90,72,0,0,0,0
+	.long	134348801
+	.short	524
+	.byte	2
+	.long	2101264,2101280,0
+	.byte	1,102,211,2,15,42,72,0,0,0,0,0
+	.long	134348800
+	.short	524
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,42,72,0,0,0,0
+	.long	134348800
+	.short	525
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,91,72,0,0,0,0,0
+	.long	134348800
+	.short	525
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,91,72,0,0,0,0
+	.long	134348801
+	.short	526
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,2,15,90,72,0,0,0,0,0,0,0
+	.long	134348800
+	.short	526
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,211,2,15,90,72,0,0,0,0,0,0
+	.long	134348800
+	.short	527
+	.byte	2
+	.long	2101260,2101264,0
+	.byte	1,242,208,2,15,45,72,0,0,0,0,0
+	.long	134348800
+	.short	527
+	.byte	2
+	.long	2101260,2113536,0
+	.byte	193,1,242,208,2,15,45,72,0,0,0,0
+	.long	134348800
+	.short	528
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,90,72,0,0,0,0,0
+	.long	134348800
+	.short	528
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,90,72,0,0,0,0
+	.long	134348800
+	.short	529
+	.byte	2
+	.long	2101264,2101260,0
+	.byte	1,242,209,2,15,42,72,0,0,0,0,0
+	.long	134348800
+	.short	529
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,209,2,15,42,72,0,0,0,0
+	.long	134348800
+	.short	530
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,90,72,0,0,0,0,0,0
+	.long	134348800
+	.short	530
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,211,2,15,90,72,0,0,0,0,0
+	.long	134348800
+	.short	531
+	.byte	2
+	.long	2101280,2101264,0
+	.byte	1,102,211,2,15,44,72,0,0,0,0,0
+	.long	134348800
+	.short	531
+	.byte	2
+	.long	2101280,2113536,0
+	.byte	193,1,102,211,2,15,44,72,0,0,0,0
+	.long	134348800
+	.short	532
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,230,72,0,0,0,0,0
+	.long	134348800
+	.short	532
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,230,72,0,0,0,0
+	.long	134348801
+	.short	533
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	219,211,2,15,91,72,0,0,0,0,0,0
+	.long	134348800
+	.short	533
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	219,193,2,15,91,72,0,0,0,0,0,0
+	.long	134348801
+	.short	534
+	.byte	2
+	.long	2101260,2101264,0
+	.byte	1,242,208,2,15,44,72,0,0,0,0,0
+	.long	134348800
+	.short	534
+	.byte	2
+	.long	2101260,2113536,0
+	.byte	193,1,242,208,2,15,44,72,0,0,0,0
+	.long	134348800
+	.short	535
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,94,72,0,0,0,0,0
+	.long	134348800
+	.short	535
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,94,72,0,0,0,0
+	.long	134348801
+	.short	536
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,94,72,0,0,0,0,0
+	.long	134348800
+	.short	536
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,94,72,0,0,0,0
+	.long	134348800
+	.short	537
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,95,72,0,0,0,0,0
+	.long	134348800
+	.short	537
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,95,72,0,0,0,0
+	.long	134348801
+	.short	538
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,95,72,0,0,0,0,0
+	.long	134348800
+	.short	538
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,95,72,0,0,0,0
+	.long	134348800
+	.short	539
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,93,72,0,0,0,0,0
+	.long	134348800
+	.short	539
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,93,72,0,0,0,0
+	.long	134348801
+	.short	540
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,93,72,0,0,0,0,0
+	.long	134348800
+	.short	540
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,93,72,0,0,0,0
+	.long	134348800
+	.short	541
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,40,72,0,0,0,0,0
+	.long	134348800
+	.short	541
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,41,72,0,0,0,0,0
+	.long	134348800
+	.short	541
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,1,102,211,2,15,41,65,0,0,0,0
+	.long	134348801
+	.short	541
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,40,72,0,0,0,0
+	.long	134348801
+	.short	542
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,1,102,211,2,15,23,65,0,0,0,0
+	.long	134348800
+	.short	542
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,22,72,0,0,0,0
+	.long	134348800
+	.short	543
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,1,102,211,2,15,19,65,0,0,0,0
+	.long	134348800
+	.short	543
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,18,72,0,0,0,0
+	.long	134348800
+	.short	544
+	.byte	2
+	.long	2101252,2101264,0
+	.byte	211,1,102,211,2,15,80,72,0,0,0,0
+	.long	134348800
+	.short	545
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,16,72,0,0,0,0,0
+	.long	134348800
+	.short	545
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,17,72,0,0,0,0,0
+	.long	134348800
+	.short	545
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,1,102,211,2,15,17,65,0,0,0,0
+	.long	134348801
+	.short	545
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,16,72,0,0,0,0
+	.long	134348801
+	.short	546
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,89,72,0,0,0,0,0
+	.long	134348800
+	.short	546
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,89,72,0,0,0,0
+	.long	134348801
+	.short	547
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,89,72,0,0,0,0,0
+	.long	134348800
+	.short	547
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,89,72,0,0,0,0
+	.long	134348800
+	.short	548
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,86,72,0,0,0,0
+	.long	134348801
+	.short	548
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,86,72,0,0,0,0,0
+	.long	134348800
+	.short	549
+	.byte	3
+	.long	2101264,2101264,8192
+	.byte	1,102,211,2,15,198,72,22,0,0,0,0
+	.long	134348900
+	.short	549
+	.byte	3
+	.long	2101264,2113536,8192
+	.byte	193,1,102,211,2,15,198,72,22,0,0,0
+	.long	134348901
+	.short	550
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,81,72,0,0,0,0,0
+	.long	134348800
+	.short	550
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,81,72,0,0,0,0
+	.long	134348801
+	.short	551
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,81,72,0,0,0,0,0
+	.long	134348800
+	.short	551
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,81,72,0,0,0,0
+	.long	134348800
+	.short	552
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,92,72,0,0,0,0,0
+	.long	134348800
+	.short	552
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,92,72,0,0,0,0
+	.long	134348801
+	.short	553
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,92,72,0,0,0,0,0
+	.long	134348800
+	.short	553
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,92,72,0,0,0,0
+	.long	134348800
+	.short	554
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,46,72,0,0,0,0,0
+	.long	134348800
+	.short	554
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,46,72,0,0,0,0
+	.long	134348800
+	.short	555
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,21,72,0,0,0,0,0
+	.long	134348800
+	.short	555
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	192,1,102,211,2,15,21,72,0,0,0,0
+	.long	134348801
+	.short	556
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,20,72,0,0,0,0,0
+	.long	134348800
+	.short	556
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,20,72,0,0,0,0
+	.long	134348801
+	.short	557
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,87,72,0,0,0,0,0
+	.long	134348800
+	.short	557
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,87,72,0,0,0,0
+	.long	134348801
+	.short	558
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,208,72,0,0,0,0
+	.long	151257089
+	.short	558
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,208,72,0,0,0,0,0
+	.long	151257088
+	.short	559
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,208,72,0,0,0,0
+	.long	151257089
+	.short	559
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,208,72,0,0,0,0,0
+	.long	151257088
+	.short	560
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,124,72,0,0,0,0
+	.long	151257089
+	.short	560
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,124,72,0,0,0,0,0
+	.long	151257088
+	.short	561
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,124,72,0,0,0,0
+	.long	151257089
+	.short	561
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,124,72,0,0,0,0,0
+	.long	151257088
+	.short	562
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,102,211,2,15,125,72,0,0,0,0
+	.long	151257089
+	.short	562
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,102,211,2,15,125,72,0,0,0,0,0
+	.long	151257088
+	.short	563
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,125,72,0,0,0,0
+	.long	151257089
+	.short	563
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,125,72,0,0,0,0,0
+	.long	151257088
+	.short	564
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	211,1,242,211,2,15,240,72,0,0,0,0
+	.long	151257088
+	.short	565
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,242,211,2,15,18,72,0,0,0,0
+	.long	151257088
+	.short	565
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	1,242,211,2,15,18,72,0,0,0,0,0
+	.long	151257088
+	.short	566
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,243,211,2,15,22,72,0,0,0,0
+	.long	151257088
+	.short	566
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,3,243,15,22,72,0,0,0,0,0,0
+	.long	151257088
+	.short	567
+	.byte	2
+	.long	2101264,2113536,0
+	.byte	193,1,243,211,2,15,18,72,0,0,0,0
+	.long	151257088
+	.short	567
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	211,3,243,15,18,72,0,0,0,0,0,0
+	.long	151257088
+	.short	568
+	.byte	2
+	.long	2101252,2101252,0
+	.byte	192,2,15,120,65,0,0,0,0,0,0,0
+	.long	50332928
+	.short	568
+	.byte	2
+	.long	2113536,2101252,0
+	.byte	192,2,15,120,65,0,0,0,0,0,0,0
+	.long	50332929
+	.short	569
+	.byte	2
+	.long	2101252,2101252,0
+	.byte	193,2,15,121,72,0,0,0,0,0,0,0
+	.long	50332928
+	.short	569
+	.byte	2
+	.long	2101252,2113536,0
+	.byte	193,2,15,121,72,0,0,0,0,0,0,0
+	.long	50332929
+	.short	570
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,193,0,0,0,0,0,0,0,0
+	.long	50332928
+	.short	571
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,194,0,0,0,0,0,0,0,0
+	.long	50332928
+	.short	572
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,195,0,0,0,0,0,0,0,0
+	.long	50332928
+	.short	573
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,196,0,0,0,0,0,0,0,0
+	.long	50332928
+	.short	574
+	.byte	1
+	.long	2113536,0,0
+	.byte	219,192,2,15,199,134,0,0,0,0,0,0
+	.long	1280
+	.short	575
+	.byte	1
+	.long	2113536,0,0
+	.byte	1,102,192,2,15,199,134,0,0,0,0,0
+	.long	1280
+	.short	576
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,199,134,0,0,0,0,0,0,0
+	.long	1280
+	.short	577
+	.byte	1
+	.long	2113536,0,0
+	.byte	192,2,15,199,135,0,0,0,0,0,0,0
+	.long	1280
+	.short	578
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,216,0,0,0,0,0,0,0,0
+	.long	51381504
+	.short	579
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,217,0,0,0,0,0,0,0,0
+	.long	51380224
+	.short	580
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,218,0,0,0,0,0,0,0,0
+	.long	51381504
+	.short	581
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,219,0,0,0,0,0,0,0,0
+	.long	51381504
+	.short	582
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,220,0,0,0,0,0,0,0,0
+	.long	51381504
+	.short	583
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,221,0,0,0,0,0,0,0,0
+	.long	51381504
+	.short	584
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,222,0,0,0,0,0,0,0,0
+	.long	51381504
+	.short	585
+	.byte	0
+	.long	0,0,0
+	.byte	3,15,1,223,0,0,0,0,0,0,0,0
+	.long	51381504
+	.short	586
+	.byte	0
+	.long	0,0,0
+	.byte	219,3,15,166,192,0,0,0,0,0,0,0
+	.long	218103808
+	.short	587
+	.byte	0
+	.long	0,0,0
+	.byte	219,3,15,166,200,0,0,0,0,0,0,0
+	.long	218103808
+	.short	588
+	.byte	0
+	.long	0,0,0
+	.byte	219,3,15,166,208,0,0,0,0,0,0,0
+	.long	218103808
+	.short	589
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,57,0,0,0,0,0,0,0,0,0
+	.long	251658240
+	.short	590
+	.byte	0
+	.long	0,0,0
+	.byte	2,15,58,0,0,0,0,0,0,0,0,0
+	.long	251658240
+	.short	591
+	.byte	2
+	.long	2101252,8192,0
+	.byte	213,8,184,33,0,0,0,0,0,0,0,0
+	.long	167772160
+	.short	592
+	.byte	2
+	.long	2101256,2113536,0
+	.byte	214,193,1,99,72,0,0,0,0,0,0,0
+	.long	167772160
+	.short	592
+	.byte	2
+	.long	2101256,2101252,0
+	.byte	214,193,1,99,72,0,0,0,0,0,0,0
+	.long	167772160
+	.short	593
+	.byte	0
+	.long	0,0,0
+	.byte	214,1,153,0,0,0,0,0,0,0,0,0
+	.long	167772160
+	.short	594
+	.byte	1
+	.long	2113536,0,0
+	.byte	208,211,2,15,199,129,0,0,0,0,0,0
+	.long	167772160
+	.short	595
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	65,219,192,62,2,15,43,63,0,0,0,0
+	.long	2097168
+	.short	596
+	.byte	2
+	.long	2113536,2101264,0
+	.byte	65,192,220,213,62,2,15,43,63,0,0,0
+	.long	2097152
+	.short	597
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	72,220,62,2,15,121,63,0,0,0,0,0
+	.long	2097152
+	.short	598
+	.byte	3
+	.long	2101264,8192,8192
+	.byte	128,222,62,2,15,120,63,253,17,253,18,0
+	.long	2097156
+	.short	598
+	.byte	2
+	.long	2101264,2101264,0
+	.byte	72,222,62,2,15,121,63,0,0,0,0,0
+	.long	2097152
+	.short	599
+	.byte	2
+	.long	2101250,2097152,0
+	.byte	72,208,219,193,62,2,15,189,63,0,0,0
+	.long	52428801
+	.short	599
+	.byte	2
+	.long	2101260,2097152,0
+	.byte	72,209,219,193,62,2,15,189,63,0,0,0
+	.long	52428801
+	.short	600
+	.byte	2
+	.long	2101250,2097152,0
+	.byte	72,208,219,193,62,2,15,184,63,0,0,0
+	.long	52428801
+	.short	600
+	.byte	2
+	.long	2101260,2097152,0
+	.byte	72,209,219,193,62,2,15,184,63,0,0,0
+	.long	52428801
+
+.section .data.n_tc_aasmcpu_opsize_2_type
+	.balign 4
+.globl	TC_AASMCPU_OPSIZE_2_TYPE
+TC_AASMCPU_OPSIZE_2_TYPE:
+	.long	0,1,2,4,8,2,4,4,8,8,8,2,4,8,4,8,16,8,0,8,64,32,128,0,0,0,1,2,4,8,1,1,2,1,2,4,2,4,8,4,8,16,8,0,8,64,32,128,0,0,0,1,2,4,8,0,0,0,0,0,0
+	.long	2,4,8,4,8,16,8,0,8,64,32,128,0,0
+
+.section .data.n_tc_aasmcpu_reg_ot_table
+	.balign 4
+.globl	TC_AASMCPU_REG_OT_TABLE
+TC_AASMCPU_REG_OT_TABLE:
+	.long	0,2166785,2101249,2166786,2166788,2166792,2232321,2101249,2232322,2232324,2232328
+	.long	2101249,2101249,2363394,2101252,2101256,2101249,2101249,2101250,2101252,2101256,2101249
+	.long	2101250,2101252,2101256,2101249,2101250,2101252,2101256,2101249,2101250,2101252,2101256
+	.long	2101249,2101250,2101252,2101256,2101256,2101249,2101250,2101252,2101256,2101249,2101250
+	.long	2101252,2101256,2101249,2101250,2101252,2101256,2101249,2101250,2101252,2101256,2101249
+	.long	2101250,2101252,2101256,2101249,2101250,2101252,2101256,2101249,2101250,2101252,2101256
+	.long	2101249,2101250,2101252,0,0,17305602,34082818,34082818,34082818,67637250,67637250
+	.long	269488132,269488132,269488132,269488132,269488132,269488132,135270404,135270404
+	.long	135270404,135271428,537923588,537923588,537923588,537923588,537923588,16779264
+	.long	16777216,16777216,16777216,16777216,16777216,16777216,16777216,16779264,2101280
+	.long	2101280,2101280,2101280,2101280,2101280,2101280,2101280,2101264,2101264,2101264,2101264
+	.long	2101264,2101264,2101264,2101264,2101264,2101264,2101264,2101264,2101264,2101264,2101264
+	.long	2101264
+
+.section .data.n_tc_aasmcpu_tai_align_$_calculatefillbuf$tfillbuffer$$pchar_alignarray
+	.balign 8
+.globl	TC_AASMCPU_TAI_ALIGN_$_CALCULATEFILLBUF$TFILLBUFFER$$PCHAR_ALIGNARRAY
+TC_AASMCPU_TAI_ALIGN_$_CALCULATEFILLBUF$TFILLBUFFER$$PCHAR_ALIGNARRAY:
+	.byte	4
+	.ascii	"fff\220"
+	.byte	3
+	.ascii	"ff\220"
+	.ascii	" "
+	.byte	2
+	.ascii	"f\220"
+	.ascii	"  "
+	.byte	1
+	.ascii	"\220"
+	.ascii	"   "
+
+.section .data.n_tc_aasmcpu_regval$tregister$$byte_opcode_table
+.globl	TC_AASMCPU_REGVAL$TREGISTER$$BYTE_OPCODE_TABLE
+TC_AASMCPU_REGVAL$TREGISTER$$BYTE_OPCODE_TABLE:
+	.byte	0,0,4,0,0,0,1,5,1,1,1,2,6,2,2,2,3,7,3,3,3,6,6,6,6,7,7,7,7,5,5,5,5,4,4,4,4,0,0,0,0,1,1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6,6,7,7,7,7,0,0
+	.byte	1,3,0,2,4,5,0,1,2,3,6,7,0,2,3,4,3,4,5,6,7,0,1,2,3,4,5,6,7,0,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7,0,1,2,3,4,5,6,7
+
+.section .data.n_tc_aasmcpu_taicpu_$_gencode$tobjdata_condval
+.globl	TC_AASMCPU_TAICPU_$_GENCODE$TOBJDATA_CONDVAL
+TC_AASMCPU_TAICPU_$_GENCODE$TOBJDATA_CONDVAL:
+	.byte	0,7,3,2,6,2,4,15,13,12,14,6,2,3,7,3,5,14,12,13,15,1,11,9,5,0,10,10,11,8,4
+# End asmlist al_rotypedconsts
+# Begin asmlist al_threadvars
+# End asmlist al_threadvars
+# Begin asmlist al_imports
+# End asmlist al_imports
+# Begin asmlist al_exports
+# End asmlist al_exports
+# Begin asmlist al_resources
+# End asmlist al_resources
+# Begin asmlist al_rtti
+
+.section .data.n_INIT_AASMCPU_TINSCHANGE
+	.balign 4
+.globl	INIT_AASMCPU_TINSCHANGE
+INIT_AASMCPU_TINSCHANGE:
+	.byte	3
+	.ascii	"\012TInsChange"
+	.byte	1
+	.long	0,84,0
+	.byte	7
+	.ascii	"Ch_None"
+	.byte	7
+	.ascii	"Ch_REAX"
+	.byte	7
+	.ascii	"Ch_RECX"
+	.byte	7
+	.ascii	"Ch_REDX"
+	.byte	7
+	.ascii	"Ch_REBX"
+	.byte	7
+	.ascii	"Ch_RESP"
+	.byte	7
+	.ascii	"Ch_REBP"
+	.byte	7
+	.ascii	"Ch_RESI"
+	.byte	7
+	.ascii	"Ch_REDI"
+	.byte	7
+	.ascii	"Ch_WEAX"
+	.byte	7
+	.ascii	"Ch_WECX"
+	.byte	7
+	.ascii	"Ch_WEDX"
+	.byte	7
+	.ascii	"Ch_WEBX"
+	.byte	7
+	.ascii	"Ch_WESP"
+	.byte	7
+	.ascii	"Ch_WEBP"
+	.byte	7
+	.ascii	"Ch_WESI"
+	.byte	7
+	.ascii	"Ch_WEDI"
+	.byte	8
+	.ascii	"Ch_RWEAX"
+	.byte	8
+	.ascii	"Ch_RWECX"
+	.byte	8
+	.ascii	"Ch_RWEDX"
+	.byte	8
+	.ascii	"Ch_RWEBX"
+	.byte	8
+	.ascii	"Ch_RWESP"
+	.byte	8
+	.ascii	"Ch_RWEBP"
+	.byte	8
+	.ascii	"Ch_RWESI"
+	.byte	8
+	.ascii	"Ch_RWEDI"
+	.byte	7
+	.ascii	"Ch_MEAX"
+	.byte	7
+	.ascii	"Ch_MECX"
+	.byte	7
+	.ascii	"Ch_MEDX"
+	.byte	7
+	.ascii	"Ch_MEBX"
+	.byte	7
+	.ascii	"Ch_MESP"
+	.byte	7
+	.ascii	"Ch_MEBP"
+	.byte	7
+	.ascii	"Ch_MESI"
+	.byte	7
+	.ascii	"Ch_MEDI"
+	.byte	11
+	.ascii	"Ch_CDirFlag"
+	.byte	11
+	.ascii	"Ch_SDirFlag"
+	.byte	9
+	.ascii	"Ch_RFlags"
+	.byte	9
+	.ascii	"Ch_WFlags"
+	.byte	10
+	.ascii	"Ch_RWFlags"
+	.byte	6
+	.ascii	"Ch_FPU"
+	.byte	7
+	.ascii	"Ch_Rop1"
+	.byte	7
+	.ascii	"Ch_Wop1"
+	.byte	8
+	.ascii	"Ch_RWop1"
+	.byte	7
+	.ascii	"Ch_Mop1"
+	.byte	7
+	.ascii	"Ch_Rop2"
+	.byte	7
+	.ascii	"Ch_Wop2"
+	.byte	8
+	.ascii	"Ch_RWop2"
+	.byte	7
+	.ascii	"Ch_Mop2"
+	.byte	7
+	.ascii	"Ch_Rop3"
+	.byte	7
+	.ascii	"Ch_WOp3"
+	.byte	8
+	.ascii	"Ch_RWOp3"
+	.byte	7
+	.ascii	"Ch_Mop3"
+	.byte	10
+	.ascii	"Ch_WMemEDI"
+	.byte	6
+	.ascii	"Ch_All"
+	.byte	7
+	.ascii	"Ch_RRAX"
+	.byte	7
+	.ascii	"Ch_RRCX"
+	.byte	7
+	.ascii	"Ch_RRDX"
+	.byte	7
+	.ascii	"Ch_RRBX"
+	.byte	7
+	.ascii	"Ch_RRSP"
+	.byte	7
+	.ascii	"Ch_RRBP"
+	.byte	7
+	.ascii	"Ch_RRSI"
+	.byte	7
+	.ascii	"Ch_RRDI"
+	.byte	7
+	.ascii	"Ch_WRAX"
+	.byte	7
+	.ascii	"Ch_WRCX"
+	.byte	7
+	.ascii	"Ch_WRDX"
+	.byte	7
+	.ascii	"Ch_WRBX"
+	.byte	7
+	.ascii	"Ch_WRSP"
+	.byte	7
+	.ascii	"Ch_WRBP"
+	.byte	7
+	.ascii	"Ch_WRSI"
+	.byte	7
+	.ascii	"Ch_WRDI"
+	.byte	8
+	.ascii	"Ch_RWRAX"
+	.byte	8
+	.ascii	"Ch_RWRCX"
+	.byte	8
+	.ascii	"Ch_RWRDX"
+	.byte	8
+	.ascii	"Ch_RWRBX"
+	.byte	8
+	.ascii	"Ch_RWRSP"
+	.byte	8
+	.ascii	"Ch_RWRBP"
+	.byte	8
+	.ascii	"Ch_RWRSI"
+	.byte	8
+	.ascii	"Ch_RWRDI"
+	.byte	7
+	.ascii	"Ch_MRAX"
+	.byte	7
+	.ascii	"Ch_MRCX"
+	.byte	7
+	.ascii	"Ch_MRDX"
+	.byte	7
+	.ascii	"Ch_MRBX"
+	.byte	7
+	.ascii	"Ch_MRSP"
+	.byte	7
+	.ascii	"Ch_MRBP"
+	.byte	7
+	.ascii	"Ch_MRSI"
+	.byte	7
+	.ascii	"Ch_MRDI"
+	.byte	0
+
+.section .data.n_RTTI_AASMCPU_TINSCHANGE
+	.balign 4
+.globl	RTTI_AASMCPU_TINSCHANGE
+RTTI_AASMCPU_TINSCHANGE:
+	.byte	3
+	.ascii	"\012TInsChange"
+	.byte	1
+	.long	0,84,0
+	.byte	7
+	.ascii	"Ch_None"
+	.byte	7
+	.ascii	"Ch_REAX"
+	.byte	7
+	.ascii	"Ch_RECX"
+	.byte	7
+	.ascii	"Ch_REDX"
+	.byte	7
+	.ascii	"Ch_REBX"
+	.byte	7
+	.ascii	"Ch_RESP"
+	.byte	7
+	.ascii	"Ch_REBP"
+	.byte	7
+	.ascii	"Ch_RESI"
+	.byte	7
+	.ascii	"Ch_REDI"
+	.byte	7
+	.ascii	"Ch_WEAX"
+	.byte	7
+	.ascii	"Ch_WECX"
+	.byte	7
+	.ascii	"Ch_WEDX"
+	.byte	7
+	.ascii	"Ch_WEBX"
+	.byte	7
+	.ascii	"Ch_WESP"
+	.byte	7
+	.ascii	"Ch_WEBP"
+	.byte	7
+	.ascii	"Ch_WESI"
+	.byte	7
+	.ascii	"Ch_WEDI"
+	.byte	8
+	.ascii	"Ch_RWEAX"
+	.byte	8
+	.ascii	"Ch_RWECX"
+	.byte	8
+	.ascii	"Ch_RWEDX"
+	.byte	8
+	.ascii	"Ch_RWEBX"
+	.byte	8
+	.ascii	"Ch_RWESP"
+	.byte	8
+	.ascii	"Ch_RWEBP"
+	.byte	8
+	.ascii	"Ch_RWESI"
+	.byte	8
+	.ascii	"Ch_RWEDI"
+	.byte	7
+	.ascii	"Ch_MEAX"
+	.byte	7
+	.ascii	"Ch_MECX"
+	.byte	7
+	.ascii	"Ch_MEDX"
+	.byte	7
+	.ascii	"Ch_MEBX"
+	.byte	7
+	.ascii	"Ch_MESP"
+	.byte	7
+	.ascii	"Ch_MEBP"
+	.byte	7
+	.ascii	"Ch_MESI"
+	.byte	7
+	.ascii	"Ch_MEDI"
+	.byte	11
+	.ascii	"Ch_CDirFlag"
+	.byte	11
+	.ascii	"Ch_SDirFlag"
+	.byte	9
+	.ascii	"Ch_RFlags"
+	.byte	9
+	.ascii	"Ch_WFlags"
+	.byte	10
+	.ascii	"Ch_RWFlags"
+	.byte	6
+	.ascii	"Ch_FPU"
+	.byte	7
+	.ascii	"Ch_Rop1"
+	.byte	7
+	.ascii	"Ch_Wop1"
+	.byte	8
+	.ascii	"Ch_RWop1"
+	.byte	7
+	.ascii	"Ch_Mop1"
+	.byte	7
+	.ascii	"Ch_Rop2"
+	.byte	7
+	.ascii	"Ch_Wop2"
+	.byte	8
+	.ascii	"Ch_RWop2"
+	.byte	7
+	.ascii	"Ch_Mop2"
+	.byte	7
+	.ascii	"Ch_Rop3"
+	.byte	7
+	.ascii	"Ch_WOp3"
+	.byte	8
+	.ascii	"Ch_RWOp3"
+	.byte	7
+	.ascii	"Ch_Mop3"
+	.byte	10
+	.ascii	"Ch_WMemEDI"
+	.byte	6
+	.ascii	"Ch_All"
+	.byte	7
+	.ascii	"Ch_RRAX"
+	.byte	7
+	.ascii	"Ch_RRCX"
+	.byte	7
+	.ascii	"Ch_RRDX"
+	.byte	7
+	.ascii	"Ch_RRBX"
+	.byte	7
+	.ascii	"Ch_RRSP"
+	.byte	7
+	.ascii	"Ch_RRBP"
+	.byte	7
+	.ascii	"Ch_RRSI"
+	.byte	7
+	.ascii	"Ch_RRDI"
+	.byte	7
+	.ascii	"Ch_WRAX"
+	.byte	7
+	.ascii	"Ch_WRCX"
+	.byte	7
+	.ascii	"Ch_WRDX"
+	.byte	7
+	.ascii	"Ch_WRBX"
+	.byte	7
+	.ascii	"Ch_WRSP"
+	.byte	7
+	.ascii	"Ch_WRBP"
+	.byte	7
+	.ascii	"Ch_WRSI"
+	.byte	7
+	.ascii	"Ch_WRDI"
+	.byte	8
+	.ascii	"Ch_RWRAX"
+	.byte	8
+	.ascii	"Ch_RWRCX"
+	.byte	8
+	.ascii	"Ch_RWRDX"
+	.byte	8
+	.ascii	"Ch_RWRBX"
+	.byte	8
+	.ascii	"Ch_RWRSP"
+	.byte	8
+	.ascii	"Ch_RWRBP"
+	.byte	8
+	.ascii	"Ch_RWRSI"
+	.byte	8
+	.ascii	"Ch_RWRDI"
+	.byte	7
+	.ascii	"Ch_MRAX"
+	.byte	7
+	.ascii	"Ch_MRCX"
+	.byte	7
+	.ascii	"Ch_MRDX"
+	.byte	7
+	.ascii	"Ch_MRBX"
+	.byte	7
+	.ascii	"Ch_MRSP"
+	.byte	7
+	.ascii	"Ch_MRBP"
+	.byte	7
+	.ascii	"Ch_MRSI"
+	.byte	7
+	.ascii	"Ch_MRDI"
+	.byte	0
+
+.section .data.n_RTTI_AASMCPU_TINSCHANGE_o2s
+	.balign 4
+.globl	RTTI_AASMCPU_TINSCHANGE_o2s
+RTTI_AASMCPU_TINSCHANGE_o2s:
+	.long	0
+	.long	RTTI_AASMCPU_TINSCHANGE+25
+	.long	RTTI_AASMCPU_TINSCHANGE+33
+	.long	RTTI_AASMCPU_TINSCHANGE+41
+	.long	RTTI_AASMCPU_TINSCHANGE+49
+	.long	RTTI_AASMCPU_TINSCHANGE+57
+	.long	RTTI_AASMCPU_TINSCHANGE+65
+	.long	RTTI_AASMCPU_TINSCHANGE+73
+	.long	RTTI_AASMCPU_TINSCHANGE+81
+	.long	RTTI_AASMCPU_TINSCHANGE+89
+	.long	RTTI_AASMCPU_TINSCHANGE+97
+	.long	RTTI_AASMCPU_TINSCHANGE+105
+	.long	RTTI_AASMCPU_TINSCHANGE+113
+	.long	RTTI_AASMCPU_TINSCHANGE+121
+	.long	RTTI_AASMCPU_TINSCHANGE+129
+	.long	RTTI_AASMCPU_TINSCHANGE+137
+	.long	RTTI_AASMCPU_TINSCHANGE+145
+	.long	RTTI_AASMCPU_TINSCHANGE+153
+	.long	RTTI_AASMCPU_TINSCHANGE+161
+	.long	RTTI_AASMCPU_TINSCHANGE+170
+	.long	RTTI_AASMCPU_TINSCHANGE+179
+	.long	RTTI_AASMCPU_TINSCHANGE+188
+	.long	RTTI_AASMCPU_TINSCHANGE+197
+	.long	RTTI_AASMCPU_TINSCHANGE+206
+	.long	RTTI_AASMCPU_TINSCHANGE+215
+	.long	RTTI_AASMCPU_TINSCHANGE+224
+	.long	RTTI_AASMCPU_TINSCHANGE+233
+	.long	RTTI_AASMCPU_TINSCHANGE+241
+	.long	RTTI_AASMCPU_TINSCHANGE+249
+	.long	RTTI_AASMCPU_TINSCHANGE+257
+	.long	RTTI_AASMCPU_TINSCHANGE+265
+	.long	RTTI_AASMCPU_TINSCHANGE+273
+	.long	RTTI_AASMCPU_TINSCHANGE+281
+	.long	RTTI_AASMCPU_TINSCHANGE+289
+	.long	RTTI_AASMCPU_TINSCHANGE+297
+	.long	RTTI_AASMCPU_TINSCHANGE+309
+	.long	RTTI_AASMCPU_TINSCHANGE+321
+	.long	RTTI_AASMCPU_TINSCHANGE+331
+	.long	RTTI_AASMCPU_TINSCHANGE+341
+	.long	RTTI_AASMCPU_TINSCHANGE+352
+	.long	RTTI_AASMCPU_TINSCHANGE+359
+	.long	RTTI_AASMCPU_TINSCHANGE+367
+	.long	RTTI_AASMCPU_TINSCHANGE+375
+	.long	RTTI_AASMCPU_TINSCHANGE+384
+	.long	RTTI_AASMCPU_TINSCHANGE+392
+	.long	RTTI_AASMCPU_TINSCHANGE+400
+	.long	RTTI_AASMCPU_TINSCHANGE+408
+	.long	RTTI_AASMCPU_TINSCHANGE+417
+	.long	RTTI_AASMCPU_TINSCHANGE+425
+	.long	RTTI_AASMCPU_TINSCHANGE+433
+	.long	RTTI_AASMCPU_TINSCHANGE+441
+	.long	RTTI_AASMCPU_TINSCHANGE+450
+	.long	RTTI_AASMCPU_TINSCHANGE+458
+	.long	RTTI_AASMCPU_TINSCHANGE+469
+	.long	RTTI_AASMCPU_TINSCHANGE+476
+	.long	RTTI_AASMCPU_TINSCHANGE+484
+	.long	RTTI_AASMCPU_TINSCHANGE+492
+	.long	RTTI_AASMCPU_TINSCHANGE+500
+	.long	RTTI_AASMCPU_TINSCHANGE+508
+	.long	RTTI_AASMCPU_TINSCHANGE+516
+	.long	RTTI_AASMCPU_TINSCHANGE+524
+	.long	RTTI_AASMCPU_TINSCHANGE+532
+	.long	RTTI_AASMCPU_TINSCHANGE+540
+	.long	RTTI_AASMCPU_TINSCHANGE+548
+	.long	RTTI_AASMCPU_TINSCHANGE+556
+	.long	RTTI_AASMCPU_TINSCHANGE+564
+	.long	RTTI_AASMCPU_TINSCHANGE+572
+	.long	RTTI_AASMCPU_TINSCHANGE+580
+	.long	RTTI_AASMCPU_TINSCHANGE+588
+	.long	RTTI_AASMCPU_TINSCHANGE+596
+	.long	RTTI_AASMCPU_TINSCHANGE+604
+	.long	RTTI_AASMCPU_TINSCHANGE+613
+	.long	RTTI_AASMCPU_TINSCHANGE+622
+	.long	RTTI_AASMCPU_TINSCHANGE+631
+	.long	RTTI_AASMCPU_TINSCHANGE+640
+	.long	RTTI_AASMCPU_TINSCHANGE+649
+	.long	RTTI_AASMCPU_TINSCHANGE+658
+	.long	RTTI_AASMCPU_TINSCHANGE+667
+	.long	RTTI_AASMCPU_TINSCHANGE+676
+	.long	RTTI_AASMCPU_TINSCHANGE+684
+	.long	RTTI_AASMCPU_TINSCHANGE+692
+	.long	RTTI_AASMCPU_TINSCHANGE+700
+	.long	RTTI_AASMCPU_TINSCHANGE+708
+	.long	RTTI_AASMCPU_TINSCHANGE+716
+	.long	RTTI_AASMCPU_TINSCHANGE+724
+	.long	RTTI_AASMCPU_TINSCHANGE+732
+
+.section .data.n_RTTI_AASMCPU_TINSCHANGE_s2o
+	.balign 4
+.globl	RTTI_AASMCPU_TINSCHANGE_s2o
+RTTI_AASMCPU_TINSCHANGE_s2o:
+	.long	85,52
+	.long	RTTI_AASMCPU_TINSCHANGE+469
+	.long	33
+	.long	RTTI_AASMCPU_TINSCHANGE+297
+	.long	38
+	.long	RTTI_AASMCPU_TINSCHANGE+352
+	.long	25
+	.long	RTTI_AASMCPU_TINSCHANGE+233
+	.long	30
+	.long	RTTI_AASMCPU_TINSCHANGE+273
+	.long	28
+	.long	RTTI_AASMCPU_TINSCHANGE+257
+	.long	26
+	.long	RTTI_AASMCPU_TINSCHANGE+241
+	.long	32
+	.long	RTTI_AASMCPU_TINSCHANGE+289
+	.long	27
+	.long	RTTI_AASMCPU_TINSCHANGE+249
+	.long	31
+	.long	RTTI_AASMCPU_TINSCHANGE+281
+	.long	29
+	.long	RTTI_AASMCPU_TINSCHANGE+265
+	.long	42
+	.long	RTTI_AASMCPU_TINSCHANGE+384
+	.long	46
+	.long	RTTI_AASMCPU_TINSCHANGE+417
+	.long	50
+	.long	RTTI_AASMCPU_TINSCHANGE+450
+	.long	77
+	.long	RTTI_AASMCPU_TINSCHANGE+676
+	.long	82
+	.long	RTTI_AASMCPU_TINSCHANGE+716
+	.long	80
+	.long	RTTI_AASMCPU_TINSCHANGE+700
+	.long	78
+	.long	RTTI_AASMCPU_TINSCHANGE+684
+	.long	84
+	.long	RTTI_AASMCPU_TINSCHANGE+732
+	.long	79
+	.long	RTTI_AASMCPU_TINSCHANGE+692
+	.long	83
+	.long	RTTI_AASMCPU_TINSCHANGE+724
+	.long	81
+	.long	RTTI_AASMCPU_TINSCHANGE+708
+	.long	0
+	.long	RTTI_AASMCPU_TINSCHANGE+25
+	.long	1
+	.long	RTTI_AASMCPU_TINSCHANGE+33
+	.long	6
+	.long	RTTI_AASMCPU_TINSCHANGE+73
+	.long	4
+	.long	RTTI_AASMCPU_TINSCHANGE+57
+	.long	2
+	.long	RTTI_AASMCPU_TINSCHANGE+41
+	.long	8
+	.long	RTTI_AASMCPU_TINSCHANGE+89
+	.long	3
+	.long	RTTI_AASMCPU_TINSCHANGE+49
+	.long	7
+	.long	RTTI_AASMCPU_TINSCHANGE+81
+	.long	5
+	.long	RTTI_AASMCPU_TINSCHANGE+65
+	.long	35
+	.long	RTTI_AASMCPU_TINSCHANGE+321
+	.long	39
+	.long	RTTI_AASMCPU_TINSCHANGE+359
+	.long	43
+	.long	RTTI_AASMCPU_TINSCHANGE+392
+	.long	47
+	.long	RTTI_AASMCPU_TINSCHANGE+425
+	.long	53
+	.long	RTTI_AASMCPU_TINSCHANGE+476
+	.long	58
+	.long	RTTI_AASMCPU_TINSCHANGE+516
+	.long	56
+	.long	RTTI_AASMCPU_TINSCHANGE+500
+	.long	54
+	.long	RTTI_AASMCPU_TINSCHANGE+484
+	.long	60
+	.long	RTTI_AASMCPU_TINSCHANGE+532
+	.long	55
+	.long	RTTI_AASMCPU_TINSCHANGE+492
+	.long	59
+	.long	RTTI_AASMCPU_TINSCHANGE+524
+	.long	57
+	.long	RTTI_AASMCPU_TINSCHANGE+508
+	.long	17
+	.long	RTTI_AASMCPU_TINSCHANGE+161
+	.long	22
+	.long	RTTI_AASMCPU_TINSCHANGE+206
+	.long	20
+	.long	RTTI_AASMCPU_TINSCHANGE+188
+	.long	18
+	.long	RTTI_AASMCPU_TINSCHANGE+170
+	.long	24
+	.long	RTTI_AASMCPU_TINSCHANGE+224
+	.long	19
+	.long	RTTI_AASMCPU_TINSCHANGE+179
+	.long	23
+	.long	RTTI_AASMCPU_TINSCHANGE+215
+	.long	21
+	.long	RTTI_AASMCPU_TINSCHANGE+197
+	.long	37
+	.long	RTTI_AASMCPU_TINSCHANGE+341
+	.long	41
+	.long	RTTI_AASMCPU_TINSCHANGE+375
+	.long	45
+	.long	RTTI_AASMCPU_TINSCHANGE+408
+	.long	49
+	.long	RTTI_AASMCPU_TINSCHANGE+441
+	.long	69
+	.long	RTTI_AASMCPU_TINSCHANGE+604
+	.long	74
+	.long	RTTI_AASMCPU_TINSCHANGE+649
+	.long	72
+	.long	RTTI_AASMCPU_TINSCHANGE+631
+	.long	70
+	.long	RTTI_AASMCPU_TINSCHANGE+613
+	.long	76
+	.long	RTTI_AASMCPU_TINSCHANGE+667
+	.long	71
+	.long	RTTI_AASMCPU_TINSCHANGE+622
+	.long	75
+	.long	RTTI_AASMCPU_TINSCHANGE+658
+	.long	73
+	.long	RTTI_AASMCPU_TINSCHANGE+640
+	.long	34
+	.long	RTTI_AASMCPU_TINSCHANGE+309
+	.long	9
+	.long	RTTI_AASMCPU_TINSCHANGE+97
+	.long	14
+	.long	RTTI_AASMCPU_TINSCHANGE+137
+	.long	12
+	.long	RTTI_AASMCPU_TINSCHANGE+121
+	.long	10
+	.long	RTTI_AASMCPU_TINSCHANGE+105
+	.long	16
+	.long	RTTI_AASMCPU_TINSCHANGE+153
+	.long	11
+	.long	RTTI_AASMCPU_TINSCHANGE+113
+	.long	15
+	.long	RTTI_AASMCPU_TINSCHANGE+145
+	.long	13
+	.long	RTTI_AASMCPU_TINSCHANGE+129
+	.long	36
+	.long	RTTI_AASMCPU_TINSCHANGE+331
+	.long	51
+	.long	RTTI_AASMCPU_TINSCHANGE+458
+	.long	40
+	.long	RTTI_AASMCPU_TINSCHANGE+367
+	.long	44
+	.long	RTTI_AASMCPU_TINSCHANGE+400
+	.long	48
+	.long	RTTI_AASMCPU_TINSCHANGE+433
+	.long	61
+	.long	RTTI_AASMCPU_TINSCHANGE+540
+	.long	66
+	.long	RTTI_AASMCPU_TINSCHANGE+580
+	.long	64
+	.long	RTTI_AASMCPU_TINSCHANGE+564
+	.long	62
+	.long	RTTI_AASMCPU_TINSCHANGE+548
+	.long	68
+	.long	RTTI_AASMCPU_TINSCHANGE+596
+	.long	63
+	.long	RTTI_AASMCPU_TINSCHANGE+556
+	.long	67
+	.long	RTTI_AASMCPU_TINSCHANGE+588
+	.long	65
+	.long	RTTI_AASMCPU_TINSCHANGE+572
+
+.section .data.n_INIT_AASMCPU_TINSPROP
+	.balign 4
+.globl	INIT_AASMCPU_TINSPROP
+INIT_AASMCPU_TINSPROP:
+	.byte	13
+	.ascii	"\010TInsProp"
+	.long	3,0
+
+.section .data.n_RTTI_AASMCPU_DEF2
+	.balign 4
+.globl	RTTI_AASMCPU_DEF2
+RTTI_AASMCPU_DEF2:
+	.byte	12
+	.ascii	"\000"
+	.long	1,3
+	.long	RTTI_AASMCPU_TINSCHANGE
+	.long	-1
+
+.section .data.n_RTTI_AASMCPU_TINSPROP
+	.balign 4
+.globl	RTTI_AASMCPU_TINSPROP
+RTTI_AASMCPU_TINSPROP:
+	.byte	13
+	.ascii	"\010TInsProp"
+	.long	3,1
+	.long	RTTI_AASMCPU_DEF2
+	.long	0
+
+.section .data.n_INIT_AASMCPU_TOPERANDORDER
+	.balign 4
+.globl	INIT_AASMCPU_TOPERANDORDER
+INIT_AASMCPU_TOPERANDORDER:
+	.byte	3
+	.ascii	"\015TOperandOrder"
+	.byte	1
+	.long	0,1,0
+	.byte	8
+	.ascii	"op_intel"
+	.byte	6
+	.ascii	"op_att"
+	.byte	0
+
+.section .data.n_RTTI_AASMCPU_TOPERANDORDER
+	.balign 4
+.globl	RTTI_AASMCPU_TOPERANDORDER
+RTTI_AASMCPU_TOPERANDORDER:
+	.byte	3
+	.ascii	"\015TOperandOrder"
+	.byte	1
+	.long	0,1,0
+	.byte	8
+	.ascii	"op_intel"
+	.byte	6
+	.ascii	"op_att"
+	.byte	0
+
+.section .data.n_RTTI_AASMCPU_TOPERANDORDER_o2s
+	.balign 4
+.globl	RTTI_AASMCPU_TOPERANDORDER_o2s
+RTTI_AASMCPU_TOPERANDORDER_o2s:
+	.long	0
+	.long	RTTI_AASMCPU_TOPERANDORDER+28
+	.long	RTTI_AASMCPU_TOPERANDORDER+37
+
+.section .data.n_RTTI_AASMCPU_TOPERANDORDER_s2o
+	.balign 4
+.globl	RTTI_AASMCPU_TOPERANDORDER_s2o
+RTTI_AASMCPU_TOPERANDORDER_s2o:
+	.long	2,1
+	.long	RTTI_AASMCPU_TOPERANDORDER+37
+	.long	0
+	.long	RTTI_AASMCPU_TOPERANDORDER+28
+
+.section .data.n_INIT_AASMCPU_TINSENTRY
+	.balign 4
+.globl	INIT_AASMCPU_TINSENTRY
+INIT_AASMCPU_TINSENTRY:
+	.byte	13
+	.ascii	"\011tinsentry"
+	.long	31,0
+
+.section .data.n_RTTI_AASMCPU_DEF6
+	.balign 4
+.globl	RTTI_AASMCPU_DEF6
+RTTI_AASMCPU_DEF6:
+	.byte	12
+	.ascii	"\000"
+	.long	4,3
+	.long	RTTI_SYSTEM_LONGINT
+	.long	3
+
+.section .data.n_RTTI_AASMCPU_DEF7
+	.balign 4
+.globl	RTTI_AASMCPU_DEF7
+RTTI_AASMCPU_DEF7:
+	.byte	12
+	.ascii	"\000"
+	.long	1,12
+	.long	RTTI_SYSTEM_CHAR
+	.long	-1
+
+.section .data.n_RTTI_AASMCPU_TINSENTRY
+	.balign 4
+.globl	RTTI_AASMCPU_TINSENTRY
+RTTI_AASMCPU_TINSENTRY:
+	.byte	13
+	.ascii	"\011tinsentry"
+	.long	31,5
+	.long	RTTI_CPUBASE_TASMOP
+	.long	0
+	.long	RTTI_SYSTEM_BYTE
+	.long	2
+	.long	RTTI_AASMCPU_DEF6
+	.long	3
+	.long	RTTI_AASMCPU_DEF7
+	.long	15
+	.long	RTTI_SYSTEM_LONGINT
+	.long	27
+
+.section .data.n_INIT_AASMCPU_PINSENTRY
+	.balign 4
+.globl	INIT_AASMCPU_PINSENTRY
+INIT_AASMCPU_PINSENTRY:
+	.byte	0
+	.ascii	"\011pinsentry"
+
+.section .data.n_RTTI_AASMCPU_PINSENTRY
+	.balign 4
+.globl	RTTI_AASMCPU_PINSENTRY
+RTTI_AASMCPU_PINSENTRY:
+	.byte	0
+	.ascii	"\011pinsentry"
+
+.section .data.n__$AASMCPU$_Ld24
+	.balign 4
+.globl	_$AASMCPU$_Ld23
+_$AASMCPU$_Ld23:
+	.short	0
+	.long	_$AASMCPU$_Ld24
+	.balign 4
+.globl	_$AASMCPU$_Ld24
+_$AASMCPU$_Ld24:
+	.short	0
+
+.section .data.n_INIT_AASMCPU_TAI_ALIGN
+	.balign 4
+.globl	INIT_AASMCPU_TAI_ALIGN
+INIT_AASMCPU_TAI_ALIGN:
+	.byte	15,9
+	.ascii	"tai_align"
+	.long	4,0
+
+.section .data.n_RTTI_AASMCPU_TAI_ALIGN
+	.balign 4
+.globl	RTTI_AASMCPU_TAI_ALIGN
+RTTI_AASMCPU_TAI_ALIGN:
+	.byte	15,9
+	.ascii	"tai_align"
+	.long	VMT_AASMCPU_TAI_ALIGN
+	.long	0
+	.short	0
+	.byte	7
+	.ascii	"aasmcpu"
+	.short	0
+
+.section .data.n__$AASMCPU$_Ld27
+	.balign 4
+.globl	_$AASMCPU$_Ld26
+_$AASMCPU$_Ld26:
+	.short	0
+	.long	_$AASMCPU$_Ld27
+	.balign 4
+.globl	_$AASMCPU$_Ld27
+_$AASMCPU$_Ld27:
+	.short	0
+
+.section .data.n_INIT_AASMCPU_TAICPU
+	.balign 4
+.globl	INIT_AASMCPU_TAICPU
+INIT_AASMCPU_TAICPU:
+	.byte	15,6
+	.ascii	"taicpu"
+	.long	4,0
+
+.section .data.n_RTTI_AASMCPU_TAICPU
+	.balign 4
+.globl	RTTI_AASMCPU_TAICPU
+RTTI_AASMCPU_TAICPU:
+	.byte	15,6
+	.ascii	"taicpu"
+	.long	VMT_AASMCPU_TAICPU
+	.long	0
+	.short	0
+	.byte	7
+	.ascii	"aasmcpu"
+	.short	0
+# End asmlist al_rtti
+# Begin asmlist al_dwarf
+# End asmlist al_dwarf
+# Begin asmlist al_dwarf_info
+# End asmlist al_dwarf_info
+# Begin asmlist al_dwarf_abbrev
+# End asmlist al_dwarf_abbrev
+# Begin asmlist al_dwarf_line
+# End asmlist al_dwarf_line
+# Begin asmlist al_picdata
+# End asmlist al_picdata
+# Begin asmlist al_resourcestrings
+# End asmlist al_resourcestrings
+# Begin asmlist al_end
+# End asmlist al_end
+

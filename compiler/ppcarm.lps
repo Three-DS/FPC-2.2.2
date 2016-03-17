@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="7"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="pp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="pp"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="arm/aasmcpu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="aasmcpu"/>
+        <CursorPos X="50" Y="30"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../rtl/inc/lnfodwrf.pp"/>
+        <UnitName Value="lnfodwrf"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../rtl/linux/system.pp"/>
+        <UnitName Value="System"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+    </Units>
+    <General>
+      <ActiveEditorIndexAtStart Value="3"/>
+    </General>
+    <JumpHistory Count="3" HistoryIndex="2">
+      <Position1>
+        <Filename Value="pp.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="../rtl/inc/lnfodwrf.pp"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../rtl/linux/system.pp"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position3>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

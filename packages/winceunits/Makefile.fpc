@@ -1,0 +1,28 @@
+#
+#   Makefile.fpc for WinCE Units
+#
+
+[package]
+name=winceunits
+version=2.2.2
+
+[target]
+units_wince=buildwinceunits
+implicitunits_wince=aygshell commctrl commdlg iphlpapi notify oleauto power shellapi simmgr tapi \
+                    gpsapi todaycmn windbase cesync gx winioctl msgqueue pm service htmlctrl \
+                    sipapi cpl
+units_win32=rapi cesync
+
+[install]
+buildunit=buildwinceunits
+fpcpackage=y
+
+[default]
+fpcdir=../..
+
+[compiler]
+options=-Ur
+sourcedir=src
+
+[rules]
+.NOTPARALLEL:

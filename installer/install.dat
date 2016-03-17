@@ -1,0 +1,838 @@
+#
+# $Id: install.dat,v 1.39 2005/03/06 18:00:07 hajny Exp $
+#
+# Install file for Go32v2/Win32/OS2/EMX
+#
+# Warning: no package should contain more than 16 files
+
+title=Free Pascal Compiler 2.2.2
+version=2.2.2
+
+#
+# General
+#
+basepath=c:\pp
+docsub=doc
+helpidx=fpctoc.htm
+
+#
+# Go32v2 packages
+#
+pack=~D~os/Go32v2
+binsub=\bin\go32v2
+ppc386=ppc386
+targetname=go32v2
+cfgfile=fpc.cfg
+idecfgfile=fp.cfg
+ideinifile=fp.ini
+
+filecheck=*dos.zip
+# Dos 1
+package=basedos.zip,~B~asic system for Go32v2 (required)
+# Dos 2
+package=aslddos.zip,GNU ~L~inker and GNU Assembler for Go32v2 (required)
+# Dos 3
+package=idedos.zip,~I~DE with integrated debugger/compiler (BETA)
+# Dos 4
+package=utilsdos.zip[utildos.zip],~E~xtra Utilities
+# Dos 5
+package=makedos.zip,GNU ~U~tilities (needed for Makefile usage)
+# Dos 6
+package=gdbdos.zip,GNU ~D~ebugger for Go32v2
+# Dos 7
+package=ugdbintdos.zip[ugdbdos.zip],GDB Interfacing units
+# Dos 8
+package=upaszlibdos.zip[upzldos.zip],PasZLib units
+# Dos 9
+package=uregexprdos.zip[uregdos.zip],Regular expression units
+# Dos 10
+package=uunzipdos.zip[uzipdos.zip],Unzip units
+# Dos 11
+package=upasjpegdos.zip[upjpdos.zip],Pas~J~PEG units
+# Dos 12
+package=uhashdos.zip,Hash calculation units
+# Dos 13
+package=ufvdos.zip,Free ~V~ision (FV)
+# Dos 14
+package=ugraphdos.zip[ugrphdos.zip],Unit Graph
+# Dos 15
+package=ufcl-basedos.zip[ufclbdos.zip],Free Component Library (FCL)-base part
+# Dos 16
+package=ufcl-dbdos.zip[ufclddos.zip],Free Component Library (FCL)-datasets
+# Dos 17
+package=ufcl-fpcunitdos.zip[ufcludos.zip],Free Component Library (FCL)-FPCUnit
+# Dos 18
+package=ufcl-imagedos.zip[ufclidos.zip],Free Component Library (FCL)-images
+# Dos 19
+package=ufcl-netdos.zip[ufclndos.zip],Free Component Library (FCL)-network
+# Dos 20
+package=ufcl-passrcdos.zip[ufclsdos.zip],Free Component Library (FCL)-Pascal source processing
+# Dos 21
+package=ufcl-registrydos.zip[ufclrdos.zip],Free Component Library (FCL)-registry
+# Dos 22
+package=ufcl-xmldos.zip[ufclxdos.zip],Free Component Library (FCL)-XML
+# Dos 23
+package=ufpmkunitdos.zip[ufpmkdos.zip],Units required for building fpmake.exe
+# Dos 24
+package=ufcl-jsondos.zip[ufcljdos.zip],Free Component Library (FCL)-JSON interface
+# Dos 25
+package=ufcl-processdos.zip[ufclpdos.zip],Free Component Library (FCL)-process management
+# Dos 26
+package=uchmdos.zip,Support for .chm files handling
+# Dos 27
+package=ulibgddos.zip[ulgddos.zip],GD library interface unit
+# Dos 28
+package=usymbolicdos.zip[usymbdos.zip],Symbolic (unit for parsing and evaluating expressions)
+
+#
+# Win32 packages
+#
+pack=~W~in32
+binsub=\bin\i386-win32
+ppc386=ppc386
+targetname=i386-win32
+cfgfile=fpc.cfg
+idecfgfile=fp.cfg
+ideinifile=fp.ini
+setpathfile=setpath.bat
+filecheck=*.i386-win32.zip
+# Win32 1
+package=base.i386-win32.zip,~B~asic system for Win32 (required)
+# Win32 2
+package=asld.i386-win32.zip,GNU ~L~inker and GNU Assembler for Win32 (required)
+# Win32 3
+package=ide.i386-win32.zip,~I~DE with integrated debugger/compiler (BETA)
+# Win32 4
+package=utils.i386-win32.zip,~E~xtra Utilities
+# Win32 5
+package=make.i386-win32.zip,GNU ~U~tilities (needed for Makefile usage)
+# Win32 6
+package=gdb.i386-win32.zip,GNU ~D~ebugger for Win32
+# Win32 7
+package=units-fv.i386-win32.zip,Free ~V~ision (FV)
+# Win32 8
+package=units-fpgtk.i386-win32.zip,fpGTK units
+# Win32 9
+package=units-sqlite.i386-win32.zip,SQLite interface units
+# Win32 10
+package=units-cdrom.i386-win32.zip,CD-ROM interface units
+# Win32 11
+package=units-odbc.i386-win32.zip,ODBC interface units
+# Win32 12
+package=units-winunits.i386-win32.zip,Extended Windows API interface units
+# Win32 13
+package=units-tcl.i386-win32.zip,TCL interface units
+# Win32 14
+package=units-graph.i386-win32.zip,Unit Graph
+# Win32 15
+package=units-fftw.i386-win32.zip,FFTW interface unit
+# Win32 16
+package=units-postgres.i386-win32.zip,PostGreSQL interface units
+# Win32 17
+package=units-httpd-1.3.i386-win32.zip,HTTPD 1.3 interface units
+# Win32 18
+package=units-httpd-2.0.i386-win32.zip,HTTPD 2.0 interface units
+# Win32 19
+package=units-httpd-2.2.i386-win32.zip,HTTPD 2.2 interface units
+# Win32 20
+package=units-oggvorbis.i386-win32.zip,OGG Vorbis interface units
+# Win32 21
+package=units-openal.i386-win32.zip,OpenAL interface units
+# Win32 22
+package=units-openssl.i386-win32.zip,OpenSSL interface units
+
+#
+# Win32 packages 2nd part
+#
+pack=Win~3~2-2
+filecheck=*.i386-win32.zip
+# Win32-2 1
+package=units-opengl.i386-win32.zip,OpenGL units
+# Win32-2 2
+package=units-gtk1.i386-win32.zip,GTK1 units
+# Win32-2 3
+package=units-ibase.i386-win32.zip,Interbase interface units
+# Win32-2 4
+package=units-mysql.i386-win32.zip,MySQL interface units
+# Win32-2 5
+package=units-gdbint.i386-win32.zip,GDB Interfacing units
+# Win32-2 6
+package=units-paszlib.i386-win32.zip,PasZLib units
+# Win32-2 7
+package=units-regexpr.i386-win32.zip,Regular expression units
+# Win32-2 8
+package=units-unzip.i386-win32.zip,Unzip units
+# Win32-2 9
+package=units-zlib.i386-win32.zip,ZLib interface units
+# Win32-2 10
+package=units-pasjpeg.i386-win32.zip,Pas~J~PEG units
+# Win32-2 11
+package=units-hash.i386-win32.zip,Hash calculation units
+# Win32-2 12
+package=units-oracle.i386-win32.zip,Oracle interface units
+# Win32-2 13
+package=units-fcl-base.i386-win32.zip,Free Component Library (FCL)-base part
+# Win32-2 14
+package=units-fcl-db.i386-win32.zip,Free Component Library (FCL)-datasets
+# Win32-2 15
+package=units-fcl-fpcunit.i386-win32.zip,Free Component Library (FCL)-FPCUnit
+# Win32-2 16
+package=units-fcl-image.i386-win32.zip,Free Component Library (FCL)-images
+# Win32-2 17
+package=units-fcl-net.i386-win32.zip,Free Component Library (FCL)-network
+# Win32-2 18
+package=units-fcl-passrc.i386-win32.zip,Free Component Library (FCL)-Pascal sources processing
+# Win32-2 19
+package=units-fcl-registry.i386-win32.zip,Free Component Library (FCL)-registry
+# Win32-2 20
+package=units-fcl-web.i386-win32.zip,Free Component Library (FCL)-Web
+# Win32-2 21
+package=units-fcl-xml.i386-win32.zip,Free Component Library (FCL)-XML
+# Win32-2 22
+package=units-fcl-json.i386-win32.zip,Free Component Library (FCL)-JSON interface
+# Win32-2 23
+package=units-fcl-async.i386-win32.zip,Free Component Library (FCL)-asynchronous events
+# Win32-2 24
+package=units-fcl-process.i386-win32.zip,Free Component Library (FCL)-process management
+# Win32-2 25
+package=units-chm.i386-win32.zip,Support for .chm files handling
+# Win32-2 26
+package=units-libgd.i386-win32.zip,GD library interface unit
+# Win32-2 27
+package=units-symbolic.i386-win32.zip,Symbolic (unit for parsing and evaluating expressions)
+
+
+#
+# OS/2 packages
+#
+pack=~O~S/2
+binsub=\bin\os2
+ppc386=ppc386
+targetname=i386-os2
+cfgfile=fpc.cfg
+idecfgfile=fp.cfg
+ideinifile=fp.ini
+filecheck=*os2.zip
+# OS/2 1
+package=baseos2.zip,~B~asic system for OS/2 (required)
+# OS/2 2
+package=asldos2.zip,GNU ~L~inker and GNU assembler for OS/2 (required)
+# OS/2 3
+package=ideos2.zip,~I~DE with integrated compiler (BETA - no debugger)
+# OS/2 4
+package=utilsos2.zip[utilos2.zip],~E~xtra Utilities
+# OS/2 5
+package=makeos2.zip,GNU ~U~tilities (needed for Makefile usage)
+# OS/2 6
+package=gdbos2.zip,GNU ~D~ebugger for EMX and PMGDB front-end
+# OS/2 7
+package=ufvos2.zip,Free ~V~ision (FV)
+# OS/2 8
+package=uos2unitsos2.zip[uos2os2.zip],Units interfacing libraries delivered with OS/2/eCS
+#package=uclkdllos2.zip[uclkos2.zip],CLKDLL interface unit (eCS 1.1+)
+# OS/2 9
+#package=ulvmos2.zip,LVM interface unit (OS/2 v4.5 / eCS)
+# OS/2 10
+package=upasjpegos2.zip[upjpos2.zip],Pas~J~PEG units
+# OS/2 11
+package=uhashos2.zip,Hash calculation units
+# OS/2 12
+package=ufcl-baseos2.zip[ufclbos2.zip],Free Component Library (FCL)-base part
+# OS/2 13
+package=ufcl-dbos2.zip[ufcldos2.zip],Free Component Library (FCL)-datasets
+# OS/2 14
+package=ufcl-fpcunitos2.zip[ufcluos2.zip],Free Component Library (FCL)-FPCUnit
+# OS/2 15
+package=ufcl-imageos2.zip[ufclios2.zip],Free Component Library (FCL)-images
+# OS/2 16
+package=ufcl-netos2.zip[ufclnos2.zip],Free Component Library (FCL)-network
+# OS/2 17
+package=ufcl-passrcos2.zip[ufclsos2.zip],Free Component Library (FCL)-Pascal sources processing
+# OS/2 18
+package=ufcl-registryos2.zip[ufclros2.zip],Free Component Library (FCL)-registry
+# OS/2 19
+package=ufcl-xmlos2.zip[ufclxos2.zip],Free Component Library (FCL)-XML
+# OS/2 20
+#package=ufcl-webos2.zip[ufclwos2.zip],Free Component Library (FCL)-Web
+
+#
+# OS/2 packages 2nd part
+#
+pack=OS/~2~-2
+filecheck=*os2.zip
+# OS/2-2 1
+#package=ugdbintos2.zip[ugdbos2.zip],GDB interfacing units
+# OS/2-2 2
+package=upaszlibos2.zip[upzlos2.zip],PasZLib units
+# OS/2-2 3
+package=uregexpros2.zip[uregos2.zip],Regular expression units
+# OS/2-2 4
+package=urexxos2.zip,REXX SAA interface units
+# OS/2-2 5
+package=uunzipos2.zip[uzipos2.zip],Unzip units
+# OS/2-2 6
+#package=uftpapios2.zip[uftpos2.zip],FTP API interface units
+# OS/2-2 7
+#package=uhwvideoos2.zip[uhwvos2.zip],HW Video interface units
+# OS/2-2 8
+#package=ummtkos2.zip,MMOS/2 interface units
+# OS/2-2 9
+package=ux11os2.zip,X11 interface units
+# OS/2-2 10
+package=ugtk1os2.zip,GTK1 interface units
+# OS/2-2 11
+package=ufpgtkos2.zip[ufpgtos2.zip],fpGTK units
+# OS/2-2 12
+package=uimlibos2.zip[uimlbos2.zip],ImLib interface units
+# OS/2-2 13
+package=ulibpngos2.zip[ulpngos2.zip],LibPNG interface units
+# OS/2-2 14
+package=utclos2.zip,TCL interface units
+# OS/2-2 15
+package=uzlibos2.zip,ZLib interface units
+# OS/2-2 16
+package=ufpmkunitos2.zip[ufpmkos2.zip],Units required for building fpmake.exe
+# OS/2-2 17
+package=ufcl-jsonos2.zip[ufcljos2.zip],Free Component Library (FCL)-JSON interface
+# OS/2-2 18
+package=ufcl-asyncos2.zip[ufclaos2.zip],Free Component Library (FCL)-asynchronous events
+# OS/2-2 19
+package=ufcl-processos2.zip[ufclpos2.zip],Free Component Library (FCL)-process management
+# OS/2-2 20
+package=uchmos2.zip,Support for .chm files handling
+# OS/2-2 21
+package=ulibgdos2.zip[ulgdos2.zip],GD library interface unit
+# OS/2-2 22
+package=usymbolicos2.zip[usymbos2.zip],Symbolic (unit for parsing and evaluating expressions)
+
+
+
+#
+# EMX packages
+#
+pack=~E~MX
+binsub=\bin\emx
+ppc386=ppc386
+targetname=emx
+cfgfile=fpc.cfg
+idecfgfile=fp.cfg
+ideinifile=fp.ini
+filecheck=*emx.zip
+# EMX 1
+package=baseemx.zip,~B~asic system for EMX (required)
+# EMX 2
+package=asldemx.zip,GNU ~L~inker and GNU assembler for EMX (required)
+# EMX 3
+package=ideemx.zip,~I~DE with integrated compiler (BETA - no debugger)
+# EMX 4
+package=utilsemx.zip[utilemx.zip],~E~xtra Utilities
+# EMX 5
+package=makeemx.zip,GNU ~U~tilities (needed for Makefile usage)
+# EMX 6
+package=gdbemx.zip,GNU ~D~ebugger for EMX and PMGDB front-end
+# EMX 7
+package=ufvemx.zip,Free ~V~ision (FV)
+# EMX 8
+package=uos2unitsemx.zip[uos2emx.zip],Units interfacing libraries delivered with OS/2/eCS
+#package=uclkdllemx.zip[uclkemx.zip],CLKDLL interface unit (eCS 1.1+)
+# EMX 9
+#package=ulvmemx.zip,LVM interface unit (OS/2 v4.5 / eCS)
+# EMX 10
+package=upasjpegemx.zip[upjpemx.zip],Pas~J~PEG units
+# EMX 11
+package=uhashemx.zip,Hash calculation units
+# EMX 12
+package=ufcl-baseemx.zip[ufclbemx.zip],Free Component Library (FCL)-base part
+# EMX 13
+package=ufcl-dbemx.zip[ufcldemx.zip],Free Component Library (FCL)-datasets
+# EMX 14
+package=ufcl-fpcunitemx.zip[ufcluemx.zip],Free Component Library (FCL)-FPCUnit
+# EMX 15
+package=ufcl-imageemx.zip[ufcliemx.zip],Free Component Library (FCL)-images
+# EMX 16
+package=ufcl-netemx.zip[ufclnemx.zip],Free Component Library (FCL)-network
+# EMX 17
+package=ufcl-passrcemx.zip[ufclsemx.zip],Free Component Library (FCL)-Pascal sources processing
+# EMX 18
+package=ufcl-registryemx.zip[ufclremx.zip],Free Component Library (FCL)-registry
+# EMX 19
+package=ufcl-xmlemx.zip[ufclxemx.zip],Free Component Library (FCL)-XML
+# EMX 20
+#package=ufcl-webemx.zip[ufclwemx.zip],Free Component Library (FCL)-Web
+
+#
+# EMX packages 2nd part
+#
+pack=E~M~X-2
+filecheck=*emx.zip
+# EMX-2 1
+#package=ugdbintemx.zip[ugdbemx.zip],GDB interfacing units
+# EMX-2 2
+package=upaszlibemx.zip[upzlemx.zip],PasZLib units
+# EMX-2 3
+package=uregexpremx.zip[uregemx.zip],Regular expression units
+# EMX-2 4
+package=urexxemx.zip,REXX SAA interface units
+# EMX-2 5
+package=uunzipemx.zip[uzipemx.zip],Unzip units
+# EMX-2 6
+#package=uftpapiemx.zip[uftpemx.zip],FTP API interface units
+# EMX-2 7
+#package=uhwvideoemx.zip[uhwvemx.zip],HW Video interface units
+# EMX-2 8
+#package=ummtkemx.zip,MMOS/2 interface units
+# EMX-2 9
+package=ux11emx.zip,X11 interface units
+# EMX-2 10
+package=ugtk1emx.zip,GTK1 interface units
+# EMX-2 11
+package=ufpgtkemx.zip,fpGTK units
+# EMX-2 12
+package=uimlibemx.zip[uimlbemx.zip],ImLib interface units
+# EMX-2 13
+package=ulibpngemx.zip[ulpngemx.zip],LibPNG interface units
+# EMX-2 14
+package=utclemx.zip,TCL interface units
+# EMX-2 15
+package=uzlibemx.zip,ZLib interface units
+# EMX-2 16
+package=ufpmkunitemx.zip[ufpmkemx.zip],Units required for building fpmake.exe
+# EMX-2 17
+package=ufcl-jsonemx.zip[ufcljemx.zip],Free Component Library (FCL)-JSON interface
+# EMX-2 18
+package=ufcl-asyncemx.zip[ufclaemx.zip],Free Component Library (FCL)-asynchronous events
+# EMX-2 19
+package=ufcl-processemx.zip[ufclpemx.zip],Free Component Library (FCL)-process management
+# EMX-2 20
+package=uchmemx.zip,Support for .chm files handling
+# EMX-2 21
+package=ulibgdemx.zip[ulgdemx.zip],GD library interface unit
+# EMX-2 22
+package=usymbolicemx.zip[usymbemx.zip],Symbolic (unit for parsing and evaluating expressions)
+
+
+#
+# Common packages
+#
+pack=Commo~n~
+# Common 1
+package=doc-pdf.zip,Documentation (~P~DF)
+# Common 2
+package=doc-html.zip[doc-htm.zip],Documentation (~H~TML)
+# Common 3
+package=doc-txt.zip,Documentation (~T~XT)
+# Common 4
+package=demo.zip,D~e~mos
+
+
+#
+# Source packages
+#
+pack=~S~ources
+filecheck=*.source.zip[*src.zip]
+# Source 1
+package=base.source.zip[basesrc.zip],~B~asic Makefiles for the sources
+# Source 2
+package=compiler.source.zip[compsrc.zip],~C~ompiler sources
+# Source 3
+package=rtl.source.zip[rtlsrc.zip],Run time library sources
+# Source 4
+package=units-graph.source.zip[ugrphsrc.zip],Unit Graph
+# Source 5
+package=utils.source.zip[utilsrc.zip],~U~tils sources
+# Source 6
+package=installer.source.zip[instsrc.zip],~I~nstaller sources
+# Source 7
+package=doc.source.zip[docsrc.zip],~D~ocumentation sources (LaTeX)
+# Source 8
+package=units-cdrom.source.zip[ucdrsrc.zip],CD-ROM interface units
+# Source 9
+package=units-unzip.source.zip[uzipsrc.zip],Unzip units
+# Source 10
+package=units-regexpr.source.zip[uregsrc.zip],Regular expression units
+# Source 11
+package=units-paszlib.source.zip[upzlsrc.zip],PasZLib units
+# Source 12
+package=units-rexx.source.zip[urexxsrc.zip],REXX SAA interface units
+# Source 13
+package=units-zlib.source.zip[uzlibsrc.zip],ZLib interface units
+# Source 14
+package=units-gdbint.source.zip[ugdbsrc.zip],GDB interface units
+# Source 15
+package=units-postgres.source.zip[upgrsrc.zip],PostGreSQL interface units
+
+#
+# Source packages 2nd part
+#
+pack=So~u~rces 2
+filecheck=*.source.zip[*src.zip]
+# Source-2 1
+package=units-opengl.source.zip[uoglsrc.zip],OpenGL interface units
+# Source-2 2
+package=units-gtk1.source.zip[ugtksrc.zip],GTK1 interface units
+# Source-2 3
+package=units-odbc.source.zip[uodbcsrc.zip],ODBC interface units
+# Source-2 4
+package=units-ibase.source.zip[uibassrc.zip],Interbase interface units
+# Source-2 5
+package=units-mysql.source.zip[umysqsrc.zip],MySQL interface units
+# Source-2 6
+#package=units-ftpapi.source.zip[uftpsrc.zip],OS/2 FTP API interface units
+# Source-2 7
+#package=units-hwvideo.source.zip[uhwvsrc.zip],OS/2 HWVideo interface units
+# Source-2 8
+#package=units-mmtk.source.zip[ummtksrc.zip],MMOS/2 interface units
+# Source-2 9
+package=units-os2units.source.zip[uos2src.zip],Units interfacing libraries delivered with OS/2/eCS
+#package=units-clkdll.source.zip[uclksrc.zip],CLKDLL interface unit (eCS 1.1+)
+# Source-2 10
+#package=units-lvm.source.zip[ulvmsrc.zip],OS/2 LVM interface unit
+# Source-2 11
+package=units-pasjpeg.source.zip[upjpsrc.zip],PasJPEG units
+# Source-2 12
+package=units-fv.source.zip[ufvsrc.zip],Free ~V~ision (FV)
+# Source-2 13
+package=units-libpng.source.zip[ulpngsrc.zip],LibPNG interface units
+# Source-2 14
+package=units-imlib.source.zip[uimlbsrc.zip],ImLib interface units
+# Source-2 15
+package=units-fpgtk.source.zip[ufpgtsrc.zip],fpGTK units
+# Source-2 16
+package=units-sqlite.source.zip[usqltsrc.zip],SQLite interface units
+# Source-2 17
+package=units-fpmkunit.source.zip[ufpmksrc.zip],Units required for building fpmake.exe
+# Source-2 18
+package=fcl-json.source.zip[ufcljsrc.zip],Free Component Library (FCL)-JSON interface
+# Source-2 19
+package=fcl-async.source.zip[ufclasrc.zip],Free Component Library (FCL)-asynchronous events
+# Source-2 20
+package=fcl-process.source.zip[ufclpsrc.zip],Free Component Library (FCL)-process management
+# Source-2 21
+package=units-chm.source.zip[uchmsrc.zip],Support for .chm files handling
+# Source-2 22
+package=units-libgd.source.zip[ulgdsrc.zip],GD library interface unit
+# Source-2 23
+package=units-symbolic.source.zip[usymbsrc.zip],Symbolic (unit for parsing and evaluating expressions)
+
+
+#
+# Source packages 3rd part
+#
+pack=Sou~r~ces 3
+filecheck=*.source.zip[*src.zip]
+# Source-3 1
+package=units-winunits.source.zip[uwinsrc.zip],Extended Windows API interface units
+# Source-3 2
+package=units-tcl.source.zip[utclsrc.zip],TCL interface units
+# Source-3 3
+package=units-oracle.source.zip[uorasrc.zip],Oracle interface units
+# Source-3 4
+package=units-hash.source.zip[uhashsrc.zip],Hash calculation units
+# Source-3 5
+package=units-fftw.source.zip[ufftwsrc.zip],FFTW interface unit
+# Source-3 6
+package=fcl-base.source.zip[ufclbsrc.zip],Free component library (FCL)-base part
+# Source-3 7
+package=fcl-db.source.zip[ufcldsrc.zip],Free component library (FCL)-datasets
+# Source-3 8
+package=fcl-fpcunit.source.zip[ufclusrc.zip],Free component library (FCL)-FPCUnit
+# Source-3 9
+package=fcl-image.source.zip[ufclisrc.zip],Free component library (FCL)-images
+# Source-3 10
+package=fcl-net.source.zip[ufclnsrc.zip],Free component library (FCL)-network
+# Source-3 11
+package=fcl-passrc.source.zip[ufclssrc.zip],Free component library (FCL)-Pascal source processing
+# Source-3 12
+package=fcl-registry.source.zip[ufclrsrc.zip],Free component library (FCL)-registry
+# Source-3 13
+package=fcl-xml.source.zip[ufclxsrc.zip],Free component library (FCL)-XML files
+# Source-3 14
+package=fcl-web.source.zip[ufclwsrc.zip],Free component library (FCL)-Web
+# Source-3 15
+package=httpd-1.3.source.zip[uhd13src.zip],HTTPD 1.3 interface units
+# Source-3 16
+package=httpd-2.0.source.zip[uhd20src.zip],HTTPD 2.0 interface units
+# Source-3 17
+package=httpd-2.2.source.zip[uhd22src.zip],HTTPD 2.2 interface units
+# Source-3 18
+package=oggvorbis.source.zip[uoggvsrc.zip],OGG Vorbis interface units
+# Source-3 19
+package=openal.source.zip[uoalsrc.zip],OpenAL interface units
+# Source-3 20
+package=openssl.source.zip[uosslsrc.zip],OpenSSL interface units
+
+defaultcfg=
+#
+# Example fpc.cfg for Free Pascal Compiler
+#
+
+# ----------------------
+# Defines (preprocessor)
+# ----------------------
+
+#
+# nested #IFNDEF, #IFDEF, #ENDIF, #ELSE, #DEFINE, #UNDEF are allowed
+#
+# -d is the same as #DEFINE
+# -u is the same as #UNDEF
+#
+
+#
+# Some examples (for switches see below, and the -? helppages)
+#
+# Try compiling with the -dRELEASE or -dDEBUG on the commandline
+#
+
+# For a release compile with optimizes and strip debuginfo
+#IFDEF RELEASE
+  -O3
+  -Xs
+  #WRITE Compiling Release Version
+#ENDIF
+
+# For a debug version compile with debuginfo and all codegeneration checks on
+#IFDEF DEBUG
+  -g
+  -Crtoi
+  #WRITE Compiling Debug Version
+#ENDIF
+
+# ----------------
+# Parsing switches
+# ----------------
+
+# All assembler blocks are intel styled by default
+#-Rintel
+
+# All assembler blocks are AT&T styled by default
+#-Ratt
+
+# All assembler blocks are directly copied to asm
+#-Rdirect
+
+# Semantic checking
+#  -S2        switch some Delphi 2 extensions on
+#  -Sc        supports operators like C (*=,+=,/= and -=)
+#  -Sd        tries to be Delphi compatible
+#  -Se<x>     compiler stops after the <x> errors (default is 1)
+#  -Sg        allow LABEL and GOTO
+#  -Sh        Use ansistrings
+#  -Si        support C++ styled INLINE
+#  -Sm        support macros like C (global)
+#  -So        tries to be TP/BP 7.0 compatible
+#  -Sp        tries to be gpc compatible
+#  -Ss        constructor name must be init (destructor must be done)
+#  -St        allow static keyword in objects
+# Allow goto, inline, C-operators
+-Sgic
+
+# ---------------
+# Code generation
+# ---------------
+
+# Uncomment the next line if you always want static/dynamic units by default
+# (can be overruled with -CD, -CS at the commandline)
+#-CS
+#-CD
+
+# Set the default heapsize to 8Mb
+#-Ch8000000
+
+# Set default codegeneration checks (iocheck, overflow, range, stack)
+#-Ci
+#-Co
+#-Cr
+#-Ct
+
+# Optimizer switches
+# -O1        level 1 optimizations (quick and debugger friendly)
+# -O2        level 2 optimizations (-O1 + quick optimizations)
+# -O3        level 3 optimizations (-O2 + slow optimizations)
+
+
+# -----------------------
+# Set Filenames and Paths
+# -----------------------
+
+# Both slashes and backslashes are allowed in paths
+
+# path to the messagefile, not necessary anymore but can be used to override
+# the default language
+#-Fr%basepath%/msg/errore.msg
+#-Fr%basepath%/msg/errorn.msg
+#-Fr%basepath%/msg/errores.msg
+#-Fr%basepath%/msg/errord.msg
+#-Fr%basepath%/msg/errorr.msg
+
+# path to the gcclib
+#-Fl%basepath%/lib
+
+# searchpath for includefiles
+# release them only if you know what you do
+# because this could cause a rebuild of the runtime library
+# if you tell them compiler/ide to build the project (FK)
+#-Fi%basepath%/source/rtl/inc;%basepath%/source/rtl/i386
+
+# searchpath for objectfiles
+#-Fo%basepath%/source/rtl/inc;%basepath%/source/rtl/i386
+
+# searchpath for units and other system dependent things
+-Fu%basepath%/units/%fpctargetmacro%
+-Fu%basepath%/units/%fpctargetmacro%/*
+-Fu%basepath%/units/%fpctargetmacro%/rtl
+
+# searchpath for libraries
+#-Fl%basepath%/lib
+#-Fl/lib;/usr/lib
+
+# searchpath for tools
+-FD%basepath%/bin/%fpctargetmacro%
+
+# -------------
+# Linking
+# -------------
+
+# generate always debugging information for GDB (slows down the compiling
+# process)
+#-gl
+
+# always pass an option to the linker
+#-k-s
+
+# Always strip debuginfo from the executable
+-Xs
+
+
+# -------------
+# Miscellaneous
+# -------------
+
+# Write always a nice FPC logo ;)
+-l
+
+# Verbosity
+# e : Show errors (default)       d : Show debug info
+# w : Show warnings               u : Show used files
+# n : Show notes                  t : Show tried files
+# h : Show hints                  m : Show defined macros
+# i : Show general info           p : Show compiled procedures
+# l : Show linenumbers            c : Show conditionals
+# a : Show everything             0 : Show nothing (except errors)
+
+# Display Info, Warnings, Notes and Hints
+-viwn
+# If you don't want so much verbosity use
+#-vw
+
+endcfg
+
+# the IDE configuration files
+
+defaultidecfg=
+#IFDEF NORMAL
+ -T%targetos%
+ -Sg
+ -O1
+ -OpPENTIUM
+ -Ratt
+ -Fu%basepath%\units\%fpctargetmacro%
+ -Fu%basepath%\units\%fpctargetmacro%\*
+ -Fu%basepath%\units\%fpctargetmacro%\rtl
+ -g-
+ -p-
+ -b-
+#ENDIF
+
+#IFDEF DEBUG
+ -T%targetos%
+ -Sg
+ -Cr
+ -Ci
+ -Co
+ -OpPENTIUM
+ -Ratt
+ -Fu%basepath%\units\%fpctargetmacro%
+ -Fu%basepath%\units\%fpctargetmacro%\*
+ -Fu%basepath%\units\%fpctargetmacro%\rtl
+ -g
+ -p-
+ -b-
+#ENDIF
+
+#IFDEF RELEASE
+ -T%targetos%
+ -Sg
+ -O3
+ -OpPENTIUM
+ -Ratt
+ -Fu%basepath%\units\%fpctargetmacro%
+ -Fu%basepath%\units\%fpctargetmacro%\*
+ -Fu%basepath%\units\%fpctargetmacro%\rtl
+ -g-
+ -p-
+ -b-
+#ENDIF
+endcfg
+
+defaultideini=
+[Compile]
+CompileMode=DEBUG
+
+[Help]
+Files="%basepath%\doc\fpctoc.htx"
+
+[Editor]
+DefaultTabSize=8
+DefaultFlags=20599
+DefaultSaveExt=.pas
+DefaultIndentSize=1
+
+[Highlight]
+Exts="*.pas;*.pp;*.inc"
+NeedsTabs="make*;make*.*"
+
+[SourcePath]
+SourceList=""
+
+[Mouse]
+DoubleDelay=8
+ReverseButtons=0
+AltClickAction=6
+CtrlClickAction=1
+
+[Search]
+FindFlags=4
+
+[Breakpoints]
+Count=0
+
+[Watches]
+Count=0
+
+[Preferences]
+DesktopFileFlags=209
+CenterCurrentLineWhileDebugging=1
+AutoSaveFlags=7
+MiscOptions=6
+DesktopLocation=1
+
+[Misc]
+ShowReadme=1
+
+[Files]
+OpenExts="*.pas;*.pp;*.inc"
+
+endcfg
+
+
+defaultsetpath=
+@echo off
+echo Setting PATH for use with %targetname% Free Pascal Compiler
+set A=%basepath%\bin\%targetname%;%PATH%
+set Path=
+set PATH=%A%
+set A=
+endcfg
+
+#
+# That's all folks

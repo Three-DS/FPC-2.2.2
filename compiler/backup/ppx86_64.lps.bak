@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="pp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="pp"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="53"/>
+        <CursorPos X="27" Y="53"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="x86\aasmcpu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="aasmcpu"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="globals.pas"/>
+        <UnitName Value="globals"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1231"/>
+        <CursorPos X="43" Y="1246"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="nflw.pas"/>
+        <UnitName Value="nflw"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1245"/>
+        <CursorPos X="44" Y="1258"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\2.4.0\source\rtl\win64\buildrtl.pp"/>
+        <UnitName Value="buildrtl"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="60" Y="11"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\2.4.0\source\rtl\objpas\fgl.pp"/>
+        <UnitName Value="fgl"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="82"/>
+        <CursorPos X="20" Y="101"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="5" HistoryIndex="4">
+      <Position1>
+        <Filename Value="pp.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="globals.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="pp.pas"/>
+        <Caret Line="73" Column="6" TopLine="58"/>
+      </Position3>
+      <Position4>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\2.4.0\source\rtl\objpas\fgl.pp"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position5>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

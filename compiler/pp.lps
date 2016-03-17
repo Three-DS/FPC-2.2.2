@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <Units Count="9">
+      <Unit0>
+        <Filename Value="pp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="pp"/>
+        <EditorIndex Value="2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="x86/aasmcpu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="aasmcpu"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="fpcdefs.inc"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="80"/>
+        <CursorPos X="2" Y="112"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="symsym.pas"/>
+        <UnitName Value="symsym"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="134"/>
+        <CursorPos X="41" Y="148"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="symtable.pas"/>
+        <UnitName Value="symtable"/>
+        <EditorIndex Value="4"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="82"/>
+        <CursorPos X="1" Y="99"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="ncnv.pas"/>
+        <UnitName Value="ncnv"/>
+        <EditorIndex Value="5"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="179"/>
+        <CursorPos X="40" Y="188"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="ncal.pas"/>
+        <UnitName Value="ncal"/>
+        <EditorIndex Value="6"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="70"/>
+        <CursorPos X="52" Y="81"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="nflw.pas"/>
+        <UnitName Value="nflw"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="7"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1270"/>
+        <CursorPos X="38" Y="1282"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="pass_1.pas"/>
+        <UnitName Value="pass_1"/>
+        <EditorIndex Value="8"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="18"/>
+        <CursorPos X="15" Y="31"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit8>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="14" HistoryIndex="13">
+      <Position1>
+        <Filename Value="fpcdefs.inc"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="pp.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="symsym.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="symtable.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="ncnv.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="ncal.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1" Column="1" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1258" Column="44" TopLine="1245"/>
+      </Position8>
+      <Position9>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1259" Column="45" TopLine="1246"/>
+      </Position9>
+      <Position10>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1282" Column="38" TopLine="1074"/>
+      </Position10>
+      <Position11>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1258" Column="44" TopLine="1245"/>
+      </Position11>
+      <Position12>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="166" Column="20" TopLine="152"/>
+      </Position12>
+      <Position13>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1258" Column="21" TopLine="1245"/>
+      </Position13>
+      <Position14>
+        <Filename Value="nflw.pas"/>
+        <Caret Line="1259" Column="45" TopLine="1246"/>
+      </Position14>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

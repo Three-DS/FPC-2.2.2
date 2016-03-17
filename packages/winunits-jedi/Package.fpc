@@ -1,0 +1,8 @@
+[package]
+name=winunits-jedi
+version=2.2.2
+[require]
+packages_win32=winunits-base
+packages_win64=winunits-base
+packages=rtl 
+packages_win64_x86_64=

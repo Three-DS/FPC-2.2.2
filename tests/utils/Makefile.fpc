@@ -1,0 +1,29 @@
+#
+# Makefile.fpc for Free Pascal testing utilities
+#
+
+[install]
+fpcpackage=y
+
+[default]
+fpcdir=../..
+
+[require]
+# We depend on the installed compiler with it's fpc.cfg
+nortl=y
+
+[target]
+programs=dotest fptime fail testfail digest $(DBDIGEST)
+programs_win32=prepup
+programs_win64=prepup
+programs_go32v2=prepup
+
+[clean]
+programs=dbdigest
+
+[rules]
+
+utils: all
+
+utilsdb:
+        $(MAKE) utils DBDIGEST=dbdigest

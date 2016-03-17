@@ -1,0 +1,26 @@
+#
+#   Makefile.fpc for fppkg
+#
+
+[package]
+name=fpmkunit
+version=2.2.2
+
+[target]
+units=fpmkunit
+
+[install]
+fpcpackage=y
+
+[require]
+packages=paszlib fcl-process
+
+[compiler]
+sourcedir=src
+includedir=src
+
+[default]
+fpcdir=../..
+
+[rules]
+.NOTPARALLEL:
